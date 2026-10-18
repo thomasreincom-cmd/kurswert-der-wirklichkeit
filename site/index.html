@@ -5,244 +5,291 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kurswert der Wirklichkeit</title>
 <meta name="description" content="Eine Reise in sieben Stationen: Wie belastbar ist eine Zahl, die als Nachricht zitiert wird? Ein nicht gewinnorientiertes Copoiema des Studio Bifurkation.">
+<link rel="stylesheet" href="ci.css">
 <style>
-:root{--bg:#0d0f12;--card:#151820;--raised:#1a1d24;--line:#2d3748;--text:#e2e8f0;--muted:#94a3b8;
---amber:#f59e0b;--teal:#2dd4bf;--red:#f87171;--focus:#2dd4bf}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 system-ui,"Segoe UI",Helvetica,Arial,sans-serif}
-a{color:var(--teal)}
-:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
+body{margin:0;overflow-x:hidden;background:var(--void);color:var(--text);font:400 17px/1.6 var(--body);
+  background-image:radial-gradient(1200px 600px at 80% -10%,rgba(177,77,255,.10),transparent 60%),
+                   radial-gradient(900px 500px at -10% 40%,rgba(0,240,255,.06),transparent 60%)}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
 button{font:inherit;color:inherit;cursor:pointer}
+.grad{background:var(--grad-ice);-webkit-background-clip:text;background-clip:text;color:transparent}
+.heat{background:var(--grad-heat);-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* Kopfleiste: Fortschritt und Werkzeugkasten */
-.bar{position:sticky;top:0;z-index:20;background:rgba(13,15,18,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-.bar-in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.bar-title{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap}
-.kit-btn{white-space:nowrap}
-.kit-btn{background:var(--raised);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:14px}
-.kit-btn b{color:var(--amber);font-variant-numeric:tabular-nums}
-.progress{height:2px;background:var(--amber);width:0;transition:width .4s ease}
+/* Kopfleiste */
+.bar{position:sticky;top:0;z-index:30;background:rgba(4,6,15,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--glass-border)}
+.bar-in{max-width:980px;margin:0 auto;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font:700 12px/1 var(--display);letter-spacing:.22em;color:var(--text);text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:10px}
+.brand::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.kit-btn{background:var(--glass);border:1px solid var(--glass-border);border-radius:99px;padding:7px 14px;font:600 13px var(--body);white-space:nowrap}
+.kit-btn b{font-family:var(--display);color:var(--cyan)}
+@media (max-width:520px){.brand{font-size:9px;letter-spacing:.12em;gap:7px}.kit-btn{padding:6px 10px;font-size:12px}.bar-in{padding:10px 14px}}
+.progress{height:2px;width:0;background:var(--grad-heat);transition:width .5s ease}
 
-main{max-width:760px;margin:0 auto;padding:0 16px 96px}
-section{padding:72px 0 24px;border-bottom:1px solid var(--line)}
-section:last-of-type{border-bottom:0}
-.step{color:var(--muted);font-size:14px;margin:0 0 6px}
-h1{font-size:42px;line-height:1.1;margin:0 0 14px;letter-spacing:-.015em}
-h2{font-size:25px;line-height:1.25;margin:0 0 12px}
-p{margin:0 0 14px;max-width:66ch}
-.muted{color:var(--muted)}
-.small{font-size:15px}
+/* Hero mit Partikelfeld */
+.hero{position:relative;min-height:calc(100svh - 50px);display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--glass-border)}
+#field{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;z-index:2;max-width:980px;margin:0 auto;padding:56px 18px 40px;width:100%}
+.kicker{font:700 11px/1.4 var(--display);letter-spacing:.28em;color:var(--cyan);margin:0 0 18px}
+h1{font:900 clamp(38px,7vw,72px)/1.02 var(--display);letter-spacing:-.01em;margin:0 0 20px}
+.lede{font-weight:300;font-size:19px;color:var(--muted);max-width:56ch;margin:0 0 26px}
+.q{font-weight:600;font-size:18px;max-width:52ch;margin:0}
+.q small{display:block;font-weight:400;font-size:13px;color:var(--muted);margin-top:4px}
+.big{font:900 clamp(96px,24vw,230px)/.95 var(--display);letter-spacing:-.03em;margin:6px 0 10px;font-variant-numeric:tabular-nums;transition:filter .4s}
+.big.moved{filter:drop-shadow(0 0 24px rgba(255,46,154,.45))}
+.hint{font:700 10px/1.4 var(--display);letter-spacing:.2em;color:var(--muted);margin:0 0 22px}
 
-/* Prolog: die große Zahl */
-.question{font-size:19px;font-weight:600;margin:28px 0 4px;max-width:58ch}
-.question small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:4px}
-.big{font-size:clamp(112px,30vw,220px);line-height:.9;font-weight:800;letter-spacing:-.04em;
-font-variant-numeric:tabular-nums;color:var(--text);margin:8px 0 18px;transition:color .3s}
-.big.moved{color:var(--amber)}
-.guess{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
-.guess label{display:block;font-weight:600;margin-bottom:10px}
-input[type=range]{width:100%;accent-color:var(--amber);height:28px}
-.guess-val{font-size:28px;font-weight:700;color:var(--amber);font-variant-numeric:tabular-nums;margin:6px 0 12px}
-.go{background:var(--amber);color:#0d0f12;border:0;border-radius:8px;padding:11px 18px;font-weight:700}
-.go.ghost{background:none;color:var(--teal);border:1px solid var(--teal)}
-.go:disabled{opacity:.4;cursor:default}
-.reveal{margin-top:16px;padding:16px 18px;border-left:3px solid var(--teal);background:var(--raised);border-radius:0 10px 10px 0;display:none}
+.glass{background:var(--glass);border:1px solid var(--glass-border);border-radius:18px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.guess{padding:20px;max-width:560px}
+.guess label{display:block;font-weight:600;margin-bottom:12px}
+input[type=range]{width:100%;accent-color:var(--cyan);height:28px}
+.val{font:900 30px var(--display);margin:8px 0 14px}
+.go{display:inline-block;border:0;border-radius:99px;padding:12px 22px;font:700 12px var(--display);letter-spacing:.14em;color:#04060f;
+  background:linear-gradient(110deg,#00f0ff,#a9d8ff);box-shadow:0 0 24px rgba(0,240,255,.25);text-decoration:none}
+.go.ghost{background:var(--glass);color:var(--text);border:1px solid var(--glass-border);box-shadow:none}
+.go:disabled{opacity:.35;cursor:default;box-shadow:none}
+.reveal{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:var(--glass-2);border-left:3px solid var(--pink)}
 .reveal.on{display:block}
-.reveal strong{color:var(--teal)}
+.reveal strong{color:var(--cyan)}
 
-/* Werkzeug-Karte am Ende jeder Station */
-.tool{margin-top:22px;display:none;border:1px dashed var(--amber);border-radius:12px;padding:14px 16px}
-.tool.on{display:block}
-.tool .k{color:var(--amber);font-weight:700;font-size:15px;margin:0 0 4px}
+main{max-width:980px;margin:0 auto;padding:0 18px 80px}
+section{padding:88px 0 28px}
+.step{font:700 11px/1.4 var(--display);letter-spacing:.28em;color:var(--violet);margin:0 0 12px}
+h2{font:700 clamp(26px,4.2vw,38px)/1.15 var(--display);margin:0 0 16px}
+p{margin:0 0 14px;max-width:64ch}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.stage{padding:20px;margin:18px 0}
+
+/* Werkzeug */
+.tool{display:none;margin-top:24px;padding:16px 18px;border-radius:16px;position:relative;background:var(--glass)}
+.tool::before{content:"";position:absolute;inset:0;border-radius:16px;padding:1px;background:var(--grad-heat);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.tool.on{display:block;animation:pop .5s ease}
+@keyframes pop{from{transform:scale(.97);opacity:0}to{transform:none;opacity:1}}
+.tool .k{font:700 11px var(--display);letter-spacing:.2em;margin:0 0 6px}
 .tool p{margin:0}
 
-/* Station 1: Münze */
-.coin-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:14px 0}
-.coin{width:118px;height:118px;border-radius:50%;border:3px solid var(--amber);display:grid;place-items:center;
-font-size:30px;font-weight:800;color:var(--amber);background:radial-gradient(circle at 35% 30%,#2a2416,#151820 70%);font-variant-numeric:tabular-nums}
+/* Station 1 */
+.coin-row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.coin{width:124px;height:124px;border-radius:50%;display:grid;place-items:center;font:900 28px var(--display);
+  background:radial-gradient(circle at 35% 30%,rgba(0,240,255,.25),rgba(4,6,15,.9) 70%);border:1px solid var(--cyan);box-shadow:0 0 30px rgba(0,240,255,.25)}
 .btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{background:var(--raised);border:1px solid var(--line);border-radius:8px;padding:9px 14px}
-.btn:hover{border-color:var(--teal)}
+.btn{background:var(--glass-2);border:1px solid var(--glass-border);border-radius:99px;padding:9px 16px}
+.btn:hover:not(:disabled){border-color:var(--cyan)}
+.btn:disabled{opacity:.45;cursor:default}
 
-/* Station 2: zwei Mauern */
-.walls{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
-.wall{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px}
-.wall .q{font-size:14px;font-weight:600;min-height:3.2em}
-.meter{height:150px;position:relative;background:var(--raised);border-radius:8px;overflow:hidden}
-.meter .fill{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(var(--teal),#1a8f82);transition:height .35s ease}
-.meter .num{position:absolute;inset:0;display:grid;place-items:center;font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;text-shadow:0 2px 12px rgba(0,0,0,.6)}
-.spent{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
-.spent b{color:var(--amber)}
-@media (max-width:520px){.walls{grid-template-columns:1fr}}
+/* Station 2 */
+.walls{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wall{padding:16px;display:flex;flex-direction:column;gap:10px}
+.wall .mq{font-size:14px;font-weight:600;min-height:3.2em}
+.meter{position:relative;height:170px;border-radius:12px;overflow:hidden;background:rgba(4,6,15,.6)}
+.meter canvas{position:absolute;inset:0;width:100%;height:100%}
+.meter .num{position:absolute;inset:0;display:grid;place-items:center;font:900 36px var(--display);text-shadow:0 2px 16px rgba(0,0,0,.8)}
+.spent{font-size:13px;color:var(--muted)}
+.spent b{color:var(--pink)}
+@media (max-width:620px){.walls{grid-template-columns:1fr}}
 
-/* Station 3: die Lücke */
-.book{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;align-items:end;height:130px;margin:18px 0 6px;position:relative}
-.book i{display:block;border-radius:3px 3px 0 0}
-.book i.b{background:#1a8f82}
-.book i.a{background:#b45309}
-.book i.gap{background:transparent;border:1px dashed var(--line);border-bottom:0;height:100%!important}
-.book i.mine{background:var(--amber)!important;border:0}
-.axis{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
-.shown{font-size:clamp(28px,9vw,44px);white-space:nowrap;font-weight:800;font-variant-numeric:tabular-nums;margin:12px 0 2px;transition:color .3s}
+/* Station 3 */
+.book{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;align-items:end;height:130px;margin:6px 0}
+.book i{display:block;border-radius:4px 4px 0 0}
+.book i.b{background:linear-gradient(#00f0ff,rgba(0,240,255,.25))}
+.book i.a{background:linear-gradient(#ff2e9a,rgba(255,46,154,.25))}
+.book i.gap{border:1px dashed var(--glass-border);border-bottom:0;height:100%!important}
+.book i.mine{background:var(--violet)!important;border:0;box-shadow:0 0 16px var(--violet)}
+.axis{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.shown{font:900 clamp(26px,7vw,40px) var(--display);margin:14px 0 4px;white-space:nowrap}
 
-/* Station 4: Quiz */
-.quiz{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0}
+/* Station 4 */
+.quiz{padding:16px;margin:12px 0}
 .quiz .mq{font-weight:600;margin:0 0 4px}
-.quiz .mp{color:var(--muted);font-size:14px;margin:0 0 12px}
-.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
-.choice{background:var(--raised);border:1px solid var(--line);border-radius:8px;padding:10px;text-align:left;font-size:15px}
-.choice small{display:block;color:var(--muted);font-size:13px}
-.choice.right{border-color:var(--teal);background:#12312e}
-.choice.wrong{border-color:var(--red);opacity:.7}
-.score{font-variant-numeric:tabular-nums;color:var(--amber);font-weight:700}
+.quiz .mp{color:var(--muted);font-size:13px;margin:0 0 12px}
+.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.choice{background:var(--glass-2);border:1px solid var(--glass-border);border-radius:12px;padding:10px 12px;text-align:left;font-size:15px}
+.choice small{display:block;color:var(--muted);font-size:12px}
+.choice.right{border-color:var(--green);box-shadow:0 0 0 1px var(--green) inset}
+.choice.wrong{border-color:var(--red);opacity:.6}
+.score{font:700 14px var(--display);letter-spacing:.06em;color:var(--cyan)}
 
-/* Station 5: Flecken */
-.regions{display:grid;gap:8px;margin:14px 0}
-.rbar{display:grid;grid-template-columns:150px 1fr 60px;gap:10px;align-items:center;font-size:15px}
-.rbar .t{height:12px;background:var(--raised);border-radius:6px;overflow:hidden}
-.rbar .t span{display:block;height:100%;background:var(--teal);width:0;transition:width .6s ease}
+/* Station 5 */
+.regions{display:grid;gap:9px;margin:16px 0}
+.rbar{display:grid;grid-template-columns:150px 1fr 60px;gap:12px;align-items:center;font-size:15px}
+.rbar .t{height:10px;border-radius:5px;background:rgba(160,200,255,.08);overflow:hidden}
+.rbar .t span{display:block;height:100%;width:0;background:var(--grad-heat);transition:width .8s ease}
 .rbar .v{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
 @media (max-width:520px){.rbar{grid-template-columns:118px 1fr 52px;font-size:14px}}
 
-/* Station 6: Übertragen */
+/* Station 6: KI */
+.ai-list{display:grid;gap:10px;margin:16px 0}
+.ai{display:grid;grid-template-columns:minmax(0,1fr) auto;font-family:var(--body);color:var(--text);gap:6px 14px;padding:14px 16px;align-items:center;text-align:left;width:100%}
+.ai{white-space:normal}
+.ai .aq{display:block;white-space:normal;font-weight:600;font-size:15px;min-width:0;overflow-wrap:break-word;line-height:1.4}
+.ai .ap,.ai .aw,.ai .am{display:block}
+.ai .ap{font:900 22px var(--display)}
+.ai .aw{grid-column:1/-1;height:6px;border-radius:3px;background:rgba(160,200,255,.08);overflow:hidden}
+.ai .aw span{display:block;height:100%;width:0;background:var(--grad-ice);transition:width .8s ease}
+.ai .am{grid-column:1/-1;font-size:13px;color:var(--muted);display:none}
+.ai.shown .am{display:block}
+.ai.pick{border-color:var(--pink)}
+.ai.cheap{border-color:var(--green)}
+.disclose{border-left:3px solid var(--violet);padding:10px 14px;background:var(--glass);border-radius:0 12px 12px 0;font-size:14px;color:var(--muted)}
+
+/* Station 7 */
 .cases{display:grid;gap:12px;margin:14px 0}
-.case{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
-.case h3{font-size:17px;margin:0 0 6px}
-.case ol{margin:8px 0 0;padding-left:20px;color:var(--muted);display:none}
+.case{padding:16px 18px}
+.case h3{font:700 16px var(--display);margin:0 0 6px}
+.case ol{display:none;margin:10px 0 0;padding-left:20px;color:var(--muted)}
 .case.open ol{display:block}
-.case button{margin-top:6px}
 
 /* Epilog */
-.manifest p{font-size:19px;line-height:1.6;max-width:62ch}
-.kitlist{list-style:none;padding:0;margin:18px 0;display:grid;gap:8px}
-.kitlist li{border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--muted)}
-.kitlist li.got{border-color:var(--amber);color:var(--text)}
-.kitlist li b{display:block;color:var(--amber);font-size:15px}
-.kitlist li:not(.got) b{color:var(--muted)}
-.next{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
-.next a{text-decoration:none}
+.manifest p{font-weight:300;font-size:20px;line-height:1.65;max-width:60ch}
+.kitlist{list-style:none;padding:0;margin:18px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.kitlist li{padding:12px 14px;border-radius:14px;border:1px solid var(--glass-border);background:var(--glass);color:var(--muted);font-size:14px}
+.kitlist li.got{color:var(--text);border-color:rgba(255,46,154,.55);box-shadow:0 0 18px rgba(177,77,255,.15)}
+.kitlist li b{display:block;font:700 12px var(--display);letter-spacing:.12em;margin-bottom:4px;color:var(--muted)}
+.kitlist li.got b{color:var(--pink)}
+.next{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
 
-/* Werkzeugkasten-Schublade */
-dialog{background:var(--raised);color:var(--text);border:1px solid var(--amber);border-radius:14px;max-width:min(560px,calc(100vw - 32px));padding:20px}
-dialog::backdrop{background:rgba(13,15,18,.7)}
-dialog h2{margin-top:0}
-footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+dialog{background:rgba(7,10,24,.94);color:var(--text);border:1px solid var(--glass-border);border-radius:18px;max-width:min(720px,calc(100vw - 32px));padding:22px;backdrop-filter:blur(14px)}
+dialog::backdrop{background:rgba(4,6,15,.7)}
+footer{max-width:980px;margin:0 auto;padding:26px 18px 50px;border-top:1px solid var(--glass-border);color:var(--muted);font-size:13px}
 footer p{max-width:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 
 <div class="bar">
   <div class="bar-in">
-    <a class="bar-title" href="#prolog">Kurswert der Wirklichkeit</a>
-    <button class="kit-btn" id="kitBtn" type="button" aria-haspopup="dialog" aria-label="Werkzeugkasten öffnen">Werkzeuge <b id="kitCount">0</b>/7</button>
+    <a class="brand" href="#top">KURSWERT DER WIRKLICHKEIT</a>
+    <button class="kit-btn" id="kitBtn" type="button" aria-haspopup="dialog" aria-label="Werkzeugkasten öffnen">Werkzeuge <b id="kitCount">0</b>/8</button>
   </div>
   <div class="progress" id="progress"></div>
 </div>
 
+<header class="hero" id="top">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="kicker">Ein Copoiema · Studio Bifurkation · IC</p>
+    <h1><span class="grad">Was kostet</span><br><span class="heat">eine Wahrheit?</span></h1>
+    <p class="lede">Auf Prognosemärkten setzen Menschen Geld darauf, ob etwas eintritt. Aus ihren Einsätzen wird eine Prozentzahl, und diese Zahl landet in Nachrichten, als wäre sie eine Umfrage. Jeder Lichtpunkt hinter dieser Zahl steht für Geld, das ihr im Weg liegt.</p>
+    <p class="q" id="pQuestion">Daten werden geladen<small id="pMeta"></small></p>
+    <div class="big grad" id="pBig" aria-live="polite">81 %</div>
+    <p class="hint">Maus oder Finger bewegen: so viel Geld liegt im Weg</p>
+    <div class="guess glass">
+      <label for="pRange">Wie viel Geld müsste jemand einsetzen, um diese Zahl um zehn Punkte zu verschieben?</label>
+      <input type="range" id="pRange" min="0" max="100" value="50">
+      <div class="val grad" id="pVal">10.000 $</div>
+      <button class="go" id="pGo" type="button">Schätzung abgeben</button>
+      <div class="reveal" id="pReveal" role="status"></div>
+    </div>
+    <div class="tool" id="t1"><p class="k heat">Werkzeug 1 · Die Preisfrage</p><p>Bevor ich einer Zahl glaube, frage ich: Was würde es kosten, sie zu verschieben?</p></div>
+  </div>
+</header>
+
 <main>
 
-<section id="prolog">
-  <h1>Was kostet eine Wahrheit?</h1>
-  <p>Auf Prognosemärkten setzen Menschen Geld darauf, ob etwas eintritt. Aus ihren Einsätzen wird eine Prozentzahl, und diese Zahl landet in Nachrichten, als wäre sie eine Umfrage. Hier ist die meistgehandelte Frage von heute.</p>
-  <p class="question" id="pQuestion">Daten werden geladen<small id="pMeta"></small></p>
-  <div class="big" id="pBig" aria-live="polite">81 %</div>
-  <div class="guess">
-    <label for="pRange">Was glaubst du: Wie viel Geld müsste jemand einsetzen, um diese Zahl um zehn Punkte zu verschieben?</label>
-    <input type="range" id="pRange" min="0" max="100" value="50" aria-describedby="pVal">
-    <div class="guess-val" id="pVal">10.000 $</div>
-    <button class="go" id="pGo" type="button">Schätzung abgeben</button>
-    <div class="reveal" id="pReveal" role="status"></div>
-  </div>
-  <div class="tool" id="t1"><p class="k">Werkzeug 1: die Preisfrage</p><p>Bevor ich einer Zahl glaube, frage ich: Was würde es kosten, sie zu verschieben?</p></div>
-</section>
-
 <section id="s1">
-  <p class="step">Station 1 von 6</p>
+  <p class="step">Station 1 von 7</p>
   <h2>Aus einer Wette wird eine Zahl</h2>
   <p>Ein Anteil zahlt einen Dollar, wenn das Ereignis eintritt, sonst nichts. Wer glaubt, dass es eintritt, kauft. Je mehr kaufen, desto teurer der Anteil. Sein Preis in Cent wird als Wahrscheinlichkeit gelesen.</p>
-  <div class="coin-row">
-    <div class="coin" id="coin" aria-live="polite">50 ¢</div>
-    <div class="btns">
-      <button class="btn" type="button" data-coin="5">Jemand kauft JA</button>
-      <button class="btn" type="button" data-coin="-5">Jemand kauft NEIN</button>
+  <div class="stage glass coin-row">
+    <div class="coin grad" id="coin" aria-live="polite">50 ¢</div>
+    <div>
+      <div class="btns">
+        <button class="btn" type="button" data-coin="5">Jemand kauft JA</button>
+        <button class="btn" type="button" data-coin="-5">Jemand kauft NEIN</button>
+      </div>
+      <p class="muted small" id="coinText" style="margin-top:12px">Der Anteil kostet 50 Cent. Gelesen wird: 50 % Wahrscheinlichkeit.</p>
     </div>
   </div>
-  <p class="muted small" id="coinText">Der Anteil kostet 50 Cent. Gelesen wird: 50 % Wahrscheinlichkeit.</p>
-  <div class="tool" id="t2"><p class="k">Werkzeug 2: die Herkunft</p><p>Eine Zahl hat immer einen Ursprung. Wer hat sie erzeugt, und womit? Hier: mit Geld, das Menschen setzen, die sich etwas davon versprechen.</p></div>
+  <div class="tool" id="t2"><p class="k heat">Werkzeug 2 · Die Herkunft</p><p>Jede Zahl hat einen Ursprung. Wer hat sie erzeugt, und womit? Hier: mit Geld von Menschen, die sich etwas davon versprechen.</p></div>
 </section>
 
 <section id="s2">
-  <p class="step">Station 2 von 6</p>
+  <p class="step">Station 2 von 7</p>
   <h2>Die Mauer aus Geld</h2>
-  <p>Hinter jeder Quote liegen Angebote anderer Leute, wie eine Mauer. Je dicker die Mauer, desto mehr Geld braucht es, um die Zahl zu bewegen. Links und rechts zwei echte Märkte von heute. Jeder Schub kostet 1.000 $.</p>
+  <p>Hinter jeder Quote liegen die Angebote anderer, wie eine Mauer. Je dichter sie ist, desto mehr Geld braucht es, um die Zahl zu bewegen. Zwei echte Märkte von heute. Jeder Schub kostet 1.000 $.</p>
   <div class="walls">
-    <div class="wall"><div class="q" id="wQa"></div><div class="meter"><div class="fill" id="wFa"></div><div class="num" id="wNa"></div></div>
+    <div class="wall glass"><div class="mq" id="wQa"></div><div class="meter"><canvas id="wCa"></canvas><div class="num" id="wNa"></div></div>
       <button class="btn" type="button" id="wBa">Mit 1.000 $ schieben</button><div class="spent" id="wSa"></div></div>
-    <div class="wall"><div class="q" id="wQb"></div><div class="meter"><div class="fill" id="wFb"></div><div class="num" id="wNb"></div></div>
+    <div class="wall glass"><div class="mq" id="wQb"></div><div class="meter"><canvas id="wCb"></canvas><div class="num" id="wNb"></div></div>
       <button class="btn" type="button" id="wBb">Mit 1.000 $ schieben</button><div class="spent" id="wSb"></div></div>
   </div>
-  <p class="muted small">Vereinfachtes Modell: Die Mauer ist so dick wie das Kapital, das heute laut Orderbuch für zehn Punkte nötig wäre.</p>
-  <div class="tool" id="t3"><p class="k">Werkzeug 3: das Gewicht</p><p>Wie viel steht hinter dieser Zahl? Zwei Quoten können gleich aussehen und völlig verschieden belastbar sein.</p></div>
+  <p class="muted small">Jeder Lichtpunkt steht für Geld im Orderbuch. Vereinfachtes Modell: Die Mauer ist so dicht wie das Kapital, das heute für zehn Punkte nötig wäre.</p>
+  <div class="tool" id="t3"><p class="k heat">Werkzeug 3 · Das Gewicht</p><p>Wie viel steht hinter dieser Zahl? Zwei Quoten können gleich aussehen und völlig verschieden belastbar sein.</p></div>
 </section>
 
 <section id="s3">
-  <p class="step">Station 3 von 6</p>
+  <p class="step">Station 3 von 7</p>
   <h2>Die Lücke</h2>
-  <p>Viele Plattformen zeigen die Mitte zwischen dem besten Kaufangebot und dem besten Verkaufsangebot. Klafft dazwischen eine große Lücke, braucht es keinen einzigen Handel, um die Zahl zu verändern. Ein einziger Auftrag in die Lücke genügt.</p>
-  <div class="book" id="book" aria-hidden="true"></div>
-  <div class="axis"><span>0 %</span><span>Kaufangebote</span><span>Lücke</span><span>Verkaufsangebote</span><span>100 %</span></div>
-  <div class="shown" id="shown">Angezeigt: 60 %</div>
-  <p class="muted small" id="shownText">Bestes Kaufangebot 30 %, bestes Verkaufsangebot 90 %. Die Mitte: 60 %.</p>
-  <button class="go" type="button" id="gapBtn">Einen Auftrag bei 80 % in die Lücke stellen</button>
-  <div class="tool" id="t4"><p class="k">Werkzeug 4: die Lücke</p><p>Lässt sich die Zahl ändern, ohne dass irgendetwas passiert? Im Bericht heißen solche Märkte „ohne Widerstand“. Heute betrifft das <span id="gapCount">viele</span> Märkte.</p></div>
+  <p>Viele Plattformen zeigen die Mitte zwischen dem besten Kauf- und dem besten Verkaufsangebot. Klafft dazwischen eine große Lücke, braucht es keinen einzigen Handel, um die Zahl zu verändern. Ein Auftrag in die Lücke genügt.</p>
+  <div class="stage glass">
+    <div class="book" id="book" aria-hidden="true"></div>
+    <div class="axis"><span>0 %</span><span>Kaufangebote</span><span>Lücke</span><span>Verkaufsangebote</span><span>100 %</span></div>
+    <div class="shown grad" id="shown">Angezeigt: 60 %</div>
+    <p class="muted small" id="shownText">Bestes Kaufangebot 30 %, bestes Verkaufsangebot 90 %. Die Mitte: 60 %.</p>
+    <button class="go" type="button" id="gapBtn">Auftrag bei 80 % in die Lücke stellen</button>
+  </div>
+  <div class="tool" id="t4"><p class="k heat">Werkzeug 4 · Die Lücke</p><p>Lässt sich die Zahl ändern, ohne dass etwas passiert? Im Bericht heißen solche Märkte „ohne Widerstand“. Heute betrifft das <span id="gapCount">viele</span> Märkte.</p></div>
 </section>
 
 <section id="s4">
-  <p class="step">Station 4 von 6</p>
+  <p class="step">Station 4 von 7</p>
   <h2>Teuer oder Taschengeld?</h2>
-  <p>Drei echte Märkte von heute. Schätze, in welche Klasse jeder fällt, also wie viel Geld nötig wäre, um seine Quote um zehn Punkte zu verschieben.</p>
+  <p>Drei echte Märkte von heute. In welche Klasse fällt jeder, also wie viel Geld wäre nötig, um seine Quote um zehn Punkte zu verschieben?</p>
   <div id="quiz"></div>
   <p class="score" id="quizScore"></p>
-  <div class="tool" id="t5"><p class="k">Werkzeug 5: der Zweifel</p><p>Man sieht einer Zahl nicht an, wie viel hinter ihr steht. Eine starke Bewegung ist kein Beweis für Manipulation, aber ein Grund nachzufragen.</p></div>
+  <div class="tool" id="t5"><p class="k heat">Werkzeug 5 · Der Zweifel</p><p>Man sieht einer Zahl nicht an, wie viel hinter ihr steht. Eine starke Bewegung ist kein Beweis für Manipulation, aber ein Grund nachzufragen.</p></div>
 </section>
 
 <section id="s5">
-  <p class="step">Station 5 von 6</p>
+  <p class="step">Station 5 von 7</p>
   <h2>Die weißen Flecken</h2>
-  <p>Worauf die Welt wettet, sagt viel darüber, wer hier wettet. Welche Region bekommt deiner Meinung nach den kleinsten Anteil am Handelsvolumen?</p>
+  <p>Worauf die Welt wettet, verrät, wer hier wettet. Welche Region bekommt deiner Meinung nach den kleinsten Anteil am Handelsvolumen?</p>
   <div class="btns" id="regGuess"></div>
   <div class="regions" id="regions" hidden></div>
   <p class="muted small" id="regText"></p>
-  <div class="tool" id="t6"><p class="k">Werkzeug 6: der Blickwinkel</p><p>Wer schaut hier hin, und wer fehlt? Eine Zahl über Europa, gehandelt vor allem außerhalb Europas, zeigt einen Blick von außen.</p></div>
+  <div class="tool" id="t6"><p class="k heat">Werkzeug 6 · Der Blickwinkel</p><p>Wer schaut hier hin, und wer fehlt? Eine Zahl über Europa, gehandelt vor allem außerhalb Europas, zeigt einen Blick von außen.</p></div>
 </section>
 
 <section id="s6">
-  <p class="step">Station 6 von 6</p>
+  <p class="step">Station 6 von 7</p>
+  <h2>Die Welt wettet auf KI</h2>
+  <p>Welches Modell vorne liegt, wann AGI kommt, was KI-Firmen wert sind: Auch darauf wird gewettet. Diese Quoten prägen, wie über KI gesprochen wird. Welche der heutigen KI-Quoten ist am billigsten zu verschieben?</p>
+  <div class="ai-list" id="aiList"></div>
+  <p class="muted small" id="aiText"></p>
+  <p class="disclose">Offenlegung: Claude, der KI-Ko-Autor dieses Werks, stammt von Anthropic. Märkte über Anthropic erscheinen hier wie alle anderen, automatisch ausgewählt und ohne Wertung.</p>
+  <div class="tool" id="t7"><p class="k heat">Werkzeug 7 · Die Befangenheit</p><p>Wer spricht hier, und über wen? Auch eine KI, die über KI-Quoten berichtet, hat ein Interesse. Gute Quellen legen es offen.</p></div>
+</section>
+
+<section id="s7">
+  <p class="step">Station 7 von 7</p>
   <h2>Die Werkzeuge passen überall</h2>
   <p>Was für Wettquoten gilt, gilt für jede Zahl, die uns überzeugen soll. Öffne die drei Fälle.</p>
   <div class="cases" id="cases">
-    <div class="case"><h3>Ein Beitrag mit zwei Millionen Likes</h3><p class="muted small">Er geht durch alle Feeds und wirkt wie die Meinung aller.</p>
+    <div class="case glass"><h3>Ein Beitrag mit zwei Millionen Likes</h3><p class="muted small">Er geht durch alle Feeds und wirkt wie die Meinung aller.</p>
       <button class="btn" type="button">Werkzeuge anlegen</button>
       <ol><li>Preisfrage: Likes und Konten lassen sich kaufen. Was hätten zwei Millionen gekostet?</li><li>Herkunft: Wer hat zuerst geteilt, wann, von wo?</li><li>Gewicht: Wie viele echte Menschen stehen dahinter?</li><li>Lücke: Ordnet der Feed nach Wahrheit oder nach Erregung?</li><li>Blickwinkel: Wer sieht diesen Beitrag gar nicht?</li></ol></div>
-    <div class="case"><h3>Eine KI antwortet mit großer Sicherheit</h3><p class="muted small">Die Antwort klingt fertig und ohne Zweifel.</p>
+    <div class="case glass"><h3>Eine KI antwortet mit großer Sicherheit</h3><p class="muted small">Die Antwort klingt fertig und ohne Zweifel.</p>
       <button class="btn" type="button">Werkzeuge anlegen</button>
-      <ol><li>Herkunft: Auf welchen Quellen beruht die Antwort, und lassen sie sich prüfen?</li><li>Gewicht: Klingt sie sicher, weil sie es ist, oder weil sie so formuliert wird?</li><li>Zweifel: Was ändert sich, wenn ich die Frage anders stelle?</li><li>Nutzen: Wem gehört das Modell, und was will es von mir?</li></ol></div>
-    <div class="case"><h3>Eine Politikerin zitiert eine Zahl</h3><p class="muted small">„Laut Märkten liegt unser Sieg bei 80 Prozent.“</p>
+      <ol><li>Herkunft: Auf welchen Quellen beruht die Antwort, und lassen sie sich prüfen?</li><li>Gewicht: Klingt sie sicher, weil sie es ist, oder weil sie so formuliert wird?</li><li>Zweifel: Was ändert sich, wenn ich die Frage anders stelle?</li><li>Befangenheit: Wem gehört das Modell, und spricht es gerade über sich selbst?</li></ol></div>
+    <div class="case glass"><h3>Eine Politikerin zitiert eine Zahl</h3><p class="muted small">„Laut Märkten liegt unser Sieg bei 80 Prozent.“</p>
       <button class="btn" type="button">Werkzeuge anlegen</button>
       <ol><li>Preisfrage: Was hätte es gekostet, diese 80 Prozent herzustellen?</li><li>Lücke: War der Markt überhaupt gefüllt, oder reichte ein Auftrag?</li><li>Blickwinkel: Wer wettet hier, und dürfen die Betroffenen überhaupt mitwetten?</li><li>Nutzen: Wem nützt es, wenn ich die Zahl glaube?</li></ol></div>
   </div>
-  <div class="tool" id="t7"><p class="k">Werkzeug 7: der Nutzen</p><p>Wem nützt es, wenn ich diese Zahl glaube? Diese Frage schützt vor Feeds, vor Maschinen und vor Macht.</p></div>
+  <div class="tool" id="t8"><p class="k heat">Werkzeug 8 · Der Nutzen</p><p>Wem nützt es, wenn ich diese Zahl glaube? Diese Frage schützt vor Feeds, vor Maschinen und vor Macht.</p></div>
 </section>
 
 <section id="epilog" class="manifest">
+  <p class="step">Epilog</p>
   <h2>Was dieses Copoiema will</h2>
   <p>Am Anfang stand eine menschliche Idee: In den Echtzeitdaten digitaler Märkte könnte echte Information stecken, schneller als jede Nachricht. Gemeinsam mit einer KI haben wir nachgemessen. Die Idee hielt nur zur Hälfte. Manche Zahlen tragen das Gewicht von Millionen, andere lassen sich für ein Taschengeld kaufen oder ganz ohne Geld verbiegen.</p>
   <p>Daraus ist dieses Werk geworden. Es sucht keine Wahrheit, es übt eine Haltung ein. Wir werden in Zukunft neue Methoden brauchen, um zu erkennen, ob uns Feeds, Maschinen, hybride Kriegsführung oder die Machtinteressen Einzelner lenken. Resilienz ist erlernbar, Zahl für Zahl.</p>
-  <p>Das Werk ist nicht gewinnorientiert. Es verdient nichts, wirbt für nichts und nimmt kein Geld von Plattformen. Es wächst mit den Menschen, die es benutzen: Jeder Tag bringt neue Daten, und jeder neue Prüfparameter, den jemand vorschlägt, kann ein achtes Werkzeug werden.</p>
-  <h2>Dein Werkzeugkasten</h2>
+  <p>Das Werk ist nicht gewinnorientiert. Es verdient nichts, wirbt für nichts und nimmt kein Geld von Plattformen. Es wächst mit den Menschen, die es benutzen: Jeder Tag bringt neue Daten, und jeder neue Prüfparameter, den jemand vorschlägt, kann ein neuntes Werkzeug werden.</p>
+  <h2 style="margin-top:36px">Dein Werkzeugkasten</h2>
   <ul class="kitlist" id="kitList"></ul>
   <div class="next">
     <a class="go" href="heute.html">Die heutige Messung ansehen</a>
@@ -250,12 +297,11 @@ footer p{max-width:none}
   </div>
   <p class="muted small">Vorschläge laufen über GitHub und sind öffentlich sichtbar. Bitte keine persönlichen Daten eintragen.</p>
 </section>
-
 </main>
 
 <footer>
   <p>Kurswert der Wirklichkeit ist eine Interlektische Copoiese des Studio Bifurkation in Innsbruck: Thomas Reiner und Dr. Markus W. J. Reiner (Idee, Erdung, Verantwortung) mit Claude Opus 5.5 von Anthropic (Verdichtung, Messung, Code). Nicht gewinnorientiert, keine Werbung, keine Wett- oder Anlageberatung. KI-Kennzeichnung nach Art. 50 KI-Verordnung.</p>
-  <p><a href="heute.html">Heutige Messung</a> &nbsp; <a href="impressum.html">Offenlegung, Datenschutz, Rechtliches</a> &nbsp; <a href="https://convocare.at">convocare.at</a></p>
+  <p><a href="heute.html">Heutige Messung</a> &nbsp; <a href="impressum.html">Offenlegung, Datenschutz, Rechtliches</a> &nbsp; <a href="https://convocare.at/studio">convocare.at/studio</a></p>
 </footer>
 
 <dialog id="kit" aria-labelledby="kitTitle">
@@ -267,6 +313,7 @@ footer p{max-width:none}
 <script>
 (function(){
   "use strict";
+  var N_TOOLS=8;
   var TOOLS=[
     ["Die Preisfrage","Was würde es kosten, diese Zahl zu verschieben?"],
     ["Die Herkunft","Wer hat die Zahl erzeugt, und womit?"],
@@ -274,76 +321,118 @@ footer p{max-width:none}
     ["Die Lücke","Lässt sich die Zahl ändern, ohne dass etwas passiert?"],
     ["Der Zweifel","Ist diese Bewegung ein Beweis oder ein Grund nachzufragen?"],
     ["Der Blickwinkel","Wer schaut hier hin, und wer fehlt?"],
+    ["Die Befangenheit","Wer spricht hier, und hat die Quelle ein eigenes Interesse?"],
     ["Der Nutzen","Wem nützt es, wenn ich diese Zahl glaube?"]
   ];
-  var KEY="kdw-werkzeuge";
-  var got=[];
+  var KEY="kdw-werkzeuge-v2", got=[];
   try{got=JSON.parse(localStorage.getItem(KEY)||"[]")||[];}catch(e){got=[];}
   function save(){try{localStorage.setItem(KEY,JSON.stringify(got));}catch(e){}}
   function $(id){return document.getElementById(id);}
+  var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function dots(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,".");}
   function fmt(n){
     if(n==null)return "nicht messbar";
     if(n>=1e6)return (n/1e6).toFixed(1).replace(".",",")+" Mio. $";
     if(n>=1e4)return dots(Math.round(n/1000))+" Tsd. $";
     return dots(Math.round(n))+" $";
   }
-  function dots(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,".");}
   function pct(p){return Math.round(p*100)+" %";}
   function tierOf(d){return d<1000?"Taschengeld":d<10000?"Kleinwagen":d<100000?"Eigentumswohnung":"teuer";}
   var TIERS=[["Taschengeld","unter 1.000 $"],["Kleinwagen","1.000 bis 10.000 $"],["Eigentumswohnung","10.000 bis 100.000 $"],["teuer","über 100.000 $"]];
+  // Dichte der Lichtpunkte: logarithmisch aus dem Kapitalbedarf (10 $ bis 1 Mio. $)
+  function density(d){if(!d)return 0.05;var x=(Math.log10(Math.max(d,10))-1)/5;x=Math.max(0,Math.min(1,x));return Math.max(0.03,Math.pow(x,1.8));}
 
   function renderKit(){
     $("kitCount").textContent=got.length;
-    $("progress").style.width=(got.length/7*100)+"%";
+    $("progress").style.width=(got.length/N_TOOLS*100)+"%";
     ["kitList","kitDialogList"].forEach(function(id){
       var ul=$(id);ul.innerHTML="";
       TOOLS.forEach(function(t,i){
-        var li=document.createElement("li");
-        var has=got.indexOf(i)>=0;
+        var li=document.createElement("li"),has=got.indexOf(i)>=0;
         if(has)li.className="got";
         li.innerHTML="<b>"+(has?t[0]:"Noch nicht gefunden")+"</b>"+(has?t[1]:(i===0?"Im Prolog":"In Station "+i)+" freischalten");
         ul.appendChild(li);
       });
     });
-    for(var i=0;i<7;i++){if(got.indexOf(i)>=0)$("t"+(i+1)).classList.add("on");}
+    for(var i=0;i<N_TOOLS;i++){if(got.indexOf(i)>=0)$("t"+(i+1)).classList.add("on");}
   }
   function earn(i){if(got.indexOf(i)<0){got.push(i);save();}renderKit();}
   $("kitBtn").addEventListener("click",function(){var d=$("kit");if(d.showModal)d.showModal();else location.hash="epilog";});
 
-  // Beispieldaten, falls die Tagesdaten nicht geladen werden können
+  /* Partikelfeld: ein Feld von Lichtpunkten, dessen Dichte dem Geld im Weg entspricht.
+     Zeiger stößt die Punkte weg; nach dem Schub strömen sie auseinander. */
+  function Field(canvas,opts){
+    var ctx=canvas.getContext("2d"),W=0,H=0,dpr=Math.min(2,window.devicePixelRatio||1),pts=[],mx=-1e4,my=-1e4,spread=0,dens=opts.density||0.5,raf=null,visible=true;
+    function size(){var r=canvas.getBoundingClientRect();W=r.width;H=r.height;canvas.width=W*dpr;canvas.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);seed();}
+    function seed(){
+      var area=W*H,maxN=opts.max||1400,n=Math.round(Math.min(maxN,area/(opts.per||900))*dens);
+      pts=[];for(var i=0;i<n;i++){
+        // Wolke als schräges Band, angelehnt an die Bifurkationsfigur der Studioseite
+        var t=Math.random(),cx=opts.band?W*(.35+.55*t):Math.random()*W,cy=opts.band?H*(.85-.6*t)+(Math.random()-.5)*H*.35*(1-t*.4):Math.random()*H;
+        pts.push({x:cx,y:cy,hx:cx,hy:cy,vx:0,vy:0,c:Math.random()<.18?1:0,s:Math.random()*(opts.big||1.6)+.7});
+      }
+    }
+    function step(){
+      ctx.clearRect(0,0,W,H);
+      for(var i=0;i<pts.length;i++){
+        var p=pts[i],dx=p.x-mx,dy=p.y-my,d2=dx*dx+dy*dy;
+        if(d2<9000){var f=(9000-d2)/9000*1.8;p.vx+=dx/Math.sqrt(d2+1)*f;p.vy+=dy/Math.sqrt(d2+1)*f;}
+        p.vx+=(p.hx+(p.hx-W/2)*spread-p.x)*.012;p.vy+=(p.hy+(p.hy-H/2)*spread-p.y)*.012;
+        p.vx*=.88;p.vy*=.88;p.x+=p.vx;p.y+=p.vy;
+        ctx.fillStyle=p.c?"rgba(255,46,154,.85)":"rgba(0,240,255,.78)";
+        ctx.fillRect(p.x,p.y,p.s,p.s);
+      }
+      raf=visible?requestAnimationFrame(step):null;
+    }
+    function draw1(){ctx.clearRect(0,0,W,H);pts.forEach(function(p){ctx.fillStyle=p.c?"rgba(255,46,154,.75)":"rgba(0,240,255,.62)";ctx.fillRect(p.x,p.y,p.s,p.s);});}
+    var host=opts.host||canvas.parentNode;
+    host.addEventListener("pointermove",function(e){var r=canvas.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top;});
+    host.addEventListener("pointerleave",function(){mx=my=-1e4;});
+    window.addEventListener("resize",function(){size();if(reduce)draw1();});
+    if("IntersectionObserver" in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible&&!raf&&!reduce)step();}).observe(canvas);}
+    size();if(reduce)draw1();else step();
+    return {setDensity:function(d){dens=d;seed();if(reduce)draw1();},burst:function(v){spread=v;if(reduce)draw1();}};
+  }
+
   var FALLBACK={markets:[
-    {question:"Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",price:0.81,headline_price:84571,tier:"Eigentumswohnung",status:"ok",sport:false,volume_24h:925000},
-    {question:"Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",price:0.20,headline_price:137905,tier:"teuer",status:"ok",sport:false,volume_24h:790000},
-    {question:"Next White House Press Secretary announced by October 31, 2026?",price:0.20,headline_price:6229,tier:"Kleinwagen",status:"ok",sport:false,volume_24h:150000},
-    {question:"Will Lionel Messi win the 2026 Ballon d'Or?",price:0.03,headline_price:7944,tier:"Kleinwagen",status:"ok",sport:false,volume_24h:140000},
-    {question:"US x Iran ceasefire continues through October 31?",price:0.82,headline_price:11282,tier:"Eigentumswohnung",status:"ok",sport:false,volume_24h:300000},
-    {question:"Will the US confirm that aliens exist before 2027?",price:0.05,headline_price:20376,tier:"Eigentumswohnung",status:"ok",sport:false,volume_24h:395000}
-  ],coverage:{regions:{"Nordamerika":{share_volume:.26},"Naher Osten":{share_volume:.18},"Europa":{share_volume:.10},"Asien":{share_volume:.06},"Lateinamerika":{share_volume:.06},"Afrika":{share_volume:0}}},n_open:108,demo:true};
+    {question:"Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",price:0.81,headline_price:84571,status:"ok",volume_24h:925000},
+    {question:"Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?",price:0.20,headline_price:137905,status:"ok",volume_24h:790000},
+    {question:"Next White House Press Secretary announced by October 31, 2026?",price:0.20,headline_price:6229,status:"ok",volume_24h:150000},
+    {question:"Edi Rama out as Albania PM in 2026?",price:0.32,headline_price:242,status:"ok",volume_24h:120000},
+    {question:"US x Iran ceasefire continues through October 31?",price:0.82,headline_price:11282,status:"ok",volume_24h:300000},
+    {question:"Will Anthropic have the best AI model at the end of October 2026?",price:0.23,headline_price:4199,status:"ok",ai:true,volume_24h:17755},
+    {question:"Will Google have the best AI model at the end of October 2026?",price:0.75,headline_price:4395,status:"ok",ai:true,volume_24h:15433},
+    {question:"Will OpenAI’s market cap be between $1T and $1.25T at market close on IPO day?",price:0.07,headline_price:404,status:"ok",ai:true,volume_24h:16242}
+  ],coverage:{regions:{"Nordamerika":{share_volume:.26},"Naher Osten":{share_volume:.18},"Europa":{share_volume:.10},"Asien":{share_volume:.06},"Lateinamerika":{share_volume:.06},"Afrika":{share_volume:0}}},demo:true};
+
+  var hero=Field($("field"),{band:true,density:.6,host:document.querySelector(".hero"),max:1600,per:700});
 
   function start(D){
-    var ms=(D.markets||[]).filter(function(m){return !m.sport && m.status!=="entschieden" && m.price!=null;});
+    var all=(D.markets||[]).filter(function(m){return m.price!=null&&m.status!=="entschieden";});
+    var ms=all.filter(function(m){return !m.sport;});
     ms.sort(function(a,b){return (b.volume_24h||0)-(a.volume_24h||0);});
     var ok=ms.filter(function(m){return m.status==="ok"&&m.headline_price;});
-    if(!ok.length){D=FALLBACK;return start(D);}
+    if(ok.length<4&&!D.demo)return start(FALLBACK);
 
     // Prolog
     var top=ok[0];
     $("pQuestion").firstChild.nodeValue=top.question;
     $("pMeta").textContent=(D.demo?"Beispieldaten":"Polymarket, Stand "+(D.day||"heute"))+". Fragetext im Original.";
     $("pBig").textContent=pct(top.price);
-    function val(){var v=+$("pRange").value;return Math.pow(10,2+v/100*4);}
+    hero.setDensity(density(top.headline_price));
+    function val(){return Math.pow(10,2+(+$("pRange").value)/100*4);}
     function upd(){$("pVal").textContent=fmt(val());}
     $("pRange").addEventListener("input",upd);upd();
     $("pGo").addEventListener("click",function(){
       var g=val(),r=top.headline_price,ratio=g/r;
-      var verdict=ratio>3?"Du hast die Zahl für viel stabiler gehalten, als sie ist.":ratio<1/3?"Du hast sie unterschätzt: Diese Zahl ist schwerer zu bewegen, als du dachtest.":"Gut geschätzt.";
-      $("pReveal").innerHTML="Tatsächlich reichen heute etwa <strong>"+fmt(r)+"</strong>, um diese Quote um zehn Punkte zu verschieben. Klasse: <strong>"+tierOf(r)+"</strong>. "+verdict+" Oben siehst du, wie die Zahl danach aussähe. Und das ist der meistgehandelte Markt des Tages. Von den übrigen Märkten mit messbarem Orderbuch sind "+Math.round(100*ok.filter(function(m){return m.headline_price<r;}).length/ok.length)+" % billiger zu verschieben.";
+      var verdict=ratio>3?"Du hast die Zahl für stabiler gehalten, als sie ist.":ratio<1/3?"Du hast sie unterschätzt: Diese Zahl ist schwerer zu bewegen, als du dachtest.":"Gut geschätzt.";
+      var cheaper=Math.round(100*ok.filter(function(m){return m.headline_price<r;}).length/ok.length);
+      $("pReveal").innerHTML="Tatsächlich reichen heute etwa <strong>"+fmt(r)+"</strong>, um diese Quote um zehn Punkte zu verschieben. Klasse: <strong>"+tierOf(r)+"</strong>. "+verdict+" Oben siehst du, wie die Zahl danach aussähe. Und das ist der meistgehandelte Markt des Tages: "+cheaper+" % der übrigen Märkte mit messbarem Orderbuch sind billiger zu verschieben.";
       $("pReveal").classList.add("on");
-      $("pBig").classList.add("moved");
-      var to=Math.min(0.99,top.price+0.10);
-      $("pBig").textContent=pct(to);
-      $("pGo").disabled=true;
-      earn(0);
+      $("pBig").classList.add("moved");$("pBig").classList.remove("grad");$("pBig").classList.add("heat");
+      $("pBig").textContent=pct(Math.min(0.99,top.price+0.10));
+      hero.burst(.35);setTimeout(function(){hero.burst(0);},1600);
+      $("pGo").disabled=true;earn(0);
     });
 
     // Station 1
@@ -355,82 +444,75 @@ footer p{max-width:none}
       if(clicks>=3)earn(1);
     });});
 
-    // Station 2: dickste und dünnste Mauer
-    // Vergleichbare Märkte: Mittelfeld 15 bis 85 %, damit die Mauer nicht am Rand klebt
+    // Station 2: dichteste und dünnste Mauer im Mittelfeld
     var mid=ok.slice(0,150).filter(function(m){return m.price>=0.15&&m.price<=0.85&&m.headline_price>=50;});
-    if(mid.length<2)mid=ok.slice(0,150);
+    if(mid.length<2)mid=ok.slice();
     var byCost=mid.slice().sort(function(a,b){return a.headline_price-b.headline_price;});
-    var thin=byCost[0],thick=byCost[byCost.length-1];
-    [["a",thick],["b",thin]].forEach(function(x){
+    [["a",byCost[byCost.length-1]],["b",byCost[0]]].forEach(function(x){
       var k=x[0],m=x[1],p=m.price,spent=0,start=m.price;
+      var f=Field($("wC"+k),{density:density(m.headline_price),max:1400,per:22,big:2});
       $("wQ"+k).textContent=m.question;
-      function draw(){$("wF"+k).style.height=(p*100)+"%";$("wN"+k).textContent=pct(p);
+      function draw(){$("wN"+k).textContent=pct(p);
         $("wS"+k).innerHTML="Eingesetzt: <b>"+fmt(spent)+"</b>. Bewegt: "+Math.round((p-start)*100)+" Punkte. Mauer: "+fmt(m.headline_price)+" für 10 Punkte.";}
       draw();
       $("wB"+k).addEventListener("click",function(){
         spent+=1000;
         var moved=Math.min(0.30,0.10*(spent/m.headline_price));
         p=Math.min(0.99,start+moved);
-        draw();
-        if(moved>=0.30){$("wB"+k).disabled=true;$("wS"+k).innerHTML+=" Darüber hinaus wird das Modell zu ungenau.";}
+        f.burst(Math.min(.6,moved*2));draw();
+        if(moved>=0.30){this.disabled=true;$("wS"+k).innerHTML+=" Darüber hinaus wird das Modell zu ungenau.";}
         earn(2);
       });
     });
 
-    // Station 3: die Lücke
+    // Station 3
     var book=$("book"),cols=[];
     for(var i=0;i<20;i++){
-      var x=document.createElement("i"),pr=(i+0.5)/20;
-      if(pr<0.30){x.className="b";x.style.height=(20+60*(pr/0.3))+"%";}
-      else if(pr>0.90){x.className="a";x.style.height=(20+60*((1-pr)/0.1))+"%";}
-      else{x.className="gap";}
-      book.appendChild(x);cols.push(x);
+      var e=document.createElement("i"),pr=(i+0.5)/20;
+      if(pr<0.30){e.className="b";e.style.height=(20+60*(pr/0.3))+"%";}
+      else if(pr>0.90){e.className="a";e.style.height=(20+60*((1-pr)/0.1))+"%";}
+      else e.className="gap";
+      book.appendChild(e);cols.push(e);
     }
-    var gapDone=false;
     $("gapBtn").addEventListener("click",function(){
-      if(gapDone)return;gapDone=true;
       cols[15].className="b mine";cols[15].style.height="18%";
-      $("shown").textContent="Angezeigt: 85 %";$("shown").style.color="var(--amber)";
+      $("shown").textContent="Angezeigt: 85 %";$("shown").classList.remove("grad");$("shown").classList.add("heat");
       $("shownText").textContent="Ein einziger Kaufauftrag bei 80 % hat das beste Kaufangebot verschoben. Die Mitte zwischen 80 und 90 %: 85 %. Gehandelt wurde nichts.";
-      $("gapBtn").disabled=true;
-      earn(3);
+      this.disabled=true;earn(3);
     });
-    var nOpen=D.n_open!=null?D.n_open:(D.markets||[]).filter(function(m){return m.status==="ohne_widerstand";}).length;
-    $("gapCount").textContent=nOpen;
+    $("gapCount").textContent=all.filter(function(m){return m.status==="ohne_widerstand";}).length||"einige";
 
-    // Station 4: Quiz mit drei Märkten aus verschiedenen Klassen
+    // Station 4
     var pick=[],seen={};
     ["Taschengeld","Kleinwagen","Eigentumswohnung","teuer"].forEach(function(t){
       var m=ok.filter(function(x){return tierOf(x.headline_price)===t;})[0];
       if(m&&!seen[m.question]){pick.push(m);seen[m.question]=1;}
     });
     pick=pick.sort(function(){return Math.random()-.5;}).slice(0,3);
-    var answered=0,right=0,quiz=$("quiz");
+    var answered=0,right=0;
     pick.forEach(function(m){
-      var box=document.createElement("div");box.className="quiz";
+      var box=document.createElement("div");box.className="quiz glass";
       box.innerHTML='<p class="mq"></p><p class="mp">Angezeigt: '+pct(m.price)+'</p><div class="choices"></div><p class="muted small" hidden></p>';
       box.querySelector(".mq").textContent=m.question;
       var ch=box.querySelector(".choices"),truth=tierOf(m.headline_price);
       TIERS.forEach(function(t){
-        var b=document.createElement("button");b.type="button";b.className="choice";
-        b.innerHTML=t[0]+"<small>"+t[1]+"</small>";
+        var b=document.createElement("button");b.type="button";b.className="choice";b.innerHTML=t[0]+"<small>"+t[1]+"</small>";
         b.addEventListener("click",function(){
           if(box.dataset.done)return;box.dataset.done="1";answered++;
           if(t[0]===truth){right++;b.classList.add("right");}else{b.classList.add("wrong");
             ch.querySelectorAll(".choice").forEach(function(o){if(o.firstChild.nodeValue===truth)o.classList.add("right");});}
-          var info=box.querySelector("p[hidden]");info.hidden=false;
-          info.textContent="Heute nötig: etwa "+fmt(m.headline_price)+" für zehn Punkte.";
+          var info=box.querySelector("p[hidden]");info.hidden=false;info.textContent="Heute nötig: etwa "+fmt(m.headline_price)+" für zehn Punkte.";
           if(answered===pick.length){$("quizScore").textContent=right+" von "+pick.length+" richtig. Die Prozentzahl allein verrät es nicht.";earn(4);}
         });
         ch.appendChild(b);
       });
-      quiz.appendChild(box);
+      $("quiz").appendChild(box);
     });
 
-    // Station 5: weiße Flecken
+    // Station 5
     var regs=(D.coverage&&D.coverage.regions)||FALLBACK.coverage.regions;
-    var cand=["Europa","Afrika","Asien","Lateinamerika"].filter(function(r){return r in regs||r==="Afrika";});
     var share=function(r){return regs[r]?regs[r].share_volume||0:0;};
+    var cand=["Europa","Afrika","Asien","Lateinamerika"];
     var smallest=cand.slice().sort(function(a,b){return share(a)-share(b);})[0];
     cand.forEach(function(r){
       var b=document.createElement("button");b.type="button";b.className="btn";b.textContent=r;
@@ -445,7 +527,7 @@ footer p{max-width:none}
           var row=document.createElement("div");row.className="rbar";
           row.innerHTML='<span></span><div class="t"><span></span></div><span class="v">'+(share(n)*100).toFixed(1).replace(".",",")+' %</span>';
           row.firstChild.textContent=n;list.appendChild(row);
-          requestAnimationFrame(function(){row.querySelector(".t span").style.width=(share(n)/max*100)+"%";});
+          requestAnimationFrame(function(){requestAnimationFrame(function(){row.querySelector(".t span").style.width=(share(n)/max*100)+"%";});});
         });
         $("regText").textContent=(r===smallest?"Richtig. ":"Am wenigsten: "+smallest+". ")+"Gezählt wird das Volumen der meistgehandelten Märkte, zugeordnet über Schlüsselwörter. Märkte ohne erkennbare Region sind nicht dargestellt.";
         earn(5);
@@ -453,23 +535,43 @@ footer p{max-width:none}
       $("regGuess").appendChild(b);
     });
 
-    // Station 6
+    // Station 6: KI
+    var ai=all.filter(function(m){return m.ai&&m.status==="ok"&&m.headline_price;});
+    if(ai.length<2)ai=FALLBACK.markets.filter(function(m){return m.ai;});
+    ai.sort(function(a,b){return (b.volume_24h||0)-(a.volume_24h||0);});
+    ai=ai.slice(0,6);
+    var cheapest=ai.slice().sort(function(a,b){return a.headline_price-b.headline_price;})[0];
+    var maxD=Math.max.apply(null,ai.map(function(m){return density(m.headline_price);}));
+    var aiDone=false;
+    ai.forEach(function(m){
+      var b=document.createElement("button");b.type="button";b.className="ai glass";
+      b.innerHTML='<span class="aq"></span><span class="ap grad">'+pct(m.price)+'</span><span class="aw"><span></span></span><span class="am">Für zehn Punkte nötig: etwa '+fmt(m.headline_price)+' ('+tierOf(m.headline_price)+').</span>';
+      b.querySelector(".aq").textContent=m.question;
+      b.addEventListener("click",function(){
+        if(aiDone)return;aiDone=true;
+        $("aiList").querySelectorAll(".ai").forEach(function(o,i){o.classList.add("shown");
+          var mm=ai[i];o.querySelector(".aw span").style.width=(density(mm.headline_price)/maxD*100)+"%";
+          if(mm===cheapest)o.classList.add("cheap");});
+        if(m!==cheapest)b.classList.add("pick");
+        $("aiText").textContent=(m===cheapest?"Richtig. ":"Am billigsten ist eine andere Quote. ")+"Der Balken zeigt die Dichte der Mauer. Mit "+fmt(cheapest.headline_price)+" ließe sich heute eine Schlagzeile über KI kaufen. "+(D.demo?"(Beispieldaten)":"");
+        earn(6);
+      });
+      $("aiList").appendChild(b);
+    });
+
+    // Station 7
     var opened=0;
     document.querySelectorAll(".case").forEach(function(cs){
       cs.querySelector("button").addEventListener("click",function(){
         if(!cs.classList.contains("open")){cs.classList.add("open");opened++;}
-        this.disabled=true;
-        if(opened===3)earn(6);
+        this.disabled=true;if(opened===3)earn(7);
       });
     });
   }
 
   renderKit();
   fetch("summary.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json();})
-    .then(function(s){
-      start({markets:s.markets||[],coverage:s.coverage,day:s.stats&&s.stats.day,
-             n_open:(s.markets||[]).filter(function(m){return m.status==="ohne_widerstand";}).length});
-    })
+    .then(function(s){start({markets:s.markets||[],coverage:s.coverage,day:s.stats&&s.stats.day});})
     .catch(function(){start(FALLBACK);});
 })();
 </script>

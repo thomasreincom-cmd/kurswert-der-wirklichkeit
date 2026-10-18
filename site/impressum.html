@@ -2,29 +2,31 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Offenlegung · Kurswert der Wirklichkeit</title>
 <meta name="robots" content="noindex">
+<link rel="stylesheet" href="ci.css">
 <style>
-:root{--bg:#0d0f12;--card:#151820;--raised:#1a1d24;--line:#2d3748;--text:#e2e8f0;
---muted:#94a3b8;--amber:#f59e0b;--teal:#2dd4bf;--red:#f87171}
+:root{--bg:var(--void);--card:var(--glass);--raised:var(--glass-2);--line:var(--glass-border);
+--amber:var(--pink);--teal:var(--cyan)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
-font:17px/1.5 system-ui,"Segoe UI",Helvetica,Arial,sans-serif}
+font:400 17px/1.55 var(--body);
+background-image:radial-gradient(1200px 600px at 80% -10%,rgba(177,77,255,.10),transparent 60%)}
 main{max-width:1040px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:42px;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
-h2{font-size:25px;margin:48px 0 6px}
+h1{font:900 clamp(30px,6vw,48px)/1.1 var(--display);margin:0 0 10px;background:var(--grad-ice);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font:700 clamp(20px,3.4vw,26px)/1.2 var(--display);margin:48px 0 8px}
 h3{font-size:17px;margin:20px 0 8px;color:var(--muted);font-weight:600}
 p.lead{color:var(--muted);max-width:720px;margin:0 0 8px}
 p.note{color:var(--muted);font-size:15px;max-width:760px;margin:4px 0 16px}
-.date{color:var(--amber);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.date{color:var(--cyan);font:700 11px/1.4 var(--display);letter-spacing:.24em;text-transform:uppercase}
 .banner{background:var(--red);color:var(--bg);padding:10px 16px;font-weight:700;border-radius:8px;margin-bottom:20px}
 .grid{display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .row{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline}
 .q{font-weight:600}
 .q a,td a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)}
 .q a:hover,td a:hover{border-color:var(--teal)}
 .meta{color:var(--muted);font-size:14px}
 .right{text-align:right}
-.prob{font-variant-numeric:tabular-nums;font-size:22px;font-weight:700;color:var(--teal);text-align:right}
+.prob{font:900 22px var(--display);color:var(--teal);text-align:right}
 .cost{font-variant-numeric:tabular-nums;font-weight:700;color:var(--amber)}
 .tier{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);
 color:var(--muted);margin-left:6px;white-space:nowrap}
@@ -74,7 +76,7 @@ Grundlegende Richtung: künstlerische und wissenschaftliche Auseinandersetzung m
 <p>Rechteinhaber, die eine Darstellung beanstanden, erreichen uns über <a href="https://convocare.at">convocare.at</a>. Wir prüfen jede Beanstandung umgehend und entfernen Inhalte im Zweifel.</p>
 
 <h2>Datenschutz</h2>
-<p>Diese Seite setzt keine Cookies, verwendet keine Analysewerkzeuge, lädt keine externen Schriften und erhebt selbst keine personenbezogenen Daten. Gehostet wird sie bei GitHub Pages (GitHub, Inc., USA). GitHub verarbeitet beim Aufruf technisch notwendige Verbindungsdaten wie die IP-Adresse; Einzelheiten in der <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+<p>Diese Seite setzt keine Cookies, verwendet keine Analysewerkzeuge und erhebt selbst keine personenbezogenen Daten. Die Schriften Orbitron und Space Grotesk (SIL Open Font License) liegen auf demselben Server; es werden keine externen Schriftdienste geladen. Gehostet wird sie bei GitHub Pages (GitHub, Inc., USA). GitHub verarbeitet beim Aufruf technisch notwendige Verbindungsdaten wie die IP-Adresse; Einzelheiten in der <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
 <p>Marktfragen nennen mitunter Personen des öffentlichen Lebens. Das Werk gibt diese Fragen als Zitat wieder und trifft keine eigenen Aussagen über die genannten Personen.</p>
 
 <h2>Künstliche Intelligenz</h2>
@@ -82,5 +84,5 @@ Grundlegende Richtung: künstlerische und wissenschaftliche Auseinandersetzung m
 
 <h2>Lizenzen</h2>
 <p>Programmcode: MIT-Lizenz. Texte und eigene Kennzahlen: CC BY 4.0. Daten und Fragetexte Dritter sind von diesen Lizenzen ausgenommen.</p>
-<p class="note">Stand 2026-10-18 09:17 UTC</p>
+<p class="note">Stand 2026-10-18 09:38 UTC</p>
 </main></body></html>

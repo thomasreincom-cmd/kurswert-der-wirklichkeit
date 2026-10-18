@@ -2,30 +2,31 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kurswert der Wirklichkeit</title>
 <meta name="description" content="Was kostet es, eine Wahrscheinlichkeit zu verschieben? Täglicher Bericht über Prognosemärkte.">
-<link rel="stylesheet" href="ci-convocare.css">
+<link rel="stylesheet" href="ci.css">
 <style>
-:root{--bg:#0d0f12;--card:#151820;--raised:#1a1d24;--line:#2d3748;--text:#e2e8f0;
---muted:#94a3b8;--amber:#f59e0b;--teal:#2dd4bf;--red:#f87171}
+:root{--bg:var(--void);--card:var(--glass);--raised:var(--glass-2);--line:var(--glass-border);
+--amber:var(--pink);--teal:var(--cyan)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
-font:17px/1.5 system-ui,"Segoe UI",Helvetica,Arial,sans-serif}
+font:400 17px/1.55 var(--body);
+background-image:radial-gradient(1200px 600px at 80% -10%,rgba(177,77,255,.10),transparent 60%)}
 main{max-width:1040px;margin:0 auto;padding:32px 16px 64px}
-h1{font-size:42px;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
-h2{font-size:25px;margin:48px 0 6px}
+h1{font:900 clamp(30px,6vw,48px)/1.1 var(--display);margin:0 0 10px;background:var(--grad-ice);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font:700 clamp(20px,3.4vw,26px)/1.2 var(--display);margin:48px 0 8px}
 h3{font-size:17px;margin:20px 0 8px;color:var(--muted);font-weight:600}
 p.lead{color:var(--muted);max-width:720px;margin:0 0 8px}
 p.note{color:var(--muted);font-size:15px;max-width:760px;margin:4px 0 16px}
-.date{color:var(--amber);font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase}
+.date{color:var(--cyan);font:700 11px/1.4 var(--display);letter-spacing:.24em;text-transform:uppercase}
 .banner{background:var(--red);color:var(--bg);padding:10px 16px;font-weight:700;border-radius:8px;margin-bottom:20px}
 .grid{display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .row{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline}
 .q{font-weight:600}
 .q a,td a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--line)}
 .q a:hover,td a:hover{border-color:var(--teal)}
 .meta{color:var(--muted);font-size:14px}
 .right{text-align:right}
-.prob{font-variant-numeric:tabular-nums;font-size:22px;font-weight:700;color:var(--teal);text-align:right}
+.prob{font:900 22px var(--display);color:var(--teal);text-align:right}
 .cost{font-variant-numeric:tabular-nums;font-weight:700;color:var(--amber)}
 .tier{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;border:1px solid var(--line);
 color:var(--muted);margin-left:6px;white-space:nowrap}
@@ -58,44 +59,44 @@ dl.glossary dt{color:var(--teal);font-weight:600}
 dl.glossary dd{margin:0;color:var(--muted)}
 @media (max-width:560px){h1{font-size:32px}.prob{font-size:19px}dl.glossary{grid-template-columns:1fr}dl.glossary dd{margin-bottom:8px}}
 </style></head><body><main>
-<div class="date">18.10.2026 · 400 Märkte</div>
+<div class="date">18.10.2026 · 439 Märkte</div>
 <h1>Kurswert der Wirklichkeit</h1>
 <p class="note"><a href="index.html" style="color:var(--teal)">Neu hier? Die Reise in sieben Stationen erklärt, worum es geht.</a></p>
 <p class="lead"><button type="button" class="term" popovertarget="g-prognosemarkt">Prognosemärkte</button> werden zitiert wie Umfragen. Hier steht neben jeder Quote, wie viel Kapital es binden würde, sie durch Handel um zehn Prozentpunkte zu verschieben. Ob billig verschiebbare Quoten tatsächlich weniger taugen, prüft dieser Bericht laufend nach.</p>
 <p class="note">Gemessen am sichtbaren <button type="button" class="term" popovertarget="g-orderbuch">Orderbuch</button> zum Zeitpunkt der Abfrage. <button type="button" class="term" popovertarget="g-ohne">„Ohne Widerstand“</button> heißt: Der Abstand zwischen bestem Kauf- und Verkaufsauftrag ist so groß, dass sich die angezeigte Zahl schon durch bloßes Einstellen von Aufträgen bewegen lässt, ganz ohne Handel. Market Maker füllen nach, wer verschiebt, hält danach Anteile mit möglichem Wert: gemessen wird Einsatz, nicht Verlust.</p>
-<p class="note">Verteilung heute: <button type="button" class="term" popovertarget="g-ohne">ohne Widerstand</button>: 78 · <button type="button" class="term" popovertarget="g-taschengeld">Taschengeld</button>: 36 · <button type="button" class="term" popovertarget="g-kleinwagen">Kleinwagen</button>: 75 · <button type="button" class="term" popovertarget="g-wohnung">Eigentumswohnung</button>: 98 · <button type="button" class="term" popovertarget="g-teuer">teuer</button>: 48 · <button type="button" class="term" popovertarget="g-entschieden">praktisch entschieden</button>: 38. Unterstrichene Begriffe antippen für eine Erklärung, alle auf einen Blick unter <a href="#begriffe" style="color:var(--teal)">Begriffe</a>.</p>
+<p class="note">Verteilung heute: <button type="button" class="term" popovertarget="g-ohne">ohne Widerstand</button>: 86 · <button type="button" class="term" popovertarget="g-taschengeld">Taschengeld</button>: 50 · <button type="button" class="term" popovertarget="g-kleinwagen">Kleinwagen</button>: 86 · <button type="button" class="term" popovertarget="g-wohnung">Eigentumswohnung</button>: 103 · <button type="button" class="term" popovertarget="g-teuer">teuer</button>: 47 · <button type="button" class="term" popovertarget="g-entschieden">praktisch entschieden</button>: 43. Unterstrichene Begriffe antippen für eine Erklärung, alle auf einen Blick unter <a href="#begriffe" style="color:var(--teal)">Begriffe</a>.</p>
 <h2>Die meistgehandelten Fragen des Tages</h2>
-<p class="note">Sortiert nach 24-Stunden-Volumen, ohne Sport. Sportwetten machen heute 44 % des Tagesvolumens aus (128 von 362 offenen Märkten) und würden diese Liste sonst füllen. Rechts unten das Kapital für zehn Punkte in die billigere Richtung.</p>
+<p class="note">Sortiert nach 24-Stunden-Volumen, ohne Sport. Sportwetten machen heute 44 % des Tagesvolumens aus (124 von 396 offenen Märkten) und würden diese Liste sonst füllen. Rechts unten das Kapital für zehn Punkte in die billigere Richtung.</p>
 <div class="grid"><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/brazil-presidential-election" rel="nofollow noopener noreferrer">Will Flávio Bolsonaro win the 2026 Brazilian presidential election?</a></div>
 <div class="prob">81 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 925 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 927 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach unten</button>: <span class="cost">85 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/brazil-presidential-election" rel="nofollow noopener noreferrer">Will Luiz Inácio Lula da Silva win the 2026 Brazilian presidential election?</a></div>
 <div class="prob">20 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 791 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">129 Tsd. $</span><button type="button" class="tier term t-teuer" popovertarget="g-teuer">teuer</button></div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 785 Tsd. $</div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">139 Tsd. $</span><button type="button" class="tier term t-teuer" popovertarget="g-teuer">teuer</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027" rel="nofollow noopener noreferrer">Will the US confirm that aliens exist before 2027?</a></div>
 <div class="prob">5 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 396 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 397 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">20 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt" rel="nofollow noopener noreferrer">US x Iran ceasefire continues through October 31?</a></div>
 <div class="prob">82 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 310 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach unten</button>: <span class="cost">13 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 309 Tsd. $</div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach unten</button>: <span class="cost">16 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt" rel="nofollow noopener noreferrer">US x Iran ceasefire continues through October 18?</a></div>
 <div class="prob">99 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 307 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 308 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="tier term t-ohne" popovertarget="g-ohne">ohne Widerstand</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election" rel="nofollow noopener noreferrer">Will Benjamin Netanyahu be the next Prime Minister of Israel?</a></div>
 <div class="prob">28 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 307 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach unten</button>: <span class="cost">81 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach unten</button>: <span class="cost">79 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/fed-decision-in-october-20260617190323537" rel="nofollow noopener noreferrer">Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?</a></div>
 <div class="prob">0 %</div>
@@ -104,35 +105,35 @@ dl.glossary dd{margin:0;color:var(--muted)}
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963" rel="nofollow noopener noreferrer">Israel x Iran ceasefire continues through October 18?</a></div>
 <div class="prob">99 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 195 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 197 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="tier term t-ohne" popovertarget="g-ohne">ohne Widerstand</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/nato-x-russia-military-clash-in-2025" rel="nofollow noopener noreferrer">NATO x Russia military clash by December 31, 2026?</a></div>
 <div class="prob">26 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 182 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">11 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">9.485 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026" rel="nofollow noopener noreferrer">Will the Iranian regime fall before 2027?</a></div>
 <div class="prob">4 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 171 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">28 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">29 Tsd. $</span><button type="button" class="tier term t-Eigentumswohnung" popovertarget="g-wohnung">Eigentumswohnung</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/next-press-secretary-announced-byptptpt" rel="nofollow noopener noreferrer">Next White House Press Secretary announced by October 31, 2026?</a></div>
 <div class="prob">20 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 171 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">6.465 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">5.508 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/ballon-dor-winner-2026" rel="nofollow noopener noreferrer">Will Lionel Messi win the 2026 Ballon d&#x27;Or?</a></div>
 <div class="prob">3 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 163 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">7.901 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">7.732 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div></div>
 <h2>Viel Aufmerksamkeit, wenig Widerstand</h2>
 <p class="note">Unter den 150 meistgehandelten Märkten ohne Sport jene, die ohne Widerstand oder mit weniger als 10.000 $ verschiebbar sind. Wer solche Quoten zitiert, zitiert eine dünne Zahl.</p>
 <div class="grid"><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt" rel="nofollow noopener noreferrer">US x Iran ceasefire continues through October 18?</a></div>
 <div class="prob">99 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 307 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 308 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="tier term t-ohne" popovertarget="g-ohne">ohne Widerstand</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/fed-decision-in-october-20260617190323537" rel="nofollow noopener noreferrer">Will the Fed increase interest rates by 50+ bps after the October 2026 meeting?</a></div>
@@ -142,23 +143,28 @@ dl.glossary dd{margin:0;color:var(--muted)}
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963" rel="nofollow noopener noreferrer">Israel x Iran ceasefire continues through October 18?</a></div>
 <div class="prob">99 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 195 Tsd. $</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 197 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="tier term t-ohne" popovertarget="g-ohne">ohne Widerstand</button></div>
+</div></div><div class="card"><div class="row">
+<div class="q"><a href="https://polymarket.com/event/nato-x-russia-military-clash-in-2025" rel="nofollow noopener noreferrer">NATO x Russia military clash by December 31, 2026?</a></div>
+<div class="prob">26 %</div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 182 Tsd. $</div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">9.485 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/next-press-secretary-announced-byptptpt" rel="nofollow noopener noreferrer">Next White House Press Secretary announced by October 31, 2026?</a></div>
 <div class="prob">20 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 171 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">6.465 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">5.508 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/ballon-dor-winner-2026" rel="nofollow noopener noreferrer">Will Lionel Messi win the 2026 Ballon d&#x27;Or?</a></div>
 <div class="prob">3 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 163 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">7.901 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">7.732 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory" rel="nofollow noopener noreferrer">Will Flávio Bolsonaro win the second round of the 2026 Brazilian presidential election by 8–12%?</a></div>
 <div class="prob">9 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 141 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">6.757 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">7.046 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/balance-of-power-2026-midterms" rel="nofollow noopener noreferrer">2026 Balance of Power: Other</a></div>
 <div class="prob">0 %</div>
@@ -168,22 +174,17 @@ dl.glossary dd{margin:0;color:var(--muted)}
 <div class="q"><a href="https://polymarket.com/event/nato-x-russia-military-clash-in-2025" rel="nofollow noopener noreferrer">NATO x Russia military clash by October 31, 2026?</a></div>
 <div class="prob">10 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 124 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">3.293 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">3.349 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by" rel="nofollow noopener noreferrer">Bab el-Mandeb Strait effectively closed by October 31?</a></div>
 <div class="prob">4 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 94 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">4.115 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
+<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 92 Tsd. $</div>
+<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">4.116 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-october-31-20260810151043583" rel="nofollow noopener noreferrer">Strait of Hormuz traffic returns to normal by October 31?</a></div>
 <div class="prob">1 %</div>
 <div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 90 Tsd. $</div>
 <div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">480 $</span><button type="button" class="tier term t-Taschengeld" popovertarget="g-taschengeld">Taschengeld</button></div>
-</div></div><div class="card"><div class="row">
-<div class="q"><a href="https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory" rel="nofollow noopener noreferrer">Will Luiz Inácio Lula da Silva win the second round of the 2026 Brazilian presidential election by less than 4%?</a></div>
-<div class="prob">20 %</div>
-<div class="meta">Polymarket · <button type="button" class="term" popovertarget="g-volumen">24h-Volumen</button> 89 Tsd. $</div>
-<div class="meta right"><button type="button" class="term" popovertarget="g-zehnpunkte">10 Punkte</button> <button type="button" class="term" popovertarget="g-richtung">nach oben</button>: <span class="cost">8.538 $</span><button type="button" class="tier term t-Kleinwagen" popovertarget="g-kleinwagen">Kleinwagen</button></div>
 </div></div><div class="card"><div class="row">
 <div class="q"><a href="https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026" rel="nofollow noopener noreferrer">Will Ethereum reach $2,600 October 12-18?</a></div>
 <div class="prob">1 %</div>
@@ -197,24 +198,24 @@ dl.glossary dd{margin:0;color:var(--muted)}
 <h2>Worüber gewettet wird</h2>
 <p class="note">Anteil am Volumen der erfassten Märkte, also der je 400 meistgehandelten pro Plattform. Nischenmärkte fehlen damit von vornherein. Die Zuordnung läuft über Schlüsselwörter und irrt im Einzelfall.</p>
 <h3>Regionen</h3><div class='grid' style='gap:8px'>
-<div><div class='row'><span>unklar/global <span class='meta'>· 232 Märkte</span></span><span class='meta'>28,2 %</span></div><div class='bar '><span style='width:28.2%'></span></div></div>
-<div><div class='row'><span>Nordamerika <span class='meta'>· 72 Märkte</span></span><span class='meta'>26,6 %</span></div><div class='bar '><span style='width:26.6%'></span></div></div>
-<div><div class='row'><span>Naher Osten <span class='meta'>· 38 Märkte</span></span><span class='meta'>18,5 %</span></div><div class='bar '><span style='width:18.5%'></span></div></div>
-<div><div class='row'><span>Europa <span class='meta'>· 30 Märkte</span></span><span class='meta'>9,9 %</span></div><div class='bar '><span style='width:9.9%'></span></div></div>
-<div><div class='row'><span>Asien <span class='meta'>· 3 Märkte</span></span><span class='meta'>6,5 %</span></div><div class='bar '><span style='width:6.5%'></span></div></div>
-<div><div class='row'><span>Lateinamerika <span class='meta'>· 12 Märkte</span></span><span class='meta'>5,8 %</span></div><div class='bar '><span style='width:5.8%'></span></div></div>
-<div><div class='row'><span>Russland/Ukraine <span class='meta'>· 10 Märkte</span></span><span class='meta'>4,3 %</span></div><div class='bar '><span style='width:4.3%'></span></div></div>
+<div><div class='row'><span>unklar/global <span class='meta'>· 266 Märkte</span></span><span class='meta'>30,5 %</span></div><div class='bar '><span style='width:30.5%'></span></div></div>
+<div><div class='row'><span>Nordamerika <span class='meta'>· 73 Märkte</span></span><span class='meta'>25,8 %</span></div><div class='bar '><span style='width:25.8%'></span></div></div>
+<div><div class='row'><span>Naher Osten <span class='meta'>· 39 Märkte</span></span><span class='meta'>17,9 %</span></div><div class='bar '><span style='width:17.9%'></span></div></div>
+<div><div class='row'><span>Europa <span class='meta'>· 30 Märkte</span></span><span class='meta'>9,6 %</span></div><div class='bar '><span style='width:9.6%'></span></div></div>
+<div><div class='row'><span>Asien <span class='meta'>· 7 Märkte</span></span><span class='meta'>6,3 %</span></div><div class='bar '><span style='width:6.3%'></span></div></div>
+<div><div class='row'><span>Lateinamerika <span class='meta'>· 12 Märkte</span></span><span class='meta'>5,7 %</span></div><div class='bar '><span style='width:5.7%'></span></div></div>
+<div><div class='row'><span>Russland/Ukraine <span class='meta'>· 9 Märkte</span></span><span class='meta'>4,2 %</span></div><div class='bar '><span style='width:4.2%'></span></div></div>
 <div><div class='row'><span>Ozeanien <span class='meta'>· 3 Märkte</span></span><span class='meta'>0,0 %</span></div><div class='bar '><span style='width:0.4%'></span></div></div>
 </div>
 <h3>Themen</h3><div class='grid' style='gap:8px'>
-<div><div class='row'><span>Politik <span class='meta'>· 81 Märkte</span></span><span class='meta'>44,2 %</span></div><div class='bar amber'><span style='width:44.2%'></span></div></div>
-<div><div class='row'><span>Sonstiges <span class='meta'>· 91 Märkte</span></span><span class='meta'>26,5 %</span></div><div class='bar amber'><span style='width:26.5%'></span></div></div>
-<div><div class='row'><span>Krieg/Konflikt <span class='meta'>· 18 Märkte</span></span><span class='meta'>15,1 %</span></div><div class='bar amber'><span style='width:15.1%'></span></div></div>
-<div><div class='row'><span>Sport <span class='meta'>· 141 Märkte</span></span><span class='meta'>6,7 %</span></div><div class='bar amber'><span style='width:6.7%'></span></div></div>
-<div><div class='row'><span>Wirtschaft <span class='meta'>· 11 Märkte</span></span><span class='meta'>5,7 %</span></div><div class='bar amber'><span style='width:5.7%'></span></div></div>
+<div><div class='row'><span>Politik <span class='meta'>· 81 Märkte</span></span><span class='meta'>44,7 %</span></div><div class='bar amber'><span style='width:44.7%'></span></div></div>
+<div><div class='row'><span>Sonstiges <span class='meta'>· 91 Märkte</span></span><span class='meta'>25,8 %</span></div><div class='bar amber'><span style='width:25.8%'></span></div></div>
+<div><div class='row'><span>Krieg/Konflikt <span class='meta'>· 18 Märkte</span></span><span class='meta'>14,7 %</span></div><div class='bar amber'><span style='width:14.7%'></span></div></div>
+<div><div class='row'><span>Sport <span class='meta'>· 141 Märkte</span></span><span class='meta'>6,5 %</span></div><div class='bar amber'><span style='width:6.5%'></span></div></div>
+<div><div class='row'><span>Wirtschaft <span class='meta'>· 11 Märkte</span></span><span class='meta'>5,5 %</span></div><div class='bar amber'><span style='width:5.5%'></span></div></div>
+<div><div class='row'><span>KI/Tech <span class='meta'>· 43 Märkte</span></span><span class='meta'>1,4 %</span></div><div class='bar amber'><span style='width:1.4%'></span></div></div>
 <div><div class='row'><span>Krypto <span class='meta'>· 34 Märkte</span></span><span class='meta'>1,3 %</span></div><div class='bar amber'><span style='width:1.3%'></span></div></div>
-<div><div class='row'><span>KI/Tech <span class='meta'>· 5 Märkte</span></span><span class='meta'>0,3 %</span></div><div class='bar amber'><span style='width:0.4%'></span></div></div>
-<div><div class='row'><span>Kultur <span class='meta'>· 18 Märkte</span></span><span class='meta'>0,1 %</span></div><div class='bar amber'><span style='width:0.4%'></span></div></div>
+<div><div class='row'><span>Kultur <span class='meta'>· 19 Märkte</span></span><span class='meta'>0,1 %</span></div><div class='bar amber'><span style='width:0.4%'></span></div></div>
 <div><div class='row'><span>Gesundheit <span class='meta'>· 1 Märkte</span></span><span class='meta'>0,1 %</span></div><div class='bar amber'><span style='width:0.4%'></span></div></div>
 </div>
 <h2>Prüfstand</h2>
@@ -225,5 +226,5 @@ dl.glossary dd{margin:0;color:var(--muted)}
 <p>Interlektische Copoiese: Thomas Reiner und Dr. Markus W. J. Reiner (Idee, Erdung, redaktionelle Verantwortung) mit Claude Opus 5.5 (Anthropic; Verdichtung, Code). Der Programmcode wurde mit KI erstellt; die Seite selbst wird täglich automatisch aus Marktdaten erzeugt. Kennzeichnung gemäß Art. 50 KI-Verordnung (EU) 2024/1689. Session BIF-2026-10-18-001.</p>
 <p><strong>Keine Werbung, keine Empfehlung.</strong> Diese Seite bewirbt keine Wettangebote, erhält keine Vergütung und enthält keine Partnerlinks. Verweise auf Marktseiten dienen ausschließlich als Quellenangabe. Polymarket hat nach unserem Kenntnisstand keine Konzession in Österreich und ist in mehreren EU-Staaten gesperrt. Die gezeigten Quoten sind keine Prognosen des Studios und keine Anlage- oder Wettberatung. Markennamen gehören ihren Inhabern; es besteht keine Verbindung zu den Plattformen.</p>
 <p>Datenquelle: öffentliche Lese-Schnittstelle von Polymarket. Veröffentlicht werden nur abgeleitete Kennzahlen, keine Orderbuch-Rohdaten.</p>
-<p>Erzeugt 2026-10-18 09:17 UTC · 400 Märkte · Probleme 0</p>
+<p>Erzeugt 2026-10-18 09:38 UTC · 439 Märkte · Probleme 0</p>
 </footer></main><div id="g-prognosemarkt" popover class="pop"><button type="button" class="close" popovertarget="g-prognosemarkt" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Prognosemarkt</strong><p>Eine Plattform, auf der Menschen mit Geld darauf wetten, ob etwas eintritt. Ein Anteil zahlt 1 $, wenn es eintritt, sonst nichts. Kostet er 62 Cent, liest man das als 62 % Wahrscheinlichkeit.</p></div><div id="g-zehnpunkte" popover class="pop"><button type="button" class="close" popovertarget="g-zehnpunkte" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Kapital für 10 Punkte</strong><p>So viel Geld müsste jemand einsetzen, um die angezeigte Wahrscheinlichkeit durch Käufe um zehn Prozentpunkte zu verschieben, etwa von 60 auf 70 %. Je kleiner der Betrag, desto leichter lässt sich die Zahl beeinflussen, die in Schlagzeilen zitiert wird.</p></div><div id="g-richtung" popover class="pop"><button type="button" class="close" popovertarget="g-richtung" popovertargetaction="hide" aria-label="Schließen">×</button><strong>nach oben, nach unten</strong><p>Die Richtung, in die das Verschieben billiger wäre. Nach oben heißt: JA-Anteile kaufen, bis die Wahrscheinlichkeit zehn Punkte höher steht. Nach unten heißt: NEIN-Anteile kaufen.</p></div><div id="g-ohne" popover class="pop"><button type="button" class="close" popovertarget="g-ohne" popovertargetaction="hide" aria-label="Schließen">×</button><strong>ohne Widerstand</strong><p>Zwischen dem besten Kaufangebot und dem besten Verkaufsangebot klafft eine Lücke von zehn Punkten oder mehr. Dann genügt ein einziger Auftrag in diese Lücke, und die angezeigte Zahl springt, ohne dass irgendetwas gehandelt wird. Solche Quoten sind praktisch beliebig formbar.</p></div><div id="g-taschengeld" popover class="pop"><button type="button" class="close" popovertarget="g-taschengeld" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Taschengeld</strong><p>Unter 1.000 $ reichen, um die Quote um zehn Punkte zu verschieben. Die Klassen sind nach dem benannt, was man sich für diesen Betrag ungefähr kaufen könnte.</p></div><div id="g-kleinwagen" popover class="pop"><button type="button" class="close" popovertarget="g-kleinwagen" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Kleinwagen</strong><p>Zwischen 1.000 und 10.000 $ reichen, um die Quote um zehn Punkte zu verschieben.</p></div><div id="g-wohnung" popover class="pop"><button type="button" class="close" popovertarget="g-wohnung" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Eigentumswohnung</strong><p>Zwischen 10.000 und 100.000 $ sind nötig, um die Quote um zehn Punkte zu verschieben.</p></div><div id="g-teuer" popover class="pop"><button type="button" class="close" popovertarget="g-teuer" popovertargetaction="hide" aria-label="Schließen">×</button><strong>teuer</strong><p>Über 100.000 $ sind nötig. Solche Quoten lassen sich nur mit großem Einsatz verschieben und sind entsprechend belastbarer.</p></div><div id="g-entschieden" popover class="pop"><button type="button" class="close" popovertarget="g-entschieden" popovertargetaction="hide" aria-label="Schließen">×</button><strong>praktisch entschieden</strong><p>Der Preis steht bei 97 % oder mehr (oder bei 3 % oder weniger), und nur noch eine Seite bietet. Der Ausgang gilt als so gut wie sicher; gemessen wird hier nichts mehr.</p></div><div id="g-verwundbar" popover class="pop"><button type="button" class="close" popovertarget="g-verwundbar" popovertargetaction="hide" aria-label="Schließen">×</button><strong>verwundbar</strong><p>Der Markt hat sich seit dem Vortag um mindestens acht Punkte bewegt und war am Vortag ohne Widerstand oder für weniger als 10.000 $ verschiebbar. Das ist ein Hinweis auf Verwundbarkeit, kein Beweis für Manipulation: Echte Nachrichten bewegen dünne Märkte genauso.</p></div><div id="g-beobachten" popover class="pop"><button type="button" class="close" popovertarget="g-beobachten" popovertargetaction="hide" aria-label="Schließen">×</button><strong>beobachten</strong><p>Der Markt hat sich stark bewegt, war am Vortag aber teuer zu verschieben. Die Bewegung ist wahrscheinlich echt.</p></div><div id="g-volumen" popover class="pop"><button type="button" class="close" popovertarget="g-volumen" popovertargetaction="hide" aria-label="Schließen">×</button><strong>24h-Volumen</strong><p>Der Geldbetrag, der in den letzten 24 Stunden in diesem Markt gehandelt wurde. Ein Maß für Aufmerksamkeit, nicht für Belastbarkeit.</p></div><div id="g-orderbuch" popover class="pop"><button type="button" class="close" popovertarget="g-orderbuch" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Orderbuch</strong><p>Die Liste aller offenen Kauf- und Verkaufsangebote mit Preis und Menge. Aus ihr lässt sich ablesen, wie viel Geld im Weg liegt, wenn jemand die Quote verschieben will.</p></div><div id="g-mittelkurs" popover class="pop"><button type="button" class="close" popovertarget="g-mittelkurs" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Mittelkurs</strong><p>Die Mitte zwischen bestem Kauf- und bestem Verkaufsangebot. Meist ist das die Zahl, die eine Plattform als Wahrscheinlichkeit anzeigt.</p></div><div id="g-brier" popover class="pop"><button type="button" class="close" popovertarget="g-brier" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Brier-Score</strong><p>Ein Maß dafür, wie gut Wahrscheinlichkeiten im Nachhinein gestimmt haben. 0 ist perfekt, 0,25 entspricht dem Münzwurf. Kleiner ist besser.</p></div><div id="g-mittelfeld" popover class="pop"><button type="button" class="close" popovertarget="g-mittelfeld" popovertargetaction="hide" aria-label="Schließen">×</button><strong>Mittelfeld</strong><p>Nur Märkte mit einer Wahrscheinlichkeit zwischen 15 und 85 %. Außenseiter und Favoriten fallen heraus, weil sie den Vergleich verzerren würden.</p></div></body></html>
