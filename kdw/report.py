@@ -213,6 +213,7 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
 
     out.append(f"""<div class="date">{day.strftime('%d.%m.%Y')} · {stats.get('n_markets', 0)} Märkte</div>
 <h1>Kurswert der Wirklichkeit</h1>
+<p class="note"><a href="index.html" style="color:var(--teal)">Neu hier? Die Reise in sieben Stationen erklärt, worum es geht.</a></p>
 <p class="lead">{term("Prognosemärkte", "prognosemarkt")} werden zitiert wie Umfragen. Hier steht neben jeder Quote, wie viel Kapital es binden würde, sie durch Handel um zehn Prozentpunkte zu verschieben. Ob billig verschiebbare Quoten tatsächlich weniger taugen, prüft dieser Bericht laufend nach.</p>
 <p class="note">Gemessen am sichtbaren {term("Orderbuch", "orderbuch")} zum Zeitpunkt der Abfrage. {term("„Ohne Widerstand“", "ohne")} heißt: Der Abstand zwischen bestem Kauf- und Verkaufsauftrag ist so groß, dass sich die angezeigte Zahl schon durch bloßes Einstellen von Aufträgen bewegen lässt, ganz ohne Handel. Market Maker füllen nach, wer verschiebt, hält danach Anteile mit möglichem Wert: gemessen wird Einsatz, nicht Verlust.</p>""")
 
@@ -291,8 +292,8 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
     out.append(glossary_section())
     errs = stats.get("errors") or []
     out.append(f"""<footer>
-<p><strong>Kurswert der Wirklichkeit</strong> ist ein nicht kommerzielles Kunstwerk (Copoiema) des Studio Bifurkation · IC, Innsbruck, über das Verhältnis von Mensch, Maschine und öffentlicher Wahrscheinlichkeit. <a href="impressum.html">Offenlegung, Datenschutz und Rechtliches</a> · <a href="https://convocare.at">convocare.at</a></p>
-<p>Interlektische Copoiese: Thomas Reiner (Neugiervektor, Erdung, redaktionelle Verantwortung) mit Claude Opus 5.5 (Anthropic; Verdichtung, Code). Der Programmcode wurde mit KI erstellt; die Seite selbst wird täglich automatisch aus Marktdaten erzeugt. Kennzeichnung gemäß Art. 50 KI-Verordnung (EU) 2024/1689. Session BIF-2026-10-18-001.</p>
+<p><strong>Kurswert der Wirklichkeit</strong> ist ein nicht gewinnorientiertes Kunstwerk (Copoiema) des Studio Bifurkation · IC, Innsbruck, über das Verhältnis von Mensch, Maschine und öffentlicher Wahrscheinlichkeit. <a href="impressum.html">Offenlegung, Datenschutz und Rechtliches</a> · <a href="https://convocare.at">convocare.at</a></p>
+<p>Interlektische Copoiese: Thomas Reiner und Dr. Markus W. J. Reiner (Idee, Erdung, redaktionelle Verantwortung) mit Claude Opus 5.5 (Anthropic; Verdichtung, Code). Der Programmcode wurde mit KI erstellt; die Seite selbst wird täglich automatisch aus Marktdaten erzeugt. Kennzeichnung gemäß Art. 50 KI-Verordnung (EU) 2024/1689. Session BIF-2026-10-18-001.</p>
 <p><strong>Keine Werbung, keine Empfehlung.</strong> Diese Seite bewirbt keine Wettangebote, erhält keine Vergütung und enthält keine Partnerlinks. Verweise auf Marktseiten dienen ausschließlich als Quellenangabe. Polymarket hat nach unserem Kenntnisstand keine Konzession in Österreich und ist in mehreren EU-Staaten gesperrt. Die gezeigten Quoten sind keine Prognosen des Studios und keine Anlage- oder Wettberatung. Markennamen gehören ihren Inhabern; es besteht keine Verbindung zu den Plattformen.</p>
 <p>Datenquelle: öffentliche Lese-Schnittstelle von Polymarket. Veröffentlicht werden nur abgeleitete Kennzahlen, keine Orderbuch-Rohdaten.</p>
 <p>Erzeugt {e(stats.get('generated'))} · {stats.get('n_markets', 0)} Märkte · Probleme {len(errs)}</p>
@@ -307,12 +308,12 @@ def render_legal(generated: str) -> str:
 <title>Offenlegung · Kurswert der Wirklichkeit</title>
 <meta name="robots" content="noindex">
 <style>{CSS}</style></head><body><main>
-<div class="date"><a href="index.html" style="color:var(--amber)">← Zum Bericht</a></div>
+<div class="date"><a href="index.html" style="color:var(--amber)">Zur Reise</a> &nbsp; <a href="heute.html" style="color:var(--amber)">Zur heutigen Messung</a></div>
 <h1>Offenlegung, Datenschutz, Rechtliches</h1>
 
 <h2>Offenlegung gemäß § 25 Mediengesetz</h2>
-<p>Medieninhaber und redaktionell verantwortlich: Thomas Reiner, Innsbruck, Österreich.<br>
-Gegenstand: nicht kommerzielles Kunst- und Forschungsprojekt des Studio Bifurkation · IC (convocare.at).<br>
+<p>Medieninhaber und redaktionell verantwortlich: Thomas Reiner, Innsbruck, und Dr. Markus W. J. Reiner, gemeinsam als Studio Bifurkation · IC (convocare.at), Österreich.<br>
+Gegenstand: nicht gewinnorientiertes (non-profit) Kunst- und Forschungsprojekt. Es werden keine Einnahmen erzielt, keine Werbung geschaltet und keine Zuwendungen von Plattformen angenommen.<br>
 Grundlegende Richtung: künstlerische und wissenschaftliche Auseinandersetzung mit Prognosemärkten, ihrer Verwundbarkeit und ihrer Rolle in der öffentlichen Meinungsbildung. Das Werk ist eine Interlektische Copoiese, entstanden in Ko-Autorschaft von Mensch und KI.</p>
 
 <h2>Was dieses Werk ist</h2>

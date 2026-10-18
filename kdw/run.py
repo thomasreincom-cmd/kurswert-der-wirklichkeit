@@ -133,17 +133,21 @@ def main(argv=None) -> int:
         "counters": counters,
     }
     SITE.mkdir(exist_ok=True)
-    (SITE / "index.html").write_text(render(stale_from or day, records, ano, div, cov, cal, stats),
+    # Startseite = die Reise (statisch, liest summary.json); Tagesmessung = heute.html
+    (SITE / "heute.html").write_text(render(stale_from or day, records, ano, div, cov, cal, stats),
+                                     encoding="utf-8")
+    (SITE / "index.html").write_text((Path(__file__).parent / "static" / "reise.html").read_text(encoding="utf-8"),
                                      encoding="utf-8")
     (SITE / "impressum.html").write_text(render_legal(stats["generated"]), encoding="utf-8")
     (SITE / "summary.json").write_text(json.dumps({
         "stats": stats, "coverage": cov, "divergences": div, "anomalies": ano[:50],
         "calibration": cal,
-        "markets": [{k: r.get(k) for k in ("venue", "market_id", "question", "price", "url")}
-                    | {"tier": r["move"].get("tier"), "headline_price": r["move"].get("headline_price")}
+        "markets": [{k: r.get(k) for k in ("venue", "market_id", "question", "price", "url", "volume_24h")}
+                    | {"tier": r["move"].get("tier"), "headline_price": r["move"].get("headline_price"),
+                       "status": r["move"].get("status"), "sport": analysis.is_sport(r)}
                     for r in records],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
-    log.info("Bericht: %s (%d Märkte, Fehler: %s)", SITE / "index.html", len(records), errors or "keine")
+    log.info("Bericht: %s (%d Märkte, Fehler: %s)", SITE / "heute.html", len(records), errors or "keine")
     failed = (not records) or stale_from is not None or (listed and bad_share > MAX_BAD_SHARE) \
         or any(e.startswith(("Polymarket:", "Kalshi:")) for e in errors)
     return 1 if failed else 0

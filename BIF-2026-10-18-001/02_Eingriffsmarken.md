@@ -17,3 +17,5 @@ Offen für weitere Eingriffe: stilistische und epistemische Prüfung von Bericht
 **E6 · Selbständigkeit.** „kommst du rein und kannst jetzt selbständig weiter arbeiten“. Freigabe für den Weg in Thomas' GitHub-Konto. Öffentliches Repo und Pages je einzeln bestätigt.
 
 **E7 · Redlichkeit vor Reichweite.** „bitte eine rechtliche Nutzungsprüfung durchführen bzw alles tun um uns abzusichern, dies ist für uns ein Kunstwerk, ein Copoiema, es geht um Menschen und KI“. Folge: Kalshi ausgesetzt, Rohdaten nicht mehr öffentlich, Offenlegung und Rechtsseite. Das Werk wird kleiner und dadurch sauberer.
+
+**E8 · Zweck und Erdung.** „Medieninhaber beides, wichtig ist NON PROFIT“ und die Frage, was dieses Copoiema erreichen will: neue Methoden, mit denen Menschen erkennen, ob Feeds, KI, hybride Kriegsführung oder Machtinteressen Einzelner sie lenken. Dazu der Auftrag, das Technische herunterzubrechen, „fast wie ein interaktives Wissensspiel“. Folge: die Reise in sieben Stationen als Startseite, die Messung als zweite Ebene.

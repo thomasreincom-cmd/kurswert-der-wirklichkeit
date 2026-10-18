@@ -4,9 +4,10 @@ Prognosemärkte werden inzwischen zitiert wie Umfragen. Eine Umfrage kommt mit F
 
 Der Gedanke dahinter ist einfach. Eine Wahrscheinlichkeit, hinter der 184 Millionen Dollar Handelsvolumen stehen (Brasilien-Stichwahl auf Polymarket, Oktober 2026), ist etwas anderes als eine aus einem Markt mit 6.000 Dollar Gesamtvolumen (Merz' Abgang vor 2027, Polymarket, Stand Mai 2026). Beide erscheinen in Schlagzeilen als nüchterne Prozentzahl.
 
-Ein nicht kommerzielles Kunstwerk (Copoiema) des Studio Bifurkation · IC, Innsbruck, über Menschen, Maschinen und öffentliche Wahrscheinlichkeit. Entstanden in Session BIF-2026-10-18-001. Kein Wettangebot, keine Werbung, keine Anlageberatung.
+Ein nicht gewinnorientiertes Kunstwerk (Copoiema) des Studio Bifurkation · IC, Innsbruck, über Menschen, Maschinen und öffentliche Wahrscheinlichkeit. Entstanden in Session BIF-2026-10-18-001. Kein Wettangebot, keine Werbung, keine Anlageberatung.
 
-Bericht: https://thomasreincom-cmd.github.io/kurswert-der-wirklichkeit/
+Startseite (die Reise in sieben Stationen): https://thomasreincom-cmd.github.io/kurswert-der-wirklichkeit/
+Tägliche Messung: https://thomasreincom-cmd.github.io/kurswert-der-wirklichkeit/heute.html
 
 ## Was täglich passiert
 
