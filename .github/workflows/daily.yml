@@ -1,0 +1,83 @@
+name: Tageslauf
+
+on:
+  schedule:
+    - cron: "13 5 * * *"   # täglich 05:13 UTC (07:13 Innsbruck, Sommerzeit)
+  workflow_dispatch:
+    inputs:
+      top:
+        description: "Märkte je Plattform"
+        default: "400"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tageslauf
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    outputs:
+      status: ${{ steps.collect.outcome }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhängigkeiten
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Tests
+        run: python -m pytest -q
+
+      - name: Sammeln und auswerten
+        id: collect
+        continue-on-error: true
+        run: python -m kdw.run --top "${{ github.event.inputs.top || '400' }}"
+
+      - name: Archiv sichern
+        run: |
+          mkdir -p data site
+          git config user.name  "kdw-bot"
+          git config user.email "kdw-bot@users.noreply.github.com"
+          git add data site
+          if git diff --cached --quiet; then
+            echo "Nichts Neues."
+          else
+            git commit -m "Tageslauf $(date -u +%F)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Lauf als fehlgeschlagen markieren
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo "::error::Sammeln unvollständig oder gescheitert, Bericht trägt einen Warnhinweis."
+          exit 1
+
+  deploy:
+    needs: run
+    if: always() && needs.run.result != 'cancelled'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
