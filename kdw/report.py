@@ -302,8 +302,15 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
     return "\n".join(out)
 
 
-def render_legal(generated: str) -> str:
+HOSTING = {
+    "github": 'Gehostet wird sie bei GitHub Pages (GitHub, Inc., USA). GitHub verarbeitet beim Aufruf technisch notwendige Verbindungsdaten wie die IP-Adresse; Einzelheiten in der <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.',
+    "convocare": 'Gehostet wird sie auf convocare.at; für das Hosting gilt die Datenschutzerklärung von <a href="https://convocare.at">convocare.at</a>. Die täglichen Messdaten und die Seite „Heutige Messung“ werden von GitHub Pages (GitHub, Inc., USA) geladen. Dabei verarbeitet GitHub technisch notwendige Verbindungsdaten wie die IP-Adresse; Einzelheiten in der <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.',
+}
+
+
+def render_legal(generated: str, host: str = "github") -> str:
     """Offenlegung nach § 25 MedienG, Datenschutz, Rechtliches."""
+    hosting = HOSTING[host]
     return f"""<!doctype html><html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Offenlegung · Kurswert der Wirklichkeit</title>
@@ -327,7 +334,8 @@ Grundlegende Richtung: künstlerische und wissenschaftliche Auseinandersetzung m
 <p>Rechteinhaber, die eine Darstellung beanstanden, erreichen uns über <a href="https://convocare.at">convocare.at</a>. Wir prüfen jede Beanstandung umgehend und entfernen Inhalte im Zweifel.</p>
 
 <h2>Datenschutz</h2>
-<p>Diese Seite setzt keine Cookies, verwendet keine Analysewerkzeuge und erhebt selbst keine personenbezogenen Daten. Die Schriften Orbitron und Space Grotesk (SIL Open Font License) liegen auf demselben Server; es werden keine externen Schriftdienste geladen. Gehostet wird sie bei GitHub Pages (GitHub, Inc., USA). GitHub verarbeitet beim Aufruf technisch notwendige Verbindungsdaten wie die IP-Adresse; Einzelheiten in der <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+<p>Diese Seite selbst setzt keine Cookies, verwendet keine Analysewerkzeuge und erhebt keine personenbezogenen Daten. Die Schriften Orbitron und Space Grotesk (SIL Open Font License) liegen auf demselben Server; es werden keine externen Schriftdienste geladen. {hosting}</p>
+<p id="spotify"><strong>Podcast-Player (Spotify).</strong> Auf der Startseite lässt sich eine Folge des IC Podcast abspielen. Der Player von Spotify wird erst geladen, wenn Sie auf „Folge abspielen“ klicken. Ab diesem Klick werden Daten wie Ihre IP-Adresse an Spotify AB (Schweden) übertragen, und Spotify kann Cookies setzen und Daten auch in Drittländer übermitteln. Rechtsgrundlage ist Ihre Einwilligung durch den Klick (Art. 6 Abs. 1 lit. a DSGVO). Ohne Klick findet keine Verbindung zu Spotify statt. Einzelheiten in der <a href="https://www.spotify.com/at/legal/privacy-policy/">Datenschutzrichtlinie von Spotify</a>.</p>
 <p>Marktfragen nennen mitunter Personen des öffentlichen Lebens. Das Werk gibt diese Fragen als Zitat wieder und trifft keine eigenen Aussagen über die genannten Personen.</p>
 
 <h2>Künstliche Intelligenz</h2>

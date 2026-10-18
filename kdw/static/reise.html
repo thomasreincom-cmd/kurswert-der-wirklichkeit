@@ -156,6 +156,18 @@ dialog{background:rgba(7,10,24,.94);color:var(--text);border:1px solid var(--gla
 dialog::backdrop{background:rgba(4,6,15,.7)}
 footer{max-width:980px;margin:0 auto;padding:26px 18px 50px;border-top:1px solid var(--glass-border);color:var(--muted);font-size:13px}
 footer p{max-width:none}
+.pod{padding:14px 16px;margin:0 0 34px;max-width:640px;border-color:rgba(177,77,255,.35);box-shadow:0 0 30px rgba(177,77,255,.12)}
+.pod-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.pod-dot{flex:0 0 12px;height:12px;border-radius:50%;background:var(--pink);box-shadow:0 0 14px var(--pink);animation:podp 2.4s ease-in-out infinite}
+@keyframes podp{50%{opacity:.35}}
+.pod-k{margin:0;font:700 11px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pod-t{margin:2px 0 0;font-weight:600;font-size:17px;line-height:1.3}
+.pod-slot{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.pod-slot .go{margin:0}
+.pod-ext{color:var(--cyan);font-size:14px}
+.pod-note{flex-basis:100%;margin:2px 0 0;font-size:12.5px;color:var(--muted);max-width:none}
+.pod-note a{color:var(--muted)}
+.pod iframe{display:block;width:100%;height:152px;border:0;border-radius:12px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -172,6 +184,20 @@ footer p{max-width:none}
 <header class="hero" id="top">
   <canvas id="field" aria-hidden="true"></canvas>
   <div class="hero-in">
+    <div class="pod glass" id="pod">
+      <div class="pod-head">
+        <span class="pod-dot" aria-hidden="true"></span>
+        <div>
+          <p class="pod-k">IC Podcast · Folge zum Werk · 15 Min.</p>
+          <p class="pod-t">Wie billig sich Prognosemärkte manipulieren lassen</p>
+        </div>
+      </div>
+      <div class="pod-slot" id="podSlot">
+        <button class="go" id="podGo" type="button">Folge abspielen</button>
+        <a class="pod-ext" href="https://open.spotify.com/episode/3q2TDXlxD51fLThTwSiN1k" target="_blank" rel="noopener">Auf Spotify öffnen</a>
+        <p class="pod-note">Der Player wird erst nach Klick von Spotify geladen. Dabei werden Daten an Spotify übertragen und Cookies gesetzt. <a href="impressum.html#spotify">Mehr dazu</a></p>
+      </div>
+    </div>
     <p class="kicker">Ein Copoiema · Studio Bifurkation · IC</p>
     <h1><span class="grad">Was kostet</span><br><span class="heat">eine Wahrheit?</span></h1>
     <p class="lede">Auf Prognosemärkten setzen Menschen Geld darauf, ob etwas eintritt. Aus ihren Einsätzen wird eine Prozentzahl, und diese Zahl landet in Nachrichten, als wäre sie eine Umfrage. Jeder Lichtpunkt hinter dieser Zahl steht für Geld, das ihr im Weg liegt.</p>
@@ -311,6 +337,19 @@ footer p{max-width:none}
 </dialog>
 
 <script>
+(function(){
+  var b=document.getElementById("podGo");
+  if(!b)return;
+  b.addEventListener("click",function(){
+    var f=document.createElement("iframe");
+    f.src="https://open.spotify.com/embed/episode/3q2TDXlxD51fLThTwSiN1k?utm_source=generator&theme=0";
+    f.title="IC Podcast: Wie billig sich Prognosemärkte manipulieren lassen";
+    f.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+    f.loading="lazy";
+    var s=document.getElementById("podSlot");
+    s.replaceChildren(f);
+  });
+})();
 (function(){
   "use strict";
   var N_TOOLS=8;
