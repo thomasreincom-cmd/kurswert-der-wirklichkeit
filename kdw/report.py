@@ -48,8 +48,79 @@ td.num,th.num{text-align:right;white-space:nowrap}
 .empty{color:var(--muted);font-style:italic}
 footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 footer a{color:var(--teal)}
-@media (max-width:560px){h1{font-size:32px}.prob{font-size:19px}}
+.term{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:help;
+border-bottom:1px dotted var(--muted);text-align:inherit}
+.term:hover,.term:focus-visible{border-bottom-color:var(--teal);color:var(--text);outline:none}
+.tier.term{border-bottom:1px solid;cursor:help}
+.pop{max-width:min(420px,calc(100vw - 32px));background:var(--raised);color:var(--text);
+border:1px solid var(--teal);border-radius:10px;padding:14px 16px;font-size:15px;line-height:1.5;
+box-shadow:0 12px 40px rgba(0,0,0,.6);margin:auto}
+.pop::backdrop{background:rgba(13,15,18,.55)}
+.pop strong{display:block;color:var(--teal);margin-bottom:4px}
+.pop p{margin:0}
+.pop .close{float:right;background:none;border:0;color:var(--muted);font-size:20px;cursor:pointer;line-height:1}
+dl.glossary{display:grid;grid-template-columns:minmax(120px,max-content) 1fr;gap:8px 20px;font-size:15px}
+dl.glossary dt{color:var(--teal);font-weight:600}
+dl.glossary dd{margin:0;color:var(--muted)}
+@media (max-width:560px){h1{font-size:32px}.prob{font-size:19px}dl.glossary{grid-template-columns:1fr}dl.glossary dd{margin-bottom:8px}}
 """
+
+# Begriffe, die im Bericht ein Erklärfenster öffnen. Reihenfolge = Reihenfolge im Glossar.
+GLOSSARY: list[tuple[str, str, str]] = [
+    ("prognosemarkt", "Prognosemarkt",
+     "Eine Plattform, auf der Menschen mit Geld darauf wetten, ob etwas eintritt. Ein Anteil zahlt 1 $, wenn es eintritt, sonst nichts. Kostet er 62 Cent, liest man das als 62 % Wahrscheinlichkeit."),
+    ("zehnpunkte", "Kapital für 10 Punkte",
+     "So viel Geld müsste jemand einsetzen, um die angezeigte Wahrscheinlichkeit durch Käufe um zehn Prozentpunkte zu verschieben, etwa von 60 auf 70 %. Je kleiner der Betrag, desto leichter lässt sich die Zahl beeinflussen, die in Schlagzeilen zitiert wird."),
+    ("richtung", "nach oben, nach unten",
+     "Die Richtung, in die das Verschieben billiger wäre. Nach oben heißt: JA-Anteile kaufen, bis die Wahrscheinlichkeit zehn Punkte höher steht. Nach unten heißt: NEIN-Anteile kaufen."),
+    ("ohne", "ohne Widerstand",
+     "Zwischen dem besten Kaufangebot und dem besten Verkaufsangebot klafft eine Lücke von zehn Punkten oder mehr. Dann genügt ein einziger Auftrag in diese Lücke, und die angezeigte Zahl springt, ohne dass irgendetwas gehandelt wird. Solche Quoten sind praktisch beliebig formbar."),
+    ("taschengeld", "Taschengeld",
+     "Unter 1.000 $ reichen, um die Quote um zehn Punkte zu verschieben. Die Klassen sind nach dem benannt, was man sich für diesen Betrag ungefähr kaufen könnte."),
+    ("kleinwagen", "Kleinwagen",
+     "Zwischen 1.000 und 10.000 $ reichen, um die Quote um zehn Punkte zu verschieben."),
+    ("wohnung", "Eigentumswohnung",
+     "Zwischen 10.000 und 100.000 $ sind nötig, um die Quote um zehn Punkte zu verschieben."),
+    ("teuer", "teuer",
+     "Über 100.000 $ sind nötig. Solche Quoten lassen sich nur mit großem Einsatz verschieben und sind entsprechend belastbarer."),
+    ("entschieden", "praktisch entschieden",
+     "Der Preis steht bei 97 % oder mehr (oder bei 3 % oder weniger), und nur noch eine Seite bietet. Der Ausgang gilt als so gut wie sicher; gemessen wird hier nichts mehr."),
+    ("verwundbar", "verwundbar",
+     "Der Markt hat sich seit dem Vortag um mindestens acht Punkte bewegt und war am Vortag ohne Widerstand oder für weniger als 10.000 $ verschiebbar. Das ist ein Hinweis auf Verwundbarkeit, kein Beweis für Manipulation: Echte Nachrichten bewegen dünne Märkte genauso."),
+    ("beobachten", "beobachten",
+     "Der Markt hat sich stark bewegt, war am Vortag aber teuer zu verschieben. Die Bewegung ist wahrscheinlich echt."),
+    ("volumen", "24h-Volumen",
+     "Der Geldbetrag, der in den letzten 24 Stunden in diesem Markt gehandelt wurde. Ein Maß für Aufmerksamkeit, nicht für Belastbarkeit."),
+    ("orderbuch", "Orderbuch",
+     "Die Liste aller offenen Kauf- und Verkaufsangebote mit Preis und Menge. Aus ihr lässt sich ablesen, wie viel Geld im Weg liegt, wenn jemand die Quote verschieben will."),
+    ("mittelkurs", "Mittelkurs",
+     "Die Mitte zwischen bestem Kauf- und bestem Verkaufsangebot. Meist ist das die Zahl, die eine Plattform als Wahrscheinlichkeit anzeigt."),
+    ("brier", "Brier-Score",
+     "Ein Maß dafür, wie gut Wahrscheinlichkeiten im Nachhinein gestimmt haben. 0 ist perfekt, 0,25 entspricht dem Münzwurf. Kleiner ist besser."),
+    ("mittelfeld", "Mittelfeld",
+     "Nur Märkte mit einer Wahrscheinlichkeit zwischen 15 und 85 %. Außenseiter und Favoriten fallen heraus, weil sie den Vergleich verzerren würden."),
+]
+_GKEY = {label: key for key, label, _ in GLOSSARY}
+TIER_KEY = {"ohne Widerstand": "ohne", "Taschengeld": "taschengeld", "Kleinwagen": "kleinwagen",
+            "Eigentumswohnung": "wohnung", "teuer": "teuer", "verwundbar": "verwundbar",
+            "beobachten": "beobachten"}
+
+
+def term(text: str, key: str, cls: str = "term") -> str:
+    """Ein Begriff, der beim Antippen sein Erklärfenster öffnet."""
+    return f'<button type="button" class="{cls}" popovertarget="g-{key}">{text}</button>'
+
+
+def popovers() -> str:
+    return "".join(
+        f'<div id="g-{key}" popover class="pop"><button type="button" class="close" popovertarget="g-{key}" '
+        f'popovertargetaction="hide" aria-label="Schließen">×</button><strong>{e(label)}</strong><p>{e(text)}</p></div>'
+        for key, label, text in GLOSSARY)
+
+
+def glossary_section() -> str:
+    items = "".join(f"<dt>{e(label)}</dt><dd>{e(text)}</dd>" for _, label, text in GLOSSARY)
+    return f'<h2 id="begriffe">Begriffe</h2><p class="note">Jeder unterstrichene Begriff im Bericht öffnet beim Antippen diese Erklärung.</p><dl class="glossary">{items}</dl>'
 
 VENUE = {"polymarket": "Polymarket", "kalshi": "Kalshi"}
 
@@ -82,15 +153,19 @@ def tier_badge(t: Optional[str]) -> str:
     if not t:
         return ""
     cls = "t-ohne" if t == "ohne Widerstand" else f"t-{t}"
+    key = TIER_KEY.get(t)
+    if key:
+        return term(e(t), key, f"tier term {e(cls)}")
     return f'<span class="tier {e(cls)}">{e(t)}</span>'
 
 
 def cost_text(mv: dict) -> str:
     if mv.get("status") == "ohne_widerstand":
-        return "ohne Widerstand"
+        return ""
     if mv.get("headline_price") is None:
         return "nicht messbar"
     d = {"up": "nach oben", "down": "nach unten"}.get(mv.get("cheapest_direction"), "")
+    d = term(d, "richtung") if d else d
     return f'{d}: <span class="cost">{usd(mv["headline_price"], mv.get("lower_bound_only"))}</span>'
 
 
@@ -100,8 +175,8 @@ def market_card(r: dict) -> str:
     return f"""<div class="card"><div class="row">
 <div class="q"><a href="{e(r.get('url'))}" rel="nofollow noopener noreferrer">{e(r.get('question'))}</a></div>
 <div class="prob">{pct(r.get('price'))}</div>
-<div class="meta">{VENUE.get(r['venue'], e(r['venue']))} · 24h-Volumen {usd(r.get('volume_24h'), est=est)}</div>
-<div class="meta right">10 Punkte {cost_text(mv)}{tier_badge(mv.get('tier'))}</div>
+<div class="meta">{VENUE.get(r['venue'], e(r['venue']))} · {term("24h-Volumen", "volumen")} {usd(r.get('volume_24h'), est=est)}</div>
+<div class="meta right">{term("10 Punkte", "zehnpunkte")} {cost_text(mv)}{tier_badge(mv.get('tier'))}</div>
 </div></div>"""
 
 
@@ -138,13 +213,14 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
 
     out.append(f"""<div class="date">{day.strftime('%d.%m.%Y')} · {stats.get('n_markets', 0)} Märkte</div>
 <h1>Kurswert der Wirklichkeit</h1>
-<p class="lead">Prognosemärkte werden zitiert wie Umfragen. Hier steht neben jeder Quote, wie viel Kapital es binden würde, sie durch Handel um zehn Prozentpunkte zu verschieben. Ob billig verschiebbare Quoten tatsächlich weniger taugen, prüft dieser Bericht laufend nach.</p>
-<p class="note">Gemessen am sichtbaren Orderbuch zum Zeitpunkt der Abfrage. „Ohne Widerstand“ heißt: Der Abstand zwischen bestem Kauf- und Verkaufsauftrag ist so groß, dass sich die angezeigte Zahl schon durch bloßes Einstellen von Aufträgen bewegen lässt, ganz ohne Handel. Market Maker füllen nach, wer verschiebt, hält danach Anteile mit möglichem Wert: gemessen wird Einsatz, nicht Verlust.</p>""")
+<p class="lead">{term("Prognosemärkte", "prognosemarkt")} werden zitiert wie Umfragen. Hier steht neben jeder Quote, wie viel Kapital es binden würde, sie durch Handel um zehn Prozentpunkte zu verschieben. Ob billig verschiebbare Quoten tatsächlich weniger taugen, prüft dieser Bericht laufend nach.</p>
+<p class="note">Gemessen am sichtbaren {term("Orderbuch", "orderbuch")} zum Zeitpunkt der Abfrage. {term("„Ohne Widerstand“", "ohne")} heißt: Der Abstand zwischen bestem Kauf- und Verkaufsauftrag ist so groß, dass sich die angezeigte Zahl schon durch bloßes Einstellen von Aufträgen bewegen lässt, ganz ohne Handel. Market Maker füllen nach, wer verschiebt, hält danach Anteile mit möglichem Wert: gemessen wird Einsatz, nicht Verlust.</p>""")
 
     n_decided = len(records) - len(live)
-    dist = " · ".join(f"{t}: {n}" for t, n in tiers_count.items() if n) + (f" · praktisch entschieden: {n_decided}" if n_decided else "")
+    dist = " · ".join(f"{term(e(t), TIER_KEY[t])}: {n}" for t, n in tiers_count.items() if n) + \
+        (f" · {term('praktisch entschieden', 'entschieden')}: {n_decided}" if n_decided else "")
     if dist:
-        out.append(f'<p class="note">Verteilung heute: {e(dist)}.</p>')
+        out.append(f'<p class="note">Verteilung heute: {dist}. Unterstrichene Begriffe antippen für eine Erklärung, alle auf einen Blick unter <a href="#begriffe" style="color:var(--teal)">Begriffe</a>.</p>')
 
     out.append("<h2>Die meistgehandelten Fragen des Tages</h2>")
     out.append(f'<p class="note">Sortiert nach 24-Stunden-Volumen, ohne Sport. Sportwetten machen heute {_de(sport_share*100)} % des Tagesvolumens aus ({len(sport)} von {len(live)} offenen Märkten) und würden diese Liste sonst füllen. Rechts unten das Kapital für zehn Punkte in die billigere Richtung.' + (' Kalshi zählt Kontrakte; das Dollarvolumen ist dort geschätzt.' if any(r['venue'] == 'kalshi' for r in records) else '') + '</p>')
@@ -157,7 +233,7 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
     since = stats.get("compare_day")
     out.append(f"<h2>Bewegungen seit {e(date.fromisoformat(since).strftime('%d.%m.')) if since else 'dem Vortag'}</h2>")
     if anomalies:
-        out.append('<p class="note">Märkte mit mindestens acht Punkten Bewegung im Mittelkurs. „Verwundbar“ heißt: Am Vergleichstag war der Markt ohne Widerstand oder für weniger als 10.000 $ verschiebbar. Ein Hinweis, kein Manipulationsnachweis. Echte Nachrichten bewegen dünne Märkte genauso.</p>')
+        out.append('<p class="note">Märkte mit mindestens acht Punkten Bewegung im ' + term("Mittelkurs", "mittelkurs") + '. ' + term("„Verwundbar“", "verwundbar") + ' heißt: Am Vergleichstag war der Markt ohne Widerstand oder für weniger als 10.000 $ verschiebbar. Ein Hinweis, kein Manipulationsnachweis. Echte Nachrichten bewegen dünne Märkte genauso.</p>')
         rows = []
         for a in anomalies[:15]:
             rows.append(
@@ -199,7 +275,7 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
     bt = hz.get("by_tier") or {}
     enough = [t for t, v in bt.items() if v["n"] >= 20]
     if len(enough) >= 2:
-        out.append('<p class="note">Brier-Score je Klasse, gemessen am letzten Schnappschuss mindestens sieben Tage vor der Auflösung. Kleiner ist besser, 0,25 entspricht dem Münzwurf. Weil billige Märkte oft Außenseiter sind, steht daneben das Mittelfeld (Preis 15 bis 85 %) gesondert.</p>')
+        out.append('<p class="note">' + term("Brier-Score", "brier") + ' je Klasse, gemessen am letzten Schnappschuss mindestens sieben Tage vor der Auflösung. Kleiner ist besser, 0,25 entspricht dem Münzwurf. Weil billige Märkte oft Außenseiter sind, steht daneben das ' + term("Mittelfeld", "mittelfeld") + ' (Preis 15 bis 85 %) gesondert.</p>')
         rows = "".join(
             f"<tr><td>{e(t)}</td><td class='num'>{v['n']}</td><td class='num'>{pct(v['mean_price'])}</td>"
             f"<td class='num'>{_de(v['brier'], 3)}</td><td class='num'>{v['n_mid']}</td>"
@@ -212,6 +288,7 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
         n = hz.get("n_total", 0)
         out.append(f'<p class="empty">Bisher {n} aufgelöste Märkte mit mindestens sieben Tagen Vorlauf im Archiv. Ausgewertet wird, sobald mindestens zwei Klassen je 20 Märkte haben.</p>')
 
+    out.append(glossary_section())
     errs = stats.get("errors") or []
     out.append(f"""<footer>
 <p><strong>Kurswert der Wirklichkeit</strong> ist ein nicht kommerzielles Kunstwerk (Copoiema) des Studio Bifurkation · IC, Innsbruck, über das Verhältnis von Mensch, Maschine und öffentlicher Wahrscheinlichkeit. <a href="impressum.html">Offenlegung, Datenschutz und Rechtliches</a> · <a href="https://convocare.at">convocare.at</a></p>
@@ -219,7 +296,7 @@ def render(day: date, records: list[dict], anomalies: list[dict], divergences: l
 <p><strong>Keine Werbung, keine Empfehlung.</strong> Diese Seite bewirbt keine Wettangebote, erhält keine Vergütung und enthält keine Partnerlinks. Verweise auf Marktseiten dienen ausschließlich als Quellenangabe. Polymarket hat nach unserem Kenntnisstand keine Konzession in Österreich und ist in mehreren EU-Staaten gesperrt. Die gezeigten Quoten sind keine Prognosen des Studios und keine Anlage- oder Wettberatung. Markennamen gehören ihren Inhabern; es besteht keine Verbindung zu den Plattformen.</p>
 <p>Datenquelle: öffentliche Lese-Schnittstelle von Polymarket. Veröffentlicht werden nur abgeleitete Kennzahlen, keine Orderbuch-Rohdaten.</p>
 <p>Erzeugt {e(stats.get('generated'))} · {stats.get('n_markets', 0)} Märkte · Probleme {len(errs)}</p>
-</footer></main></body></html>""")
+</footer></main>{popovers()}</body></html>""")
     return "\n".join(out)
 
 
