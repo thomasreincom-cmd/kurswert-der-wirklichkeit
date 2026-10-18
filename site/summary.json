@@ -1,13 +1,13 @@
 {
  "stats": {
-  "generated": "2026-10-18 08:49 UTC",
+  "generated": "2026-10-18 09:02 UTC",
   "day": "2026-10-18",
   "stale": false,
   "compare_day": null,
   "n_markets": 400,
   "n_polymarket": 400,
   "n_kalshi": 0,
-  "bad_share": 0.058,
+  "bad_share": 0.062,
   "errors": [],
   "counters": {
    "polymarket_listed": 400,
@@ -17,111 +17,111 @@
  "coverage": {
   "regions": {
    "unklar/global": {
-    "n": 230,
-    "volume_24h": 11291390.427359998,
-    "volume_total": 268996951.09074,
-    "share_volume": 0.29308228593465163
+    "n": 231,
+    "volume_24h": 11749386.428915003,
+    "volume_total": 250140408.16345996,
+    "share_volume": 0.27591703748604585
    },
    "Nordamerika": {
-    "n": 74,
-    "volume_24h": 3648840.548536999,
-    "volume_total": 236218238.93853,
-    "share_volume": 0.2573686473651089
+    "n": 73,
+    "volume_24h": 3628716.240165,
+    "volume_total": 243809730.66113803,
+    "share_volume": 0.26893399226538406
    },
    "Naher Osten": {
     "n": 38,
-    "volume_24h": 2382407.715784,
-    "volume_total": 168798890.97330797,
-    "share_volume": 0.18391273443468467
+    "volume_24h": 2400278.8424760005,
+    "volume_total": 168799989.84068397,
+    "share_volume": 0.18619459953099937
    },
    "Europa": {
     "n": 30,
-    "volume_24h": 1192004.6697220001,
-    "volume_total": 90890843.43295,
-    "share_volume": 0.09902898919799137
+    "volume_24h": 1196999.6187530004,
+    "volume_total": 90901586.66517399,
+    "share_volume": 0.10026887170922784
    },
    "Asien": {
     "n": 3,
     "volume_24h": 121941.48619599998,
     "volume_total": 59761531.347168,
-    "share_volume": 0.06511243397801574
+    "share_volume": 0.06591987598487005
    },
    "Lateinamerika": {
     "n": 12,
-    "volume_24h": 2163205.5034539993,
-    "volume_total": 53399282.15971602,
-    "share_volume": 0.05818052442296913
+    "volume_24h": 2164170.486805,
+    "volume_total": 53404743.907823004,
+    "share_volume": 0.05890803023363731
    },
    "Russland/Ukraine": {
     "n": 10,
-    "volume_24h": 463943.1040810001,
-    "volume_total": 39652300.5179,
-    "share_volume": 0.04320267137315505
+    "volume_24h": 460022.7247680001,
+    "volume_total": 39652709.394677,
+    "share_volume": 0.04373886724181253
    },
    "Ozeanien": {
     "n": 3,
-    "volume_24h": 105881.41140199998,
-    "volume_total": 102532.75878199999,
-    "share_volume": 0.00011171329342271213
+    "volume_24h": 109707.11489499998,
+    "volume_total": 107634.00952899997,
+    "share_volume": 0.00011872554802333106
    }
   },
   "topics": {
    "Politik": {
-    "n": 83,
-    "volume_24h": 4735868.8481479995,
-    "volume_total": 415855492.87624013,
-    "share_volume": 0.45309018550747915
+    "n": 82,
+    "volume_24h": 4753901.181915002,
+    "volume_total": 404631077.65367603,
+    "share_volume": 0.4463277606392636
    },
    "Sonstiges": {
-    "n": 87,
-    "volume_24h": 3504416.645354,
-    "volume_total": 242501294.702366,
-    "share_volume": 0.26421427270938563
+    "n": 89,
+    "volume_24h": 3546970.751419999,
+    "volume_total": 242577035.817359,
+    "share_volume": 0.2675742698921897
    },
    "Krieg/Konflikt": {
     "n": 18,
-    "volume_24h": 1730436.157961,
-    "volume_total": 138334941.933529,
-    "share_volume": 0.15072111725474366
+    "volume_24h": 1752906.9265370003,
+    "volume_total": 138336055.026886,
+    "share_volume": 0.15259139761050688
    },
    "Sport": {
-    "n": 139,
-    "volume_24h": 9155143.506277999,
-    "volume_total": 60172093.73696,
-    "share_volume": 0.06555975712882142
+    "n": 144,
+    "volume_24h": 9661279.630114999,
+    "volume_total": 60684015.30636693,
+    "share_volume": 0.06693742066315425
    },
    "Wirtschaft": {
     "n": 12,
-    "volume_24h": 592676.95698,
-    "volume_total": 52094469.492152,
-    "share_volume": 0.0567588819925419
+    "volume_24h": 599330.392793,
+    "volume_total": 52103427.366241,
+    "share_volume": 0.05747261478988278
    },
    "Krypto": {
-    "n": 32,
-    "volume_24h": 969596.679,
-    "volume_total": 4768490.252866999,
-    "share_volume": 0.00519544930937128
+    "n": 31,
+    "volume_24h": 959679.8918280001,
+    "volume_total": 4491549.185794998,
+    "share_volume": 0.004954397229005765
    },
    "KI/Tech": {
-    "n": 7,
-    "volume_24h": 124168.999007,
-    "volume_total": 2617121.002025,
-    "share_volume": 0.0028514516715928582
+    "n": 5,
+    "volume_24h": 95537.716492,
+    "volume_total": 2434189.021714,
+    "share_volume": 0.0026850288943059864
    },
    "Kultur": {
-    "n": 21,
-    "volume_24h": 479694.543808,
-    "volume_total": 984925.6096140001,
-    "share_volume": 0.001073113460843194
+    "n": 18,
+    "volume_24h": 384003.921873,
+    "volume_total": 828321.9982740001,
+    "share_volume": 0.0009136794551759653
    },
    "Gesundheit": {
     "n": 1,
     "volume_24h": 77612.53,
-    "volume_total": 491741.61334099993,
-    "share_volume": 0.0005357709652201893
+    "volume_total": 492662.6133409999,
+    "share_volume": 0.0005434308265154536
    }
   },
-  "total_volume": 917820571.2190948
+  "total_volume": 906578333.9896526
  },
  "divergences": [],
  "anomalies": [],
@@ -143,21 +143,21 @@
  "markets": [
   {
    "venue": "polymarket",
+   "market_id": "0x160b0edb35f6cf9d7f84aab6b1ecfd44d5bf623874a44e1bb80cb6b79ee532f7",
+   "question": "Valorant: LOUD vs Team Vitality (BO5) - VCT Champions Playoffs [LOUD]",
+   "price": 0.46499999999999997,
+   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 19303.45
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x1a01bf78f56a507fcb666d564d8c8b91b0750679163ed6e96746102c9b7d285d",
    "question": "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
    "price": 0.8085,
    "url": "https://polymarket.com/event/brazil-presidential-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 84920.67
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x160b0edb35f6cf9d7f84aab6b1ecfd44d5bf623874a44e1bb80cb6b79ee532f7",
-   "question": "Valorant: LOUD vs Team Vitality (BO5) - VCT Champions Playoffs [LOUD]",
-   "price": 0.575,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
-   "tier": "Kleinwagen",
-   "headline_price": 7321.0
+   "headline_price": 84587.9
   },
   {
    "venue": "polymarket",
@@ -166,7 +166,7 @@
    "price": 0.195,
    "url": "https://polymarket.com/event/brazil-presidential-election",
    "tier": "teuer",
-   "headline_price": 138520.88
+   "headline_price": 128005.49
   },
   {
    "venue": "polymarket",
@@ -175,7 +175,7 @@
    "price": 0.505,
    "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
    "tier": "teuer",
-   "headline_price": 251950.64
+   "headline_price": 262480.37
   },
   {
    "venue": "polymarket",
@@ -202,7 +202,7 @@
    "price": 0.0505,
    "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027",
    "tier": "Eigentumswohnung",
-   "headline_price": 20382.34
+   "headline_price": 20382.81
   },
   {
    "venue": "polymarket",
@@ -211,7 +211,16 @@
    "price": 0.545,
    "url": "https://polymarket.com/event/mlb-tb-cle-2026-10-17",
    "tier": "Eigentumswohnung",
-   "headline_price": 44885.94
+   "headline_price": 44808.71
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x3da73a5d52aae39d04ecf1caa586804c1b30138daa7a5fc2e3cbb19e4240049d",
+   "question": "Ningbo Open, Qualification: Tatiana Prozorova vs Kamilla Rakhimova [Tatiana Prozorova]",
+   "price": 0.415,
+   "url": "https://polymarket.com/event/wta-prozoro-rakhimo-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 23662.41
   },
   {
    "venue": "polymarket",
@@ -220,7 +229,7 @@
    "price": 0.815,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "Eigentumswohnung",
-   "headline_price": 11608.81
+   "headline_price": 10930.43
   },
   {
    "venue": "polymarket",
@@ -229,33 +238,15 @@
    "price": 0.275,
    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 79664.54
+   "headline_price": 76964.74
   },
   {
    "venue": "polymarket",
    "market_id": "0xa7676ccf35f9688305454fee351a248363851b6d5e92aae7092e124043713004",
    "question": "US x Iran ceasefire continues through October 18?",
-   "price": 0.9915,
+   "price": 0.992,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x3da73a5d52aae39d04ecf1caa586804c1b30138daa7a5fc2e3cbb19e4240049d",
-   "question": "Ningbo Open, Qualification: Tatiana Prozorova vs Kamilla Rakhimova [Tatiana Prozorova]",
-   "price": 0.335,
-   "url": "https://polymarket.com/event/wta-prozoro-rakhimo-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 30456.86
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x8bdab699242f1d511c1ba36e3f824e6e41559d1601f986b183720fc031176b92",
-   "question": "Valorant: LOUD vs Team Vitality - Map 2 Winner [LOUD]",
-   "price": 0.999,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
-   "tier": null,
    "headline_price": null
   },
   {
@@ -269,6 +260,15 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x8f25a41e19d8347078fd2917f826958a5ba1721aa4f417ef6f5f475b6f196a0c",
+   "question": "Shanghai Rolex Masters: Alejandro Davidovich Fokina vs Rafael Jodar [Alejandro Davidovich Fokina]",
+   "price": 0.28500000000000003,
+   "url": "https://polymarket.com/event/atp-fokina-jodar-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 88302.22
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x275caaeeb2715e0b56a8833a110e2a2d48697780972c41cc795f8947d4d53aaa",
    "question": "Israel x Iran ceasefire continues through October 18?",
    "price": 0.9915,
@@ -278,12 +278,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xde91800e376946d961489798727a683e032fc5eae108a3a4f902a3a3a44fbbe5",
+   "question": "LoL: Karmine Corp vs MVK Esports (BO5) - Worlds Play-In [Karmine Corp]",
+   "price": 0.875,
+   "url": "https://polymarket.com/event/lol-kc-mvk-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 34628.61
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x17af1ce6a29ba6e0af2985646848793def58f868c0539f2a621e802469d160f8",
    "question": "Will Paris FC win on 2026-10-18?",
    "price": 0.46499999999999997,
    "url": "https://polymarket.com/event/fl1-pfc-ren-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 89078.11
+   "tier": "teuer",
+   "headline_price": 104964.68
   },
   {
    "venue": "polymarket",
@@ -292,7 +301,7 @@
    "price": 0.425,
    "url": "https://polymarket.com/event/cs2-aur1-fal2-2026-10-18",
    "tier": "teuer",
-   "headline_price": 183946.18
+   "headline_price": 183567.07
   },
   {
    "venue": "polymarket",
@@ -301,7 +310,16 @@
    "price": 0.255,
    "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
    "tier": "Eigentumswohnung",
-   "headline_price": 11983.04
+   "headline_price": 10290.21
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x9a2adc6c1a7611d8b46131f6a15b68bdfc2674397a3351342ea0258874212433",
+   "question": "Nottingham Forest FC vs. Arsenal FC: O/U 2.5 [Over]",
+   "price": 0.515,
+   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18-more-markets",
+   "tier": "teuer",
+   "headline_price": 182707.99
   },
   {
    "venue": "polymarket",
@@ -319,16 +337,7 @@
    "price": 0.195,
    "url": "https://polymarket.com/event/next-press-secretary-announced-byptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 5720.93
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x8f25a41e19d8347078fd2917f826958a5ba1721aa4f417ef6f5f475b6f196a0c",
-   "question": "Shanghai Rolex Masters: Alejandro Davidovich Fokina vs Rafael Jodar [Alejandro Davidovich Fokina]",
-   "price": 0.415,
-   "url": "https://polymarket.com/event/atp-fokina-jodar-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 58061.79
+   "headline_price": 5778.11
   },
   {
    "venue": "polymarket",
@@ -337,7 +346,7 @@
    "price": 0.555,
    "url": "https://polymarket.com/event/cs2-furia-bb3-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 58984.93
+   "headline_price": 59184.33
   },
   {
    "venue": "polymarket",
@@ -346,7 +355,7 @@
    "price": 0.028,
    "url": "https://polymarket.com/event/ballon-dor-winner-2026",
    "tier": "Kleinwagen",
-   "headline_price": 8013.23
+   "headline_price": 7936.14
   },
   {
    "venue": "polymarket",
@@ -355,34 +364,34 @@
    "price": 0.265,
    "url": "https://polymarket.com/event/nfl-car-phi-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 30281.35
+   "headline_price": 35589.27
   },
   {
    "venue": "polymarket",
-   "market_id": "0xde91800e376946d961489798727a683e032fc5eae108a3a4f902a3a3a44fbbe5",
-   "question": "LoL: Karmine Corp vs MVK Esports (BO5) - Worlds Play-In [Karmine Corp]",
-   "price": 0.875,
-   "url": "https://polymarket.com/event/lol-kc-mvk-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 35339.55
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x5e01c77502f9ad47b81730498f0f42740743f2ae4d537cdedb5e990ce2bdfe69",
-   "question": "Will Flávio Bolsonaro win the second round of the 2026 Brazilian presidential election by 8–12%?",
-   "price": 0.091,
-   "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
-   "tier": "Kleinwagen",
-   "headline_price": 7404.14
+   "market_id": "0x9ce673cd9b762f7db412e786d2e3d2c46a98b5bbd4c43fa71aef9310302b20ff",
+   "question": "Wuhan Tennis Open: Maja Chwalinska vs Sonay Kartal [Maja Chwalinska]",
+   "price": 0.495,
+   "url": "https://polymarket.com/event/wta-chwalin-kartal-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 148208.11
   },
   {
    "venue": "polymarket",
    "market_id": "0xfa87b28a001920678170f7c85caccb7370dec4639f4b98c38d879281daaed72d",
    "question": "Udinese Calcio vs. US Lecce: O/U 2.5 [Over]",
-   "price": 0.475,
+   "price": 0.46499999999999997,
    "url": "https://polymarket.com/event/sea-udi-lec-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 79863.83
+   "headline_price": 99299.58
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x5e01c77502f9ad47b81730498f0f42740743f2ae4d537cdedb5e990ce2bdfe69",
+   "question": "Will Flávio Bolsonaro win the second round of the 2026 Brazilian presidential election by 8–12%?",
+   "price": 0.0905,
+   "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
+   "tier": "Kleinwagen",
+   "headline_price": 6726.06
   },
   {
    "venue": "polymarket",
@@ -395,30 +404,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x9ce673cd9b762f7db412e786d2e3d2c46a98b5bbd4c43fa71aef9310302b20ff",
-   "question": "Wuhan Tennis Open: Maja Chwalinska vs Sonay Kartal [Maja Chwalinska]",
-   "price": 0.495,
-   "url": "https://polymarket.com/event/wta-chwalin-kartal-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 129992.36
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x0c98d894e9f21fecb782add5f7f3023143eb7db6404835ee069346a9305f7c69",
    "question": "Spread: Browns (-3.5) [Browns]",
    "price": 0.255,
    "url": "https://polymarket.com/event/nfl-bal-cle-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 26873.1
+   "headline_price": 29315.79
   },
   {
    "venue": "polymarket",
    "market_id": "0x2a4fcda5c1598fc8621cf96cabc410f9f23a2d0336c3bff5070a37a663d39e94",
    "question": "NATO x Russia military clash by October 31, 2026?",
-   "price": 0.08499999999999999,
+   "price": 0.095,
    "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
    "tier": "Kleinwagen",
-   "headline_price": 1736.98
+   "headline_price": 3135.71
   },
   {
    "venue": "polymarket",
@@ -427,7 +427,7 @@
    "price": 0.625,
    "url": "https://polymarket.com/event/balance-of-power-2026-midterms",
    "tier": "teuer",
-   "headline_price": 903574.15
+   "headline_price": 877732.32
   },
   {
    "venue": "polymarket",
@@ -436,7 +436,7 @@
    "price": 0.485,
    "url": "https://polymarket.com/event/mlb-tb-cle-2026-10-17",
    "tier": "Kleinwagen",
-   "headline_price": 6556.04
+   "headline_price": 6421.33
   },
   {
    "venue": "polymarket",
@@ -449,21 +449,30 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x2d5d6e186972ce0226c35b3b461543fd5bfd4c4d7773ddfbe15a6246060a5bd7",
+   "question": "Valorant: LOUD vs Team Vitality - Map 3 Winner [LOUD]",
+   "price": 0.43,
+   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 11326.64
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x86bfb53af7250a40928975c551d12c185b762fa4ce0b40c6a64a50c946d72587",
    "question": "Will the Republican Party control the Senate after the 2026 Midterm elections?",
    "price": 0.375,
    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026",
    "tier": "teuer",
-   "headline_price": 1442098.05
+   "headline_price": 1447542.21
   },
   {
    "venue": "polymarket",
    "market_id": "0x12dc2b61723b2a54fc1947a307389b5f32038e7a29a0e936ad1fe410b969d06a",
    "question": "Will Harry Kane win the 2026 Ballon d'Or?",
-   "price": 0.651,
+   "price": 0.6525000000000001,
    "url": "https://polymarket.com/event/ballon-dor-winner-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 16348.89
+   "headline_price": 14729.06
   },
   {
    "venue": "polymarket",
@@ -472,7 +481,7 @@
    "price": 0.515,
    "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
    "tier": "teuer",
-   "headline_price": 645787.03
+   "headline_price": 619234.92
   },
   {
    "venue": "polymarket",
@@ -485,12 +494,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x7ed35c6b3e0afd120e291f434b0e220970906b7b91572c1490c657e89f2d3d17",
+   "question": "Will Arsenal FC win on 2026-10-18?",
+   "price": 0.625,
+   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 196222.02
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x17e0bb0c083cabdd9a49862c2c4ea81fcd2b577e757370931889e7d9b1d8a98d",
    "question": "Will Udinese Calcio win on 2026-10-18?",
    "price": 0.535,
    "url": "https://polymarket.com/event/sea-udi-lec-2026-10-18",
    "tier": "teuer",
-   "headline_price": 182623.14
+   "headline_price": 140849.15
   },
   {
    "venue": "polymarket",
@@ -499,16 +517,7 @@
    "price": 0.905,
    "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026",
    "tier": "teuer",
-   "headline_price": 308660.87
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x7ed35c6b3e0afd120e291f434b0e220970906b7b91572c1490c657e89f2d3d17",
-   "question": "Will Arsenal FC win on 2026-10-18?",
-   "price": 0.625,
-   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 194967.16
+   "headline_price": 311658.5
   },
   {
    "venue": "polymarket",
@@ -517,7 +526,16 @@
    "price": 0.775,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms",
    "tier": "Eigentumswohnung",
-   "headline_price": 12230.62
+   "headline_price": 16145.96
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+   "question": "Will the U.S. invade Iran before 2027?",
+   "price": 0.155,
+   "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+   "tier": "Eigentumswohnung",
+   "headline_price": 70844.99
   },
   {
    "venue": "polymarket",
@@ -526,79 +544,25 @@
    "price": 0.725,
    "url": "https://polymarket.com/event/cs2-furia-bb3-2026-10-18",
    "tier": "teuer",
-   "headline_price": 111794.24
+   "headline_price": 117868.77
   },
   {
    "venue": "polymarket",
    "market_id": "0x9bb80411fb159d9f3798fe125672a61af141f7dc7d5465c14a5936e4ba878e49",
    "question": "Bab el-Mandeb Strait effectively closed by October 31?",
-   "price": 0.040499999999999994,
+   "price": 0.039999999999999994,
    "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by",
    "tier": "Kleinwagen",
-   "headline_price": 3321.1
+   "headline_price": 3944.82
   },
   {
    "venue": "polymarket",
    "market_id": "0x405b56fc75f56d7635a94df9836d6cb6f9b9571d1fd33eb165c1e59d1d11801f",
    "question": "Strait of Hormuz traffic returns to normal by October 31?",
-   "price": 0.010499999999999999,
+   "price": 0.0115,
    "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-october-31-20260810151043583",
-   "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x84837e7c004d6761827e0c1ae9e1523ac799493b6a412a2616df4b97c13f4ef2",
-   "question": "Will Luiz Inácio Lula da Silva win the second round of the 2026 Brazilian presidential election by less than 4%?",
-   "price": 0.195,
-   "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
-   "tier": "Kleinwagen",
-   "headline_price": 7275.47
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x9a2adc6c1a7611d8b46131f6a15b68bdfc2674397a3351342ea0258874212433",
-   "question": "Nottingham Forest FC vs. Arsenal FC: O/U 2.5 [Over]",
-   "price": 0.515,
-   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18-more-markets",
-   "tier": "teuer",
-   "headline_price": 185135.22
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x92e85776be416448e840e67b7ccd00e78262882909b658c19506455c67133b83",
-   "question": "Bayer 04 Leverkusen vs. SC Freiburg: O/U 0.5 [Over]",
-   "price": 0.967,
-   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18-more-markets",
    "tier": "Taschengeld",
-   "headline_price": 771.3
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x4f22d9b0eb859dd3e1e5018abcd4d8d27a7064a7e1926fb66df3dd2c69efc09f",
-   "question": "Spread: Chiefs (-3.5) [Chiefs]",
-   "price": 0.675,
-   "url": "https://polymarket.com/event/nfl-lac-kc-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 43674.39
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x491b785c82d65c7ab9c65bb51df9e58e9b3fc53dbc8b4ee1aef49db0244b6560",
-   "question": "Will Brighton & Hove Albion FC win on 2026-10-18?",
-   "price": 0.665,
-   "url": "https://polymarket.com/event/epl-bri-cry-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 199354.68
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4",
-   "question": "Will China invade Taiwan by end of 2026?",
-   "price": 0.020999999999999998,
-   "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
-   "tier": "Eigentumswohnung",
-   "headline_price": 11392.08
+   "headline_price": 480.04
   },
   {
    "venue": "polymarket",
@@ -611,18 +575,72 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x84837e7c004d6761827e0c1ae9e1523ac799493b6a412a2616df4b97c13f4ef2",
+   "question": "Will Luiz Inácio Lula da Silva win the second round of the 2026 Brazilian presidential election by less than 4%?",
+   "price": 0.195,
+   "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
+   "tier": "Kleinwagen",
+   "headline_price": 7150.71
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x92e85776be416448e840e67b7ccd00e78262882909b658c19506455c67133b83",
+   "question": "Bayer 04 Leverkusen vs. SC Freiburg: O/U 0.5 [Over]",
+   "price": 0.967,
+   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18-more-markets",
+   "tier": "Taschengeld",
+   "headline_price": 770.98
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x4f22d9b0eb859dd3e1e5018abcd4d8d27a7064a7e1926fb66df3dd2c69efc09f",
+   "question": "Spread: Chiefs (-3.5) [Chiefs]",
+   "price": 0.675,
+   "url": "https://polymarket.com/event/nfl-lac-kc-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 40822.52
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x491b785c82d65c7ab9c65bb51df9e58e9b3fc53dbc8b4ee1aef49db0244b6560",
+   "question": "Will Brighton & Hove Albion FC win on 2026-10-18?",
+   "price": 0.655,
+   "url": "https://polymarket.com/event/epl-bri-cry-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 162462.4
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xd9fb1184af0064e5e34b129f5b79afa5a17b7e32f2953ab05efed82315fee6d4",
+   "question": "Will China invade Taiwan by end of 2026?",
+   "price": 0.020999999999999998,
+   "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
+   "tier": "Eigentumswohnung",
+   "headline_price": 11416.33
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x47e4c09a578051fd4c18f9e2e4d5d8fddab846796bd2edaa3ba25448104b3b79",
+   "question": "Steelers vs. Buccaneers [Steelers]",
+   "price": 0.565,
+   "url": "https://polymarket.com/event/nfl-pit-tb-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 535786.82
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0xe5a1025a80295986ac2e5e39b0a0944bbaad2e3539d9718ee3a052dff5b95e72",
    "question": "Will Juventus FC win on 2026-10-18?",
    "price": 0.615,
    "url": "https://polymarket.com/event/sea-juv-laz-2026-10-18",
    "tier": "teuer",
-   "headline_price": 106931.26
+   "headline_price": 107624.05
   },
   {
    "venue": "polymarket",
    "market_id": "0x0ce1ed3918472ef12ae8f3576357b34b31e3bdd6e5b3d0b86344172b2aec1425",
    "question": "Will Ethereum reach $2,600 October 12-18?",
-   "price": 0.006,
+   "price": 0.005,
    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026",
    "tier": "ohne Widerstand",
    "headline_price": null
@@ -634,16 +652,16 @@
    "price": 0.215,
    "url": "https://polymarket.com/event/nfl-ari-la-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 23855.11
+   "headline_price": 26432.92
   },
   {
    "venue": "polymarket",
-   "market_id": "0x47e4c09a578051fd4c18f9e2e4d5d8fddab846796bd2edaa3ba25448104b3b79",
-   "question": "Steelers vs. Buccaneers [Steelers]",
-   "price": 0.565,
-   "url": "https://polymarket.com/event/nfl-pit-tb-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 544689.68
+   "market_id": "0x72776bc79bf99a7c1638a83e8a61c4c42df9beb5606127458aa025ddf737511a",
+   "question": "Will FC Machida Zelvia win on 2026-10-18?",
+   "price": 0.999,
+   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -661,7 +679,25 @@
    "price": 0.07500000000000001,
    "url": "https://polymarket.com/event/lal-rea-sev-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 26354.91
+   "headline_price": 32229.68
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xae386c2493140eae67ef4eef766eff36de8974df6f4e084172893fb873b45570",
+   "question": "Almaty Open, Qualification: Roman Safiullin vs Ilia Simakin [Roman Safiullin]",
+   "price": 0.975,
+   "url": "https://polymarket.com/event/atp-safiull-simakin-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 14566.55
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xec52be4b271d19417e3dcab5b21ffb7ff4e4794bec44ac47c2230b76e2fc4cc2",
+   "question": "FC Seoul vs. Gimcheon Sangmu FC: O/U 3.5 [Over]",
+   "price": 0.99,
+   "url": "https://polymarket.com/event/kor-seo-san-2026-10-18-more-markets",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -670,16 +706,7 @@
    "price": 0.475,
    "url": "https://polymarket.com/event/nfl-bal-cle-2026-10-18",
    "tier": "teuer",
-   "headline_price": 258625.48
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x483cdcb2604d5762339a7fcd4b2e5e5eb6fd375f19c9413061dd4d3668fba7cd",
-   "question": "Will Elon Musk post 260-279 tweets from October 13 to October 20, 2026?",
-   "price": 0.0005,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 348545.8
   },
   {
    "venue": "polymarket",
@@ -688,34 +715,16 @@
    "price": 0.2815,
    "url": "https://polymarket.com/event/ballon-dor-winner-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 24541.19
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
-   "question": "Will the U.S. invade Iran before 2027?",
-   "price": 0.155,
-   "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
-   "tier": "Eigentumswohnung",
-   "headline_price": 70550.49
+   "headline_price": 24906.39
   },
   {
    "venue": "polymarket",
    "market_id": "0x1175651306e9ae39991642dcff3fd96778ae0301fc44c7f5565251fc2bb68d31",
    "question": "Israel x Iran ceasefire continues through October 21?",
-   "price": 0.959,
+   "price": 0.9584999999999999,
    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "tier": "Kleinwagen",
-   "headline_price": 4077.8
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x073b358ca8a2fdcbee75fbe0cc3a93dea55a12ac1ff81cf15fd51257008aa9c8",
-   "question": "Texans vs. Jaguars [Texans]",
-   "price": 0.435,
-   "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 551132.71
+   "headline_price": 4158.54
   },
   {
    "venue": "polymarket",
@@ -724,7 +733,16 @@
    "price": 0.0335,
    "url": "https://polymarket.com/event/ballon-dor-winner-2026",
    "tier": "Kleinwagen",
-   "headline_price": 6931.91
+   "headline_price": 6856.48
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x073b358ca8a2fdcbee75fbe0cc3a93dea55a12ac1ff81cf15fd51257008aa9c8",
+   "question": "Texans vs. Jaguars [Texans]",
+   "price": 0.435,
+   "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 580317.48
   },
   {
    "venue": "polymarket",
@@ -737,6 +755,15 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xa70da744210533416edb26fb4ee19ea7a7acdaef6daabb5077c4dec89494b546",
+   "question": "Chargers vs. Chiefs [Chargers]",
+   "price": 0.215,
+   "url": "https://polymarket.com/event/nfl-lac-kc-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 381356.78
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0xf17ad24eb4ad57926495b114149c765b9b95bc286eadc91cbbfa901ceb10d0b8",
    "question": "Will the Fed decrease interest rates by 25 bps after the December 2026 meeting?",
    "price": 0.006500000000000001,
@@ -746,21 +773,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xa70da744210533416edb26fb4ee19ea7a7acdaef6daabb5077c4dec89494b546",
-   "question": "Chargers vs. Chiefs [Chargers]",
-   "price": 0.215,
-   "url": "https://polymarket.com/event/nfl-lac-kc-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 376008.24
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x004ffe94b8541d80379fe0a7c7f81c1ce63551a9d2c453100916a6f37fb2e4d2",
    "question": "Spread: Texans (-3.5) [Texans]",
    "price": 0.295,
    "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 18344.56
+   "headline_price": 20304.57
   },
   {
    "venue": "polymarket",
@@ -769,7 +787,7 @@
    "price": 0.08499999999999999,
    "url": "https://polymarket.com/event/balance-of-power-2026-midterms",
    "tier": "teuer",
-   "headline_price": 286096.06
+   "headline_price": 282100.73
   },
   {
    "venue": "polymarket",
@@ -778,7 +796,7 @@
    "price": 0.395,
    "url": "https://polymarket.com/event/mlb-tb-cle-2026-10-17",
    "tier": "Kleinwagen",
-   "headline_price": 3107.5
+   "headline_price": 3012.26
   },
   {
    "venue": "polymarket",
@@ -791,12 +809,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x96b2ec9d7f3848abb306d02ef91754d0f962dc7ecf006ecba0bd9c87253964cd",
+   "question": "Bitcoin Up or Down on October 18? [Up]",
+   "price": 0.805,
+   "url": "https://polymarket.com/event/bitcoin-up-or-down-on-october-18-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 3081.73
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x1808ab054489943a5b59181169e2deb956a7416bf353f16a1f570bb77c409935",
    "question": "Will Olympique Lyonnais win on 2026-10-18?",
    "price": 0.505,
    "url": "https://polymarket.com/event/fl1-lyo-ogc-2026-10-18",
    "tier": "teuer",
-   "headline_price": 101329.03
+   "headline_price": 100486.0
   },
   {
    "venue": "polymarket",
@@ -805,7 +832,7 @@
    "price": 0.022,
    "url": "https://polymarket.com/event/lal-rea-sev-2026-10-18-more-markets",
    "tier": "Taschengeld",
-   "headline_price": 771.42
+   "headline_price": 697.01
   },
   {
    "venue": "polymarket",
@@ -831,8 +858,8 @@
    "question": "Will there be no Hormuz agreement?",
    "price": 0.907,
    "url": "https://polymarket.com/event/who-wins-the-senate-pending-hormuz-agreement-before-the-midterms",
-   "tier": "Eigentumswohnung",
-   "headline_price": 12365.56
+   "tier": "Kleinwagen",
+   "headline_price": 7868.68
   },
   {
    "venue": "polymarket",
@@ -841,7 +868,7 @@
    "price": 0.325,
    "url": "https://polymarket.com/event/michigan-senate-election-winner",
    "tier": "Eigentumswohnung",
-   "headline_price": 65563.56
+   "headline_price": 70779.95
   },
   {
    "venue": "polymarket",
@@ -850,16 +877,7 @@
    "price": 0.235,
    "url": "https://polymarket.com/event/nfl-dal-gb-2026-10-19",
    "tier": "Eigentumswohnung",
-   "headline_price": 27758.48
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x96b2ec9d7f3848abb306d02ef91754d0f962dc7ecf006ecba0bd9c87253964cd",
-   "question": "Bitcoin Up or Down on October 18? [Up]",
-   "price": 0.76,
-   "url": "https://polymarket.com/event/bitcoin-up-or-down-on-october-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 5461.16
+   "headline_price": 29716.83
   },
   {
    "venue": "polymarket",
@@ -868,7 +886,7 @@
    "price": 0.945,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 6229.64
+   "headline_price": 6201.02
   },
   {
    "venue": "polymarket",
@@ -877,14 +895,14 @@
    "price": 0.615,
    "url": "https://polymarket.com/event/nfl-bal-cle-2026-10-18",
    "tier": "teuer",
-   "headline_price": 362449.66
+   "headline_price": 341234.84
   },
   {
    "venue": "polymarket",
-   "market_id": "0x72776bc79bf99a7c1638a83e8a61c4c42df9beb5606127458aa025ddf737511a",
-   "question": "Will FC Machida Zelvia win on 2026-10-18?",
+   "market_id": "0xb0cbf34bbe45dfb03dcdc859dd23168b6c486a74e042efe28a185cb624437f98",
+   "question": "Games Total: O/U 3.5 [Over]",
    "price": 0.999,
-   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18",
+   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
    "tier": null,
    "headline_price": null
   },
@@ -904,16 +922,16 @@
    "price": 0.065,
    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "tier": "Kleinwagen",
-   "headline_price": 9279.73
+   "headline_price": 9454.39
   },
   {
    "venue": "polymarket",
-   "market_id": "0xae386c2493140eae67ef4eef766eff36de8974df6f4e084172893fb873b45570",
-   "question": "Almaty Open, Qualification: Roman Safiullin vs Ilia Simakin [Roman Safiullin]",
-   "price": 0.935,
-   "url": "https://polymarket.com/event/atp-safiull-simakin-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 12897.3
+   "market_id": "0xb956845b0d7c097998a9ce559dab2ce5e9163bc425bb71e9a90dd15672e49f84",
+   "question": "FC Seoul vs. Gimcheon Sangmu FC: O/U 2.5 [Over]",
+   "price": 0.999,
+   "url": "https://polymarket.com/event/kor-seo-san-2026-10-18-more-markets",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -926,12 +944,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+   "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+   "price": 0.865,
+   "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+   "tier": "teuer",
+   "headline_price": 110367.98
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x5c79dfde05559b79a9cb9f7c4187e4d49632dd042572ae676952f812732591cc",
    "question": "Strait of Hormuz traffic returns to normal by December 31?",
-   "price": 0.12,
+   "price": 0.11499999999999999,
    "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-december-31",
    "tier": "Eigentumswohnung",
-   "headline_price": 33217.91
+   "headline_price": 32827.09
   },
   {
    "venue": "polymarket",
@@ -940,16 +967,7 @@
    "price": 0.515,
    "url": "https://polymarket.com/event/ballon-dor-2026-kylian-mbappe-or-lamine-yamal-to-finish-higher",
    "tier": "Eigentumswohnung",
-   "headline_price": 11262.17
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
-   "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
-   "price": 0.865,
-   "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
-   "tier": "teuer",
-   "headline_price": 116517.87
+   "headline_price": 12457.4
   },
   {
    "venue": "polymarket",
@@ -958,7 +976,7 @@
    "price": 0.795,
    "url": "https://polymarket.com/event/lal-rea-sev-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 81624.76
+   "headline_price": 81866.79
   },
   {
    "venue": "polymarket",
@@ -976,7 +994,16 @@
    "price": 0.805,
    "url": "https://polymarket.com/event/next-press-secretary-announced-byptptpt",
    "tier": "Eigentumswohnung",
-   "headline_price": 47999.74
+   "headline_price": 48882.37
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xe068049de1d251acf056f78a62802e1e12418778dec6fbc74458b57a41b85aa8",
+   "question": "Will the price of Bitcoin be above $84,000 on October 18?",
+   "price": 0.0045000000000000005,
+   "url": "https://polymarket.com/event/bitcoin-above-on-october-18-2026",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -994,7 +1021,7 @@
    "price": 0.375,
    "url": "https://polymarket.com/event/texas-senate-election-winner",
    "tier": "teuer",
-   "headline_price": 156668.55
+   "headline_price": 154842.94
   },
   {
    "venue": "polymarket",
@@ -1003,7 +1030,7 @@
    "price": 0.595,
    "url": "https://polymarket.com/event/next-press-secretary-announced-byptptpt",
    "tier": "Eigentumswohnung",
-   "headline_price": 10164.78
+   "headline_price": 10189.6
   },
   {
    "venue": "polymarket",
@@ -1012,7 +1039,25 @@
    "price": 0.855,
    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "tier": "Kleinwagen",
-   "headline_price": 7766.36
+   "headline_price": 7567.43
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xda4a7d85a3c1abaf52bb4dd561d45c1cb33e7f76f76a21069a0d10d4668aefa6",
+   "question": "Will Aleksandar Vučić – United Serbia win the most seats in the 2026 Serbian parliamentary election?",
+   "price": 0.675,
+   "url": "https://polymarket.com/event/serbia-parliamentary-election-winner-2026",
+   "tier": "Eigentumswohnung",
+   "headline_price": 44219.43
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x25d707a88c94c8311e131997e2686c6235e70c7758baea69b5613e49f7044c38",
+   "question": "Will Bitcoin reach $84,000 October 12-18?",
+   "price": 0.03,
+   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 1185.88
   },
   {
    "venue": "polymarket",
@@ -1021,16 +1066,7 @@
    "price": 0.375,
    "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 32337.47
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xb0cbf34bbe45dfb03dcdc859dd23168b6c486a74e042efe28a185cb624437f98",
-   "question": "Games Total: O/U 3.5 [Over]",
-   "price": 0.999,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 41221.15
   },
   {
    "venue": "polymarket",
@@ -1039,7 +1075,7 @@
    "price": 0.515,
    "url": "https://polymarket.com/event/epl-lee-mun-2026-10-18-more-markets",
    "tier": "teuer",
-   "headline_price": 179244.85
+   "headline_price": 238487.63
   },
   {
    "venue": "polymarket",
@@ -1048,22 +1084,22 @@
    "price": 0.325,
    "url": "https://polymarket.com/event/cs2-eye-nem-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 23088.92
+   "headline_price": 22882.66
   },
   {
    "venue": "polymarket",
-   "market_id": "0x25d707a88c94c8311e131997e2686c6235e70c7758baea69b5613e49f7044c38",
-   "question": "Will Bitcoin reach $84,000 October 12-18?",
-   "price": 0.031,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 1163.94
+   "market_id": "0x4e4f77e7dbf4cab666e9a1943674d7ae66348e862df03ea6f44b11eb95731928",
+   "question": "Will the Republican Party control the House after the 2026 Midterm elections?",
+   "price": 0.095,
+   "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026",
+   "tier": "teuer",
+   "headline_price": 274408.44
   },
   {
    "venue": "polymarket",
-   "market_id": "0xe068049de1d251acf056f78a62802e1e12418778dec6fbc74458b57a41b85aa8",
-   "question": "Will the price of Bitcoin be above $84,000 on October 18?",
-   "price": 0.010499999999999999,
+   "market_id": "0x578302ab03b5f0d1680ad62f8888c4b0c50ddc42b6edacc811a381423873ee17",
+   "question": "Will the price of Bitcoin be above $78,000 on October 18?",
+   "price": 0.9984999999999999,
    "url": "https://polymarket.com/event/bitcoin-above-on-october-18-2026",
    "tier": "ohne Widerstand",
    "headline_price": null
@@ -1074,6 +1110,15 @@
    "question": "Will Jeonbuk Hyundai Motors FC win on 2026-10-18?",
    "price": 0.999,
    "url": "https://polymarket.com/event/kor-jeo-jej-2026-10-18",
+   "tier": null,
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x48121d915793c7c35e44244c9d6ea89d6ca2a7bc0379f6ca111980bac8620cdc",
+   "question": "Will Avispa Fukuoka win on 2026-10-18?",
+   "price": 0.999,
+   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18",
    "tier": null,
    "headline_price": null
   },
@@ -1099,19 +1144,10 @@
    "venue": "polymarket",
    "market_id": "0x5d3143945da3dc365e94e0e162d8b93210d0ac1546b1b5b138702cbf627a7ad0",
    "question": "Will \"Grand Theft Auto VI Launch Trailer\" get between 60 and 80 million views on week 1?",
-   "price": 0.711,
+   "price": 0.7044999999999999,
    "url": "https://polymarket.com/event/of-views-of-grand-theft-auto-vi-launch-trailer-on-week-1",
    "tier": "Taschengeld",
-   "headline_price": 786.37
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xda4a7d85a3c1abaf52bb4dd561d45c1cb33e7f76f76a21069a0d10d4668aefa6",
-   "question": "Will Aleksandar Vučić – United Serbia win the most seats in the 2026 Serbian parliamentary election?",
-   "price": 0.675,
-   "url": "https://polymarket.com/event/serbia-parliamentary-election-winner-2026",
-   "tier": "Eigentumswohnung",
-   "headline_price": 44758.67
+   "headline_price": 516.65
   },
   {
    "venue": "polymarket",
@@ -1120,7 +1156,7 @@
    "price": 0.475,
    "url": "https://polymarket.com/event/nfl-nyj-ne-2026-10-18",
    "tier": "teuer",
-   "headline_price": 242041.27
+   "headline_price": 264031.03
   },
   {
    "venue": "polymarket",
@@ -1135,10 +1171,10 @@
    "venue": "polymarket",
    "market_id": "0xc569a01acb2439975d62a2dfde3f9121f4ee5df77b502658bde9deebd7d14f09",
    "question": "Spread: Nottingham Forest FC (-1.5) [Nottingham Forest FC]",
-   "price": 0.041499999999999995,
+   "price": 0.041999999999999996,
    "url": "https://polymarket.com/event/epl-not-ars-2026-10-18-more-markets",
    "tier": "Kleinwagen",
-   "headline_price": 1115.3
+   "headline_price": 1381.43
   },
   {
    "venue": "polymarket",
@@ -1147,34 +1183,34 @@
    "price": 0.71,
    "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
    "tier": "Kleinwagen",
-   "headline_price": 2032.8
+   "headline_price": 1781.89
   },
   {
    "venue": "polymarket",
-   "market_id": "0x578302ab03b5f0d1680ad62f8888c4b0c50ddc42b6edacc811a381423873ee17",
-   "question": "Will the price of Bitcoin be above $78,000 on October 18?",
-   "price": 0.9964999999999999,
-   "url": "https://polymarket.com/event/bitcoin-above-on-october-18-2026",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "market_id": "0x415b2def3beae88104397ed861ae18253d8e8daf90f2b1b78dffa31afcc090f4",
+   "question": "Texans vs. Jaguars: O/U 42.5 [Over]",
+   "price": 0.485,
+   "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 147655.59
   },
   {
    "venue": "polymarket",
    "market_id": "0x15114829ad5587c8a328c574a12a4bb7322901dcc2d3a7f546cbfd4f3cc14d10",
    "question": "Will \"Grand Theft Auto VI Launch Trailer\" get between 40 and 60 million views on week 1?",
-   "price": 0.295,
+   "price": 0.3,
    "url": "https://polymarket.com/event/of-views-of-grand-theft-auto-vi-launch-trailer-on-week-1",
    "tier": "Kleinwagen",
-   "headline_price": 1420.5
+   "headline_price": 1567.13
   },
   {
    "venue": "polymarket",
    "market_id": "0xd852071ae83cf901fa9ba5b52c2a3d2131a7046cbe329e44ec5deb9c3f33d331",
    "question": "Will AC Milan win on 2026-10-18?",
-   "price": 0.555,
+   "price": 0.565,
    "url": "https://polymarket.com/event/sea-mil-ata-2026-10-18",
    "tier": "teuer",
-   "headline_price": 121902.76
+   "headline_price": 119461.82
   },
   {
    "venue": "polymarket",
@@ -1192,7 +1228,7 @@
    "price": 0.19,
    "url": "https://polymarket.com/event/venezuela-leader-end-of-2026",
    "tier": "Kleinwagen",
-   "headline_price": 6142.47
+   "headline_price": 6397.77
   },
   {
    "venue": "polymarket",
@@ -1201,7 +1237,7 @@
    "price": 0.5305,
    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 34980.85
+   "headline_price": 30797.01
   },
   {
    "venue": "polymarket",
@@ -1209,8 +1245,26 @@
    "question": "Will Naftali Bennett be the next Prime Minister of Israel?",
    "price": 0.135,
    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+   "tier": "Kleinwagen",
+   "headline_price": 6551.88
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x258ff19b4baff0ed24bc28f58e83c8be6f2f91d9134700703e0aa51810c51a63",
+   "question": "Will Student List – Students Win win the most seats in the 2026 Serbian parliamentary election?",
+   "price": 0.32,
+   "url": "https://polymarket.com/event/serbia-parliamentary-election-winner-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 11441.43
+   "headline_price": 13070.23
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xe5699e9eeb4d985d52ced2156482d1f49c3c27806e68e8011f4a4d217799e84c",
+   "question": "Saints vs. Giants [Saints]",
+   "price": 0.505,
+   "url": "https://polymarket.com/event/nfl-no-nyg-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 630282.64
   },
   {
    "venue": "polymarket",
@@ -1219,7 +1273,7 @@
    "price": 0.0395,
    "url": "https://polymarket.com/event/next-french-presidential-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 12753.0
+   "headline_price": 12490.95
   },
   {
    "venue": "polymarket",
@@ -1228,16 +1282,7 @@
    "price": 0.4785,
    "url": "https://polymarket.com/event/next-french-presidential-election",
    "tier": "teuer",
-   "headline_price": 183933.11
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x48121d915793c7c35e44244c9d6ea89d6ca2a7bc0379f6ca111980bac8620cdc",
-   "question": "Will Avispa Fukuoka win on 2026-10-18?",
-   "price": 0.999,
-   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 185075.99
   },
   {
    "venue": "polymarket",
@@ -1250,21 +1295,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x258ff19b4baff0ed24bc28f58e83c8be6f2f91d9134700703e0aa51810c51a63",
-   "question": "Will Student List – Students Win win the most seats in the 2026 Serbian parliamentary election?",
-   "price": 0.32,
-   "url": "https://polymarket.com/event/serbia-parliamentary-election-winner-2026",
-   "tier": "Eigentumswohnung",
-   "headline_price": 14370.23
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x0fcfcfc35d71424c0693c717d2e3bc9b8992910835d124d80cd2f01498f1d3dc",
    "question": "Pete Hegseth out as Secretary of Defense by December 31?",
    "price": 0.245,
    "url": "https://polymarket.com/event/pete-hegseth-out-as-secretary-of-defense-by-december-31",
    "tier": "Kleinwagen",
-   "headline_price": 4483.21
+   "headline_price": 4523.21
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xd2f04267603cd5c42ee508d5cbfa9eb3a9a19e9cb37a568c0d289f4006ffb4ca",
+   "question": "Mallorca: Ariana Geerlings vs Laura Samson [Ariana Geerlings]",
+   "price": 0.805,
+   "url": "https://polymarket.com/event/wta-geerlin-samson-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 39713.32
   },
   {
    "venue": "polymarket",
@@ -1277,12 +1322,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
-   "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
-   "price": 0.027,
-   "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-   "tier": "Kleinwagen",
-   "headline_price": 9558.75
+   "market_id": "0x32e180513d70e7bd83760dd7f649e6c1eb367036f43440631575a86fb0bc12ed",
+   "question": "Will Málaga CF win on 2026-10-18?",
+   "price": 0.295,
+   "url": "https://polymarket.com/event/lal-mala-rso-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 61056.94
   },
   {
    "venue": "polymarket",
@@ -1291,7 +1336,7 @@
    "price": 0.305,
    "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
    "tier": "Eigentumswohnung",
-   "headline_price": 17324.15
+   "headline_price": 16965.26
   },
   {
    "venue": "polymarket",
@@ -1300,25 +1345,16 @@
    "price": 0.0365,
    "url": "https://polymarket.com/event/nba-2027-champion",
    "tier": "Kleinwagen",
-   "headline_price": 2113.9
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xe5699e9eeb4d985d52ced2156482d1f49c3c27806e68e8011f4a4d217799e84c",
-   "question": "Saints vs. Giants [Saints]",
-   "price": 0.505,
-   "url": "https://polymarket.com/event/nfl-no-nyg-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 644568.33
+   "headline_price": 2040.95
   },
   {
    "venue": "polymarket",
    "market_id": "0x47e028e787bae02aef6f942c59082c8297710d4606cf2e65818c945a6e8bcb09",
    "question": "Will Bitcoin dip to $80,000 October 12-18?",
-   "price": 0.08499999999999999,
+   "price": 0.07500000000000001,
    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1283.46
+   "headline_price": 1163.68
   },
   {
    "venue": "polymarket",
@@ -1327,7 +1363,43 @@
    "price": 0.0635,
    "url": "https://polymarket.com/event/us-iran-hormuz-agreement-byptptpt-20260803235957575",
    "tier": "Kleinwagen",
-   "headline_price": 2687.76
+   "headline_price": 2700.05
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x96bb4f0ae21274d967a253ac1c29e98e6d1e552a5ab40f22b648195e5caaffe4",
+   "question": "Will Elon Musk post 280-299 tweets from October 13 to October 20, 2026?",
+   "price": 0.0015,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
+   "tier": "ohne Widerstand",
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+   "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+   "price": 0.027,
+   "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+   "tier": "Kleinwagen",
+   "headline_price": 9744.05
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xd5533e785bd74d2c7a58f76bc04c809b665d9b9f8ba5829f55aed4b7f2505018",
+   "question": "Will the price of Bitcoin be above $82,000 on October 18?",
+   "price": 0.275,
+   "url": "https://polymarket.com/event/bitcoin-above-on-october-18-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 2974.11
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x7d63c29c0d4479b35146e5b74cfb52633ba6088820056cc2099f86c083e0111a",
+   "question": "England and Sri Lanka Tour of Pakistan ODIs: Pakistan vs Sri Lanka [Pakistan]",
+   "price": 0.685,
+   "url": "https://polymarket.com/event/crint-pak-lka-2026-10-18",
+   "tier": "Taschengeld",
+   "headline_price": 312.15
   },
   {
    "venue": "polymarket",
@@ -1336,7 +1408,7 @@
    "price": 0.61,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 6340.36
+   "headline_price": 6419.17
   },
   {
    "venue": "polymarket",
@@ -1349,30 +1421,30 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xc574b31821a5a83d9268766deb4f3585139c06c62e3addcfd1fc978a8d6b276c",
+   "question": "Will Nottingham Forest FC win on 2026-10-18?",
+   "price": 0.135,
+   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 60269.13
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x14749c22d876cd112817de15d913353dc5f31e6f05398bc51c1cd3a7ad23c4f4",
    "question": "Bears vs. Falcons: O/U 51.5 [Over]",
    "price": 0.535,
    "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 53733.78
+   "headline_price": 63997.36
   },
   {
    "venue": "polymarket",
    "market_id": "0x4d9567b9fa71a94b6e43ddb62ea6104cbb01926813938d241cce336bd72a8ba5",
    "question": "Will the Tampa Bay Rays win the 2026 World Series?",
-   "price": 0.219,
+   "price": 0.2285,
    "url": "https://polymarket.com/event/mlb-world-series-champion-2026",
    "tier": "Kleinwagen",
-   "headline_price": 5340.48
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xd5533e785bd74d2c7a58f76bc04c809b665d9b9f8ba5829f55aed4b7f2505018",
-   "question": "Will the price of Bitcoin be above $82,000 on October 18?",
-   "price": 0.225,
-   "url": "https://polymarket.com/event/bitcoin-above-on-october-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 2835.48
+   "headline_price": 6328.32
   },
   {
    "venue": "polymarket",
@@ -1390,16 +1462,16 @@
    "price": 0.475,
    "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 77655.99
+   "headline_price": 85815.98
   },
   {
    "venue": "polymarket",
    "market_id": "0x3d78687856148bc4410fcf2d511c6a8e797a32cd123d5130550937776c1bc580",
    "question": "Will Bitcoin reach $95,000 in October?",
-   "price": 0.0345,
+   "price": 0.035,
    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1675.62
+   "headline_price": 1705.28
   },
   {
    "venue": "polymarket",
@@ -1408,16 +1480,7 @@
    "price": 0.885,
    "url": "https://polymarket.com/event/ucl-mnc-aek1-2026-10-20",
    "tier": "Eigentumswohnung",
-   "headline_price": 11488.84
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x96bb4f0ae21274d967a253ac1c29e98e6d1e552a5ab40f22b648195e5caaffe4",
-   "question": "Will Elon Musk post 280-299 tweets from October 13 to October 20, 2026?",
-   "price": 0.002,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "headline_price": 11931.42
   },
   {
    "venue": "polymarket",
@@ -1426,34 +1489,7 @@
    "price": 0.15000000000000002,
    "url": "https://polymarket.com/event/nfl-ten-ind-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 17265.72
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x415b2def3beae88104397ed861ae18253d8e8daf90f2b1b78dffa31afcc090f4",
-   "question": "Texans vs. Jaguars: O/U 42.5 [Over]",
-   "price": 0.475,
-   "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 202686.66
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x68a9720a0f06bf5c521796e538f189034a5444801eca397c2f3c76e41bce170c",
-   "question": "Bears vs. Falcons: O/U 52.5 [Over]",
-   "price": 0.505,
-   "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 99060.47
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x8b82ad049c9ea7a72df5972dd202f47e41a166ab24b60d432173e51fd924626a",
-   "question": "Will Coventry City FC win on 2026-10-19?",
-   "price": 0.14500000000000002,
-   "url": "https://polymarket.com/event/epl-tot-cov-2026-10-19",
-   "tier": "Eigentumswohnung",
-   "headline_price": 26674.5
+   "headline_price": 19759.78
   },
   {
    "venue": "polymarket",
@@ -1462,7 +1498,25 @@
    "price": 0.3415,
    "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
    "tier": "Kleinwagen",
-   "headline_price": 7726.83
+   "headline_price": 7694.37
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x8b82ad049c9ea7a72df5972dd202f47e41a166ab24b60d432173e51fd924626a",
+   "question": "Will Coventry City FC win on 2026-10-19?",
+   "price": 0.14500000000000002,
+   "url": "https://polymarket.com/event/epl-tot-cov-2026-10-19",
+   "tier": "Eigentumswohnung",
+   "headline_price": 30739.51
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x68a9720a0f06bf5c521796e538f189034a5444801eca397c2f3c76e41bce170c",
+   "question": "Bears vs. Falcons: O/U 52.5 [Over]",
+   "price": 0.505,
+   "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 110789.41
   },
   {
    "venue": "polymarket",
@@ -1471,25 +1525,7 @@
    "price": 0.475,
    "url": "https://polymarket.com/event/sea-fio-com-2026-10-18",
    "tier": "teuer",
-   "headline_price": 158646.58
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x7d63c29c0d4479b35146e5b74cfb52633ba6088820056cc2099f86c083e0111a",
-   "question": "England and Sri Lanka Tour of Pakistan ODIs: Pakistan vs Sri Lanka [Pakistan]",
-   "price": 0.65,
-   "url": "https://polymarket.com/event/crint-pak-lka-2026-10-18",
-   "tier": "Taschengeld",
-   "headline_price": 622.11
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xc574b31821a5a83d9268766deb4f3585139c06c62e3addcfd1fc978a8d6b276c",
-   "question": "Will Nottingham Forest FC win on 2026-10-18?",
-   "price": 0.135,
-   "url": "https://polymarket.com/event/epl-not-ars-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 56354.61
+   "headline_price": 178039.67
   },
   {
    "venue": "polymarket",
@@ -1502,11 +1538,11 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xf2f79309df05d6f56aa8f9cdfc2304d43bb7bbbd0c98275ede367337ac70a821",
-   "question": "Will Elon Musk post 500+ tweets from October 13 to October 20, 2026?",
-   "price": 0.0025,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
-   "tier": "ohne Widerstand",
+   "market_id": "0x8be00d4431d9005803c4850e5b7c9c1cfc1cb6aba5f43341799ffd9b0d7d1cdd",
+   "question": "Map Handicap: LOUD (-2.5) vs Team Vitality (+2.5) [LOUD]",
+   "price": 0.999,
+   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "tier": null,
    "headline_price": null
   },
   {
@@ -1520,12 +1556,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x48a09353d6ee6ad60fb12e70d01e2c3dba832b36ec0a422bee9e9d879d32bd11",
-   "question": "Will Elon Musk post 300-319 tweets from October 13 to October 20, 2026?",
-   "price": 0.022,
+   "market_id": "0xf2f79309df05d6f56aa8f9cdfc2304d43bb7bbbd0c98275ede367337ac70a821",
+   "question": "Will Elon Musk post 500+ tweets from October 13 to October 20, 2026?",
+   "price": 0.0025,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
-   "tier": "Taschengeld",
-   "headline_price": 558.17
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -1543,7 +1579,16 @@
    "price": 0.125,
    "url": "https://polymarket.com/event/nfl-ari-la-2026-10-18",
    "tier": "teuer",
-   "headline_price": 103186.52
+   "headline_price": 108348.89
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x48a09353d6ee6ad60fb12e70d01e2c3dba832b36ec0a422bee9e9d879d32bd11",
+   "question": "Will Elon Musk post 300-319 tweets from October 13 to October 20, 2026?",
+   "price": 0.024,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
+   "tier": "Taschengeld",
+   "headline_price": 562.97
   },
   {
    "venue": "polymarket",
@@ -1552,34 +1597,25 @@
    "price": 0.0395,
    "url": "https://polymarket.com/event/trump-out-as-president-before-2027",
    "tier": "Eigentumswohnung",
-   "headline_price": 16580.21
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xac4c8062a7bfeb35739e5a94b7fa43c697dc3edd6acccd6362c58dd8a23ac68f",
-   "question": "Ethereum Up or Down on October 18? [Up]",
-   "price": 0.425,
-   "url": "https://polymarket.com/event/ethereum-up-or-down-on-october-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 5647.09
+   "headline_price": 16581.49
   },
   {
    "venue": "polymarket",
    "market_id": "0xbf16ed03271e93e0fd31cbb231a01947b084915e54e25bd931cca3d5cc160ce2",
    "question": "Will Manchester United FC win on 2026-10-18?",
-   "price": 0.335,
+   "price": 0.345,
    "url": "https://polymarket.com/event/epl-lee-mun-2026-10-18",
    "tier": "teuer",
-   "headline_price": 155803.47
+   "headline_price": 179911.96
   },
   {
    "venue": "polymarket",
-   "market_id": "0x4bf48ea200ba9d253d5445ff5522f2e90ac4970d82da5a9fff6621308b5beeac",
-   "question": "Panthers vs. Eagles [Panthers]",
-   "price": 0.605,
-   "url": "https://polymarket.com/event/nfl-car-phi-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 454004.22
+   "market_id": "0xac4c8062a7bfeb35739e5a94b7fa43c697dc3edd6acccd6362c58dd8a23ac68f",
+   "question": "Ethereum Up or Down on October 18? [Up]",
+   "price": 0.52,
+   "url": "https://polymarket.com/event/ethereum-up-or-down-on-october-18-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 6196.45
   },
   {
    "venue": "polymarket",
@@ -1588,25 +1624,16 @@
    "price": 0.0415,
    "url": "https://polymarket.com/event/california-governor-election-2026",
    "tier": "Kleinwagen",
-   "headline_price": 5747.26
+   "headline_price": 5730.46
   },
   {
    "venue": "polymarket",
-   "market_id": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417",
-   "question": "Will the Democrats win the Texas Senate race in 2026?",
-   "price": 0.625,
-   "url": "https://polymarket.com/event/texas-senate-election-winner",
+   "market_id": "0x4bf48ea200ba9d253d5445ff5522f2e90ac4970d82da5a9fff6621308b5beeac",
+   "question": "Panthers vs. Eagles [Panthers]",
+   "price": 0.605,
+   "url": "https://polymarket.com/event/nfl-car-phi-2026-10-18",
    "tier": "teuer",
-   "headline_price": 143649.91
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x3d555d528a9a5f94a733741d75a3f707731f5e42237006aed81e191d9dd43d1d",
-   "question": "Will Anthropic's market cap be between $2.0T and $2.25T at market close on IPO day?",
-   "price": 0.1895,
-   "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes",
-   "tier": "Kleinwagen",
-   "headline_price": 2379.07
+   "headline_price": 432539.4
   },
   {
    "venue": "polymarket",
@@ -1616,6 +1643,24 @@
    "url": "https://polymarket.com/event/ballon-dor-winner-2026",
    "tier": "ohne Widerstand",
    "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x3d555d528a9a5f94a733741d75a3f707731f5e42237006aed81e191d9dd43d1d",
+   "question": "Will Anthropic's market cap be between $2.0T and $2.25T at market close on IPO day?",
+   "price": 0.1895,
+   "url": "https://polymarket.com/event/anthropic-ipo-closing-market-cap-higher-strikes",
+   "tier": "Kleinwagen",
+   "headline_price": 2411.87
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x34918035a590555ba1fb1d6a019d766ab6e557d63e7f3140b63b4550eee7f417",
+   "question": "Will the Democrats win the Texas Senate race in 2026?",
+   "price": 0.625,
+   "url": "https://polymarket.com/event/texas-senate-election-winner",
+   "tier": "teuer",
+   "headline_price": 142083.02
   },
   {
    "venue": "polymarket",
@@ -1633,16 +1678,16 @@
    "price": 0.645,
    "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026",
    "tier": "teuer",
-   "headline_price": 580635.37
+   "headline_price": 579506.51
   },
   {
    "venue": "polymarket",
-   "market_id": "0xd2f04267603cd5c42ee508d5cbfa9eb3a9a19e9cb37a568c0d289f4006ffb4ca",
-   "question": "Mallorca: Ariana Geerlings vs Laura Samson [Ariana Geerlings]",
-   "price": 0.735,
-   "url": "https://polymarket.com/event/wta-geerlin-samson-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 32854.12
+   "market_id": "0x04721b1d35f3cf3c42bc84f8b43243f815adb54093fc5ee3d5eba5c2744fb4aa",
+   "question": "Will Bayer 04 Leverkusen win on 2026-10-18?",
+   "price": 0.595,
+   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 101512.32
   },
   {
    "venue": "polymarket",
@@ -1652,15 +1697,6 @@
    "url": "https://polymarket.com/event/kor-dae1-gwa-2026-10-18",
    "tier": null,
    "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x04721b1d35f3cf3c42bc84f8b43243f815adb54093fc5ee3d5eba5c2744fb4aa",
-   "question": "Will Bayer 04 Leverkusen win on 2026-10-18?",
-   "price": 0.595,
-   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 104048.73
   },
   {
    "venue": "polymarket",
@@ -1675,28 +1711,37 @@
    "venue": "polymarket",
    "market_id": "0xff68b32e6543ae8b44ccb520604b6ea224a1bac071a186fb65f6f40949a758df",
    "question": " Iran agrees to end enrichment of uranium by December 31?",
-   "price": 0.031,
+   "price": 0.0305,
    "url": "https://polymarket.com/event/iran-agrees-to-end-enrichment-of-uranium-by-december-31",
    "tier": "Kleinwagen",
-   "headline_price": 1680.17
+   "headline_price": 1842.11
   },
   {
    "venue": "polymarket",
-   "market_id": "0x2d5d6e186972ce0226c35b3b461543fd5bfd4c4d7773ddfbe15a6246060a5bd7",
-   "question": "Valorant: LOUD vs Team Vitality - Map 3 Winner [LOUD]",
-   "price": 0.61,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "market_id": "0x88a93c1f6467fcd3956e7ad16aeaa1ea72f6948eba420c8a5b4c8145750360e3",
+   "question": "RC Celta de Vigo vs. Deportivo Alavés: O/U 2.5 [Over]",
+   "price": 0.375,
+   "url": "https://polymarket.com/event/lal-cel-ala-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 14918.8
+   "headline_price": 64197.04
   },
   {
    "venue": "polymarket",
    "market_id": "0xe45f01a18c34199c9a70703a0723cfb8f5ae82cfbaff6162aa8359fd5d19fa03",
    "question": "Will MrBeast's next video get at least 60 million views on day 1?",
-   "price": 0.8965000000000001,
+   "price": 0.9395,
    "url": "https://polymarket.com/event/of-views-of-next-mrbeast-video-on-day-1-20261012",
    "tier": "Taschengeld",
-   "headline_price": 396.76
+   "headline_price": 597.12
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x22f5daf4007082937cbb9ed9f97ad79b058a4e8a0844b8b5d107b6242c7eae90",
+   "question": "Will Elon Musk post <40 tweets from October 17 to October 19, 2026?",
+   "price": 0.006500000000000001,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-17-october-19-2026",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -1704,15 +1749,6 @@
    "question": "Will Bournemouth win the 2026-27 English Premier League (EPL) Championship?",
    "price": 0.0015,
    "url": "https://polymarket.com/event/epl-2027-champion-20260701200428749",
-   "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x22f5daf4007082937cbb9ed9f97ad79b058a4e8a0844b8b5d107b6242c7eae90",
-   "question": "Will Elon Musk post <40 tweets from October 17 to October 19, 2026?",
-   "price": 0.007,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-17-october-19-2026",
    "tier": "ohne Widerstand",
    "headline_price": null
   },
@@ -1729,19 +1765,19 @@
    "venue": "polymarket",
    "market_id": "0xff6a852f912fc6548ec130b05de014f21b1a26342adedef20e4103bb97b4e81d",
    "question": "Will Bitcoin dip to $62,500 in October?",
-   "price": 0.0175,
+   "price": 0.017,
    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1536.32
+   "headline_price": 1537.02
   },
   {
    "venue": "polymarket",
-   "market_id": "0x8be00d4431d9005803c4850e5b7c9c1cfc1cb6aba5f43341799ffd9b0d7d1cdd",
-   "question": "Map Handicap: LOUD (-2.5) vs Team Vitality (+2.5) [LOUD]",
-   "price": 0.999,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
-   "tier": null,
-   "headline_price": null
+   "market_id": "0x28df2b70414eb5e0f018e7d0aa4d0a93d2cda95f6b1ba1c7aead2ea7262c0e6f",
+   "question": "Will Bitcoin dip to $78,000 October 12-18?",
+   "price": 0.0115,
+   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 1065.12
   },
   {
    "venue": "polymarket",
@@ -1750,7 +1786,7 @@
    "price": 0.042499999999999996,
    "url": "https://polymarket.com/event/presidential-election-winner-2028",
    "tier": "Eigentumswohnung",
-   "headline_price": 12218.87
+   "headline_price": 12216.67
   },
   {
    "venue": "polymarket",
@@ -1772,12 +1808,30 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x12aa13b3da17ceae1b0a59b5d5b77121e91bb79b4bb0b52bf6543ed3f8d0953b",
+   "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
+   "price": 0.135,
+   "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+   "tier": "teuer",
+   "headline_price": 130637.27
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x9b8a472f0f5f8a3b2c11b345d969ed90203c800b8c60ef4e4b7f5ad38df5338f",
    "question": "Will Luca Niculescu be the next Prime Minister of Romania?",
-   "price": 0.956,
+   "price": 0.955,
    "url": "https://polymarket.com/event/next-prime-minister-of-romania-732",
    "tier": "Taschengeld",
-   "headline_price": 744.06
+   "headline_price": 736.33
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x9baeece46b6c4af559a297695850d395e627863a8f53bdde09ddf04c57961a99",
+   "question": "Bayer 04 Leverkusen vs. SC Freiburg: O/U 3.5 [Over]",
+   "price": 0.445,
+   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18-more-markets",
+   "tier": "Eigentumswohnung",
+   "headline_price": 55062.87
   },
   {
    "venue": "polymarket",
@@ -1790,12 +1844,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x88a93c1f6467fcd3956e7ad16aeaa1ea72f6948eba420c8a5b4c8145750360e3",
-   "question": "RC Celta de Vigo vs. Deportivo Alavés: O/U 2.5 [Over]",
-   "price": 0.375,
-   "url": "https://polymarket.com/event/lal-cel-ala-2026-10-18-more-markets",
-   "tier": "Eigentumswohnung",
-   "headline_price": 40791.2
+   "market_id": "0x59fd3b22693e27ab5ed63475b201ac8b96b32b14f24de84283aa49d5abf77a20",
+   "question": "New Zealand Women Tour of Australia T20s: Australia Women vs New Zealand Women [Australia Women]",
+   "price": 0.905,
+   "url": "https://polymarket.com/event/crint-ausw-nzlw-2026-10-18",
+   "tier": "Kleinwagen",
+   "headline_price": 6806.95
   },
   {
    "venue": "polymarket",
@@ -1817,21 +1871,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x28df2b70414eb5e0f018e7d0aa4d0a93d2cda95f6b1ba1c7aead2ea7262c0e6f",
-   "question": "Will Bitcoin dip to $78,000 October 12-18?",
-   "price": 0.0125,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 1135.24
+   "market_id": "0x31276eb8b3aca057ed421a63f8e0dee91f1810dc617aad2943b5e7ea1c52fe32",
+   "question": "Will Real Sociedad de Fútbol win on 2026-10-18?",
+   "price": 0.435,
+   "url": "https://polymarket.com/event/lal-mala-rso-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 95863.59
   },
   {
    "venue": "polymarket",
-   "market_id": "0x9262f1fa3e405e24139787fb8a870e923068f0b65962cb4e54f4fedac88d3d4b",
-   "question": "Will Russia target Kyiv on October 17, 2026?",
-   "price": 0.13949999999999999,
-   "url": "https://polymarket.com/event/will-russia-target-kyiv-on-october-2026",
-   "tier": "Taschengeld",
-   "headline_price": 240.79
+   "market_id": "0xe76d93f02190085cc9c2daf11cbcf547fd4c85517f8542cb029a78fa57a94e8c",
+   "question": "Will Bitcoin dip to $76,000 October 12-18?",
+   "price": 0.006,
+   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -1853,21 +1907,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xb25a93dc8c0f28dc404f7ee41cf6788a9de054418bd068740849b4a2995486e9",
-   "question": "Will Israel Katz be the next Prime Minister of Israel?",
-   "price": 0.0015,
-   "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-   "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x0a049471d261a1d9ce1823efc1bcfb5aa35a98169afcc6152f60b14afa232d95",
    "question": "Seoul Knights vs. Goyang [Seoul Knights]",
    "price": 0.999,
    "url": "https://polymarket.com/event/bkkbl-seo-goy-2026-10-18",
    "tier": null,
    "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x9262f1fa3e405e24139787fb8a870e923068f0b65962cb4e54f4fedac88d3d4b",
+   "question": "Will Russia target Kyiv on October 17, 2026?",
+   "price": 0.132,
+   "url": "https://polymarket.com/event/will-russia-target-kyiv-on-october-2026",
+   "tier": "Taschengeld",
+   "headline_price": 243.56
   },
   {
    "venue": "polymarket",
@@ -1903,16 +1957,7 @@
    "price": 0.0385,
    "url": "https://polymarket.com/event/epl-2027-champion-20260701200428749",
    "tier": "Kleinwagen",
-   "headline_price": 3557.05
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xe76d93f02190085cc9c2daf11cbcf547fd4c85517f8542cb029a78fa57a94e8c",
-   "question": "Will Bitcoin dip to $76,000 October 12-18?",
-   "price": 0.0035,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-october-12-18-2026",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "headline_price": 3599.17
   },
   {
    "venue": "polymarket",
@@ -1922,6 +1967,15 @@
    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026",
    "tier": null,
    "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x65934d643621a8e603f1837a93a5f345858765d2469d52541efc277da3b6219b",
+   "question": "Game Handicap: KC (-1.5) vs MVK Esports (+1.5) [Karmine Corp]",
+   "price": 0.745,
+   "url": "https://polymarket.com/event/lol-kc-mvk-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 39779.01
   },
   {
    "venue": "polymarket",
@@ -1939,16 +1993,7 @@
    "price": 0.585,
    "url": "https://polymarket.com/event/nevada-governor-winner-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 46900.56
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x65934d643621a8e603f1837a93a5f345858765d2469d52541efc277da3b6219b",
-   "question": "Game Handicap: KC (-1.5) vs MVK Esports (+1.5) [Karmine Corp]",
-   "price": 0.745,
-   "url": "https://polymarket.com/event/lol-kc-mvk-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 40600.88
+   "headline_price": 41060.45
   },
   {
    "venue": "polymarket",
@@ -1961,11 +2006,29 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x42b526ba297e1155358e5adfcce3e0c0225f37e1372fe31c4a220078166777df",
+   "question": "Map Handicap: LOUD (-1.5) vs Team Vitality (+1.5) [LOUD]",
+   "price": 0.22,
+   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "tier": "Kleinwagen",
+   "headline_price": 1736.12
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0xcb37300ae3f8d1ae110cf28d585de64323d4d814aa17cc4aecec60d74d58ea63",
    "question": "Exact Score: Any Other Score?",
    "price": 0.99,
    "url": "https://polymarket.com/event/fr2-gre-dij-2026-10-30-exact-score",
    "tier": null,
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x79c409aa93ace90413eff65ef6fd22f68635ca899b1a7f75c868303d02005bc2",
+   "question": "Will the highest temperature in Wuhan be 21°C on October 18?",
+   "price": 0.997,
+   "url": "https://polymarket.com/event/highest-temperature-in-wuhan-on-october-18-2026",
+   "tier": "ohne Widerstand",
    "headline_price": null
   },
   {
@@ -1979,12 +2042,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x79c409aa93ace90413eff65ef6fd22f68635ca899b1a7f75c868303d02005bc2",
-   "question": "Will the highest temperature in Wuhan be 21°C on October 18?",
-   "price": 0.996,
-   "url": "https://polymarket.com/event/highest-temperature-in-wuhan-on-october-18-2026",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "market_id": "0x88a13b0ae6e9efc582f2743ca28b9687b6f70efaf5dfe6a416fab44dffb3c312",
+   "question": "Udinese Calcio vs. US Lecce: O/U 6.5 [Over]",
+   "price": 0.017,
+   "url": "https://polymarket.com/event/sea-udi-lec-2026-10-18-more-markets",
+   "tier": "Taschengeld",
+   "headline_price": 238.17
   },
   {
    "venue": "polymarket",
@@ -1999,10 +2062,10 @@
    "venue": "polymarket",
    "market_id": "0xe43eac2058693dbd067ac895986d7e1a174256aeced4ea847b98be7de37e2c21",
    "question": "Saudi-Houthi ceasefire agreement announced by October 31?",
-   "price": 0.042499999999999996,
+   "price": 0.041999999999999996,
    "url": "https://polymarket.com/event/saudi-houthi-ceasefire-agreement-announced-by",
    "tier": "Kleinwagen",
-   "headline_price": 6609.45
+   "headline_price": 6425.76
   },
   {
    "venue": "polymarket",
@@ -2010,8 +2073,8 @@
    "question": "Spread: Colts (-5.5) [Colts]",
    "price": 0.545,
    "url": "https://polymarket.com/event/nfl-ten-ind-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 88107.31
+   "tier": "teuer",
+   "headline_price": 109044.91
   },
   {
    "venue": "polymarket",
@@ -2019,8 +2082,8 @@
    "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
    "price": 0.13,
    "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
-   "tier": "Kleinwagen",
-   "headline_price": 9217.37
+   "tier": "Eigentumswohnung",
+   "headline_price": 10926.93
   },
   {
    "venue": "polymarket",
@@ -2033,12 +2096,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x88a13b0ae6e9efc582f2743ca28b9687b6f70efaf5dfe6a416fab44dffb3c312",
-   "question": "Udinese Calcio vs. US Lecce: O/U 6.5 [Over]",
-   "price": 0.017,
-   "url": "https://polymarket.com/event/sea-udi-lec-2026-10-18-more-markets",
-   "tier": "Taschengeld",
-   "headline_price": 242.23
+   "market_id": "0xb25a93dc8c0f28dc404f7ee41cf6788a9de054418bd068740849b4a2995486e9",
+   "question": "Will Israel Katz be the next Prime Minister of Israel?",
+   "price": 0.0015,
+   "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2047,7 +2110,7 @@
    "price": 0.026500000000000003,
    "url": "https://polymarket.com/event/will-ilhan-omar-be-deported-in-2026",
    "tier": "Kleinwagen",
-   "headline_price": 8875.59
+   "headline_price": 8876.79
   },
   {
    "venue": "polymarket",
@@ -2078,21 +2141,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xbf0602707edd80eada90c28ee03e74b9330432105f71b41da38f3997a55c1bde",
-   "question": "Will Bitcoin dip to $72,500 in October?",
-   "price": 0.11499999999999999,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 6007.45
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x3ef0da2e1c541b115b4e2696e86060b9eef97131bb18734f2708fdf038f0f45b",
    "question": "Spread: Colts (-6.5) [Colts]",
    "price": 0.505,
    "url": "https://polymarket.com/event/nfl-ten-ind-2026-10-18",
    "tier": "teuer",
-   "headline_price": 357594.76
+   "headline_price": 329012.83
   },
   {
    "venue": "polymarket",
@@ -2101,7 +2155,7 @@
    "price": 0.575,
    "url": "https://polymarket.com/event/nfl-lac-kc-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 70931.05
+   "headline_price": 89829.25
   },
   {
    "venue": "polymarket",
@@ -2114,30 +2168,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x12aa13b3da17ceae1b0a59b5d5b77121e91bb79b4bb0b52bf6543ed3f8d0953b",
-   "question": "Will the Fed increase interest rates by 25 bps after the October 2026 meeting?",
-   "price": 0.135,
-   "url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
-   "tier": "teuer",
-   "headline_price": 136862.06
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x59fd3b22693e27ab5ed63475b201ac8b96b32b14f24de84283aa49d5abf77a20",
-   "question": "New Zealand Women Tour of Australia T20s: Australia Women vs New Zealand Women [Australia Women]",
-   "price": 0.955,
-   "url": "https://polymarket.com/event/crint-ausw-nzlw-2026-10-18",
-   "tier": "Kleinwagen",
-   "headline_price": 7233.27
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x88aeab3adb4e316a51430a38d2f8deff32a139bf36fc1df30cf38dbd49bcab79",
    "question": "Will the price of Bitcoin be above $84,000 on October 19?",
    "price": 0.055,
    "url": "https://polymarket.com/event/bitcoin-above-on-october-19-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1190.32
+   "headline_price": 1173.92
   },
   {
    "venue": "polymarket",
@@ -2146,7 +2182,7 @@
    "price": 0.9795,
    "url": "https://polymarket.com/event/bitcoin-above-on-october-19-2026",
    "tier": "Taschengeld",
-   "headline_price": 871.96
+   "headline_price": 866.68
   },
   {
    "venue": "polymarket",
@@ -2155,7 +2191,16 @@
    "price": 0.185,
    "url": "https://polymarket.com/event/next-french-presidential-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 32443.75
+   "headline_price": 31293.96
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xe7bc527d13b714ed7516f307786180236d4ce14cbd3712203a773ceb91e4f111",
+   "question": "FC Machida Zelvia vs. Avispa Fukuoka: O/U 2.5 [Over]",
+   "price": 0.999,
+   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18-more-markets",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2168,15 +2213,6 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x174ea87d011bfd0b230efc45e0b4d0756d38af91f0ffbab70013a582603c2be8",
-   "question": "Will Jean-Luc Mélenchon win the 2027 French presidential election?",
-   "price": 0.10500000000000001,
-   "url": "https://polymarket.com/event/next-french-presidential-election",
-   "tier": "Eigentumswohnung",
-   "headline_price": 33275.55
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x26ecba341a1c052cc7bd9fc4e30653ed4f238bb59486de38c6acf591e9592635",
    "question": "Will Elon Musk post 165-189 tweets from October 17 to October 19, 2026?",
    "price": 0.0015,
@@ -2186,30 +2222,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x174ea87d011bfd0b230efc45e0b4d0756d38af91f0ffbab70013a582603c2be8",
+   "question": "Will Jean-Luc Mélenchon win the 2027 French presidential election?",
+   "price": 0.10500000000000001,
+   "url": "https://polymarket.com/event/next-french-presidential-election",
+   "tier": "Eigentumswohnung",
+   "headline_price": 32942.0
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0xa467b14d51f01b957109d9cbb1d6c124fab2a089d52ed8f471d23c2812e743b7",
    "question": "Xi Jinping out before 2027?",
    "price": 0.0265,
    "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
    "tier": "Eigentumswohnung",
-   "headline_price": 17804.13
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xbe9d61d80c767264a0adc8a16453fbcaf0413e673e665cc7c14701691143fac0",
-   "question": "Will Ukraine recapture Crimean territory by December 31, 2026?",
-   "price": 0.025,
-   "url": "https://polymarket.com/event/will-ukraine-recapture-crimean-territory-by-june-30-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 5111.71
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xbfeb6d4cf3eab6071e204219b0647c8224d63a12778df467311b5f2a4b3a5bd4",
-   "question": "Will the Democrats win the Michigan Senate race in 2026?",
-   "price": 0.685,
-   "url": "https://polymarket.com/event/michigan-senate-election-winner",
-   "tier": "Eigentumswohnung",
-   "headline_price": 31476.65
+   "headline_price": 17847.03
   },
   {
    "venue": "polymarket",
@@ -2222,12 +2249,30 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xbe9d61d80c767264a0adc8a16453fbcaf0413e673e665cc7c14701691143fac0",
+   "question": "Will Ukraine recapture Crimean territory by December 31, 2026?",
+   "price": 0.025,
+   "url": "https://polymarket.com/event/will-ukraine-recapture-crimean-territory-by-june-30-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 5110.22
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xbfeb6d4cf3eab6071e204219b0647c8224d63a12778df467311b5f2a4b3a5bd4",
+   "question": "Will the Democrats win the Michigan Senate race in 2026?",
+   "price": 0.685,
+   "url": "https://polymarket.com/event/michigan-senate-election-winner",
+   "tier": "Eigentumswohnung",
+   "headline_price": 29446.25
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x5ea2ad122aacaef85f9e422bc753baf76830c8edc91336370a8f6941b954d7b7",
    "question": "Spread: Packers (-1.5) [Packers]",
    "price": 0.46499999999999997,
    "url": "https://polymarket.com/event/nfl-dal-gb-2026-10-19",
    "tier": "teuer",
-   "headline_price": 343309.54
+   "headline_price": 346399.81
   },
   {
    "venue": "polymarket",
@@ -2242,9 +2287,18 @@
    "venue": "polymarket",
    "market_id": "0x7424fc90b4f00144146bd99bbb6a82d3b020c8c0bfe1da2b8073e4b089877ef2",
    "question": "Will the price of Bitcoin be between $78,000 and $80,000 on October 18?",
-   "price": 0.0075,
+   "price": 0.007,
    "url": "https://polymarket.com/event/bitcoin-price-on-october-18-2026",
    "tier": "ohne Widerstand",
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xcba122ab90590d4289590b3bb3f75bb56be6b242c8c2ce2e667bc790dba3e7bc",
+   "question": "Exact Score: Any Other Score?",
+   "price": 0.99,
+   "url": "https://polymarket.com/event/sea-udi-rom-2026-10-31-exact-score",
+   "tier": null,
    "headline_price": null
   },
   {
@@ -2267,21 +2321,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x4ba8ec5d2c8cc2377cbf28c96546b648752db8871b6325fc7a6822eac7ad306e",
-   "question": "Will there be no Hormuz agreement?",
-   "price": 0.9595,
-   "url": "https://polymarket.com/event/who-wins-the-senate-pending-hormuz-agreement",
-   "tier": "Eigentumswohnung",
-   "headline_price": 14922.16
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x8dbc8ebfa16144ba4b3f25b273a257561474e9e9873b6d08acb5aeedbc3b0932",
    "question": "CA Osasuna vs. Real Racing Club: O/U 2.5 [Over]",
    "price": 0.575,
    "url": "https://polymarket.com/event/lal-osa-rrc-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 82994.75
+   "headline_price": 92085.08
   },
   {
    "venue": "polymarket",
@@ -2290,7 +2335,7 @@
    "price": 0.255,
    "url": "https://polymarket.com/event/nfl-ten-ind-2026-10-18",
    "tier": "teuer",
-   "headline_price": 193580.95
+   "headline_price": 194887.57
   },
   {
    "venue": "polymarket",
@@ -2299,7 +2344,16 @@
    "price": 0.123,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
    "tier": "Taschengeld",
-   "headline_price": 741.67
+   "headline_price": 748.05
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xe496820bb94513f7e748a98dbac56d9883f3165236faf2eef5d6d89dd25b6d14",
+   "question": "Will Bitcoin dip to $60,000 in October?",
+   "price": 0.0135,
+   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
+   "tier": "Kleinwagen",
+   "headline_price": 1072.89
   },
   {
    "venue": "polymarket",
@@ -2308,7 +2362,25 @@
    "price": 0.1165,
    "url": "https://polymarket.com/event/next-french-presidential-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 31180.86
+   "headline_price": 30665.81
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x7acd27b0e08dc01905f2ae0e6266c7cf316d32195e5d277394d36870a26ff0a5",
+   "question": "Will FC Seoul win on 2026-10-18?",
+   "price": 0.415,
+   "url": "https://polymarket.com/event/kor-seo-san-2026-10-18",
+   "tier": "Kleinwagen",
+   "headline_price": 2224.52
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x4ba8ec5d2c8cc2377cbf28c96546b648752db8871b6325fc7a6822eac7ad306e",
+   "question": "Will there be no Hormuz agreement?",
+   "price": 0.9595,
+   "url": "https://polymarket.com/event/who-wins-the-senate-pending-hormuz-agreement",
+   "tier": "Eigentumswohnung",
+   "headline_price": 13618.84
   },
   {
    "venue": "polymarket",
@@ -2317,7 +2389,7 @@
    "price": 0.445,
    "url": "https://polymarket.com/event/nfl-nyj-ne-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 79910.54
+   "headline_price": 84852.66
   },
   {
    "venue": "polymarket",
@@ -2336,15 +2408,6 @@
    "url": "https://polymarket.com/event/ks-04-house-election-winner",
    "tier": "Kleinwagen",
    "headline_price": 1177.71
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x42631e1a8c8e6389422b58b8e15b1b551892b9833651aa3bab25afab124354b5",
-   "question": "Will Brian Kemp win the 2028 Republican presidential nomination?",
-   "price": 0.005,
-   "url": "https://polymarket.com/event/republican-presidential-nominee-2028",
-   "tier": "ohne Widerstand",
-   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2371,7 +2434,7 @@
    "price": 0.0325,
    "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
    "tier": "Kleinwagen",
-   "headline_price": 4710.18
+   "headline_price": 4438.66
   },
   {
    "venue": "polymarket",
@@ -2380,7 +2443,7 @@
    "price": 0.545,
    "url": "https://polymarket.com/event/nfl-dal-gb-2026-10-19",
    "tier": "Eigentumswohnung",
-   "headline_price": 82166.71
+   "headline_price": 90320.45
   },
   {
    "venue": "polymarket",
@@ -2389,7 +2452,7 @@
    "price": 0.735,
    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
    "tier": "Kleinwagen",
-   "headline_price": 5461.7
+   "headline_price": 5613.32
   },
   {
    "venue": "polymarket",
@@ -2422,19 +2485,10 @@
    "venue": "polymarket",
    "market_id": "0x1f54117cc0c3ff4926fc6297c2341f13454b715d0a9afaf8d1dcf3c44c10d2d3",
    "question": "Will Ethereum dip to $2,300 October 12-18?",
-   "price": 0.0595,
+   "price": 0.052000000000000005,
    "url": "https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1838.23
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xb617001610f85954ae795aca5e41f31a58c455f8aafbf453eb98c1483e5ba699",
-   "question": "Exact Score: Any Other Score?",
-   "price": 0.99,
-   "url": "https://polymarket.com/event/bun-elv-mai-2026-10-30-exact-score",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 1435.59
   },
   {
    "venue": "polymarket",
@@ -2461,7 +2515,7 @@
    "price": 0.0175,
    "url": "https://polymarket.com/event/next-french-presidential-election",
    "tier": "Eigentumswohnung",
-   "headline_price": 13902.76
+   "headline_price": 13685.87
   },
   {
    "venue": "polymarket",
@@ -2483,6 +2537,15 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x6415fbd9638da0bf92eb9eb6b25c6b8d73d5b9a0ed1ffafb58c89cced6ea0417",
+   "question": "Wuhan San Zhen FC vs. Shanghai Shenhua FC: O/U 3.5 [Over]",
+   "price": 0.525,
+   "url": "https://polymarket.com/event/chi-wsz-sgr-2026-10-18-more-markets",
+   "tier": "Eigentumswohnung",
+   "headline_price": 27206.37
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x987b23ce34c9fbc7a2c459379c9e0b2443054a481bbcb3038ec06d56af21e4e0",
    "question": "Exact Score: Any Other Score?",
    "price": 0.99,
@@ -2498,15 +2561,6 @@
    "url": "https://polymarket.com/event/spl-dir-neo-2026-10-30-exact-score",
    "tier": "ohne Widerstand",
    "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x6415fbd9638da0bf92eb9eb6b25c6b8d73d5b9a0ed1ffafb58c89cced6ea0417",
-   "question": "Wuhan San Zhen FC vs. Shanghai Shenhua FC: O/U 3.5 [Over]",
-   "price": 0.515,
-   "url": "https://polymarket.com/event/chi-wsz-sgr-2026-10-18-more-markets",
-   "tier": "Eigentumswohnung",
-   "headline_price": 22907.08
   },
   {
    "venue": "polymarket",
@@ -2533,16 +2587,7 @@
    "price": 0.07500000000000001,
    "url": "https://polymarket.com/event/nfl-hou-jax-2026-10-18",
    "tier": "Taschengeld",
-   "headline_price": 438.72
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x7acd27b0e08dc01905f2ae0e6266c7cf316d32195e5d277394d36870a26ff0a5",
-   "question": "Will FC Seoul win on 2026-10-18?",
-   "price": 0.815,
-   "url": "https://polymarket.com/event/kor-seo-san-2026-10-18",
-   "tier": "Kleinwagen",
-   "headline_price": 9044.37
+   "headline_price": 438.08
   },
   {
    "venue": "polymarket",
@@ -2551,25 +2596,7 @@
    "price": 0.10500000000000001,
    "url": "https://polymarket.com/event/uefa-champions-league-2027-champion-20260701202025549",
    "tier": "Eigentumswohnung",
-   "headline_price": 15201.75
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d",
-   "question": "Putin out as President of Russia by December 31, 2026?",
-   "price": 0.0325,
-   "url": "https://polymarket.com/event/putin-out-before-2027",
-   "tier": "Eigentumswohnung",
-   "headline_price": 27790.62
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xdd2ca8ffd0e66a640ac501f16f3bdfe68175d3ba1b51108d53dde60bc35ad39d",
-   "question": "Tasmania JackJumpers vs. New Zealand Breakers [Tasmania JackJumpers]",
-   "price": 0.99,
-   "url": "https://polymarket.com/event/bknbl-tas-new-2026-10-18",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 15170.75
   },
   {
    "venue": "polymarket",
@@ -2582,12 +2609,21 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xdd2ca8ffd0e66a640ac501f16f3bdfe68175d3ba1b51108d53dde60bc35ad39d",
+   "question": "Tasmania JackJumpers vs. New Zealand Breakers [Tasmania JackJumpers]",
+   "price": 0.99,
+   "url": "https://polymarket.com/event/bknbl-tas-new-2026-10-18",
+   "tier": null,
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0xd299d0a0ce26e42af4edc4e429ee3d8107d3e497ae824fac11e8abc89670fbeb",
    "question": "Will Elon Musk post 40-64 tweets from October 17 to October 19, 2026?",
-   "price": 0.27,
+   "price": 0.26,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-17-october-19-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 1078.16
+   "tier": "Taschengeld",
+   "headline_price": 920.17
   },
   {
    "venue": "polymarket",
@@ -2602,10 +2638,19 @@
    "venue": "polymarket",
    "market_id": "0xba559054238b851414e7a7bdaf7858ad17db0921bafcdff15b695a2ee4230893",
    "question": "Will the highest temperature in Cape Town be 17°C on October 18?",
-   "price": 0.0415,
+   "price": 0.0385,
    "url": "https://polymarket.com/event/highest-temperature-in-cape-town-on-october-18-2026",
    "tier": "Taschengeld",
-   "headline_price": 12.58
+   "headline_price": 6.05
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x0cdad53357d66ae4911b72bb43e471fb438aa8a3773371cab2cec45308179f38",
+   "question": "Exact Score: Any Other Score?",
+   "price": 0.99,
+   "url": "https://polymarket.com/event/fl1-ogc-ren-2026-10-31-exact-score",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2614,24 +2659,15 @@
    "price": 0.405,
    "url": "https://polymarket.com/event/maine-senate-election-winner",
    "tier": "Eigentumswohnung",
-   "headline_price": 81884.73
+   "headline_price": 73383.1
   },
   {
    "venue": "polymarket",
    "market_id": "0x80f7b7390121e0682803c2670211044c2dbeb71b679277ff1f3806550965b089",
    "question": "Will the price of Ethereum be above $2,500 on October 18?",
-   "price": 0.01,
+   "price": 0.009000000000000001,
    "url": "https://polymarket.com/event/ethereum-above-on-october-18-2026",
    "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xe7bc527d13b714ed7516f307786180236d4ce14cbd3712203a773ceb91e4f111",
-   "question": "FC Machida Zelvia vs. Avispa Fukuoka: O/U 2.5 [Over]",
-   "price": 0.999,
-   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18-more-markets",
-   "tier": null,
    "headline_price": null
   },
   {
@@ -2645,21 +2681,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x29d75600ba2e46ce9dd262e813ee710a64c83c2e0c4edfa025019d00a46ae05b",
-   "question": "Will the US confirm that aliens exist by October 31?",
-   "price": 0.0055,
-   "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027",
-   "tier": "ohne Widerstand",
-   "headline_price": null
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x7de1f344e0db83326c10021ceafb9fdb9e6f7d1be10037173a65f8cdc2498cf3",
    "question": "ACF Fiorentina vs. Como 1907: O/U 2.5 [Over]",
-   "price": 0.59,
+   "price": 0.595,
    "url": "https://polymarket.com/event/sea-fio-com-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 47011.85
+   "headline_price": 67276.86
   },
   {
    "venue": "polymarket",
@@ -2672,12 +2699,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xdb1015a2ca68c97ec90e6a4cca599315eabd544366fef8783b9b4b4cea300e46",
-   "question": "Will Elon Musk post 480-499 tweets from October 13 to October 20, 2026?",
-   "price": 0.0025,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
+   "market_id": "0x29d75600ba2e46ce9dd262e813ee710a64c83c2e0c4edfa025019d00a46ae05b",
+   "question": "Will the US confirm that aliens exist by October 31?",
+   "price": 0.0055,
+   "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027",
    "tier": "ohne Widerstand",
    "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x2053d8515f1b8cbeea4ccdb56e60e89c2617e43a8660d95166b8e71d27865277",
+   "question": "Will Marco Rubio win the 2028 US Presidential Election?",
+   "price": 0.0805,
+   "url": "https://polymarket.com/event/presidential-election-winner-2028",
+   "tier": "Eigentumswohnung",
+   "headline_price": 10637.12
   },
   {
    "venue": "polymarket",
@@ -2695,7 +2731,16 @@
    "price": 0.405,
    "url": "https://polymarket.com/event/brazil-presidential-election-second-round-margin-of-victory",
    "tier": "Eigentumswohnung",
-   "headline_price": 27721.39
+   "headline_price": 28209.96
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xdb1015a2ca68c97ec90e6a4cca599315eabd544366fef8783b9b4b4cea300e46",
+   "question": "Will Elon Musk post 480-499 tweets from October 13 to October 20, 2026?",
+   "price": 0.0025,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2726,21 +2771,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xb63fbd776203cada01a13bb21b3c52c500bcf904bdfc71627022db1f891f95c5",
-   "question": "Will the Republicans win the Nevada governor race in 2026?",
-   "price": 0.415,
-   "url": "https://polymarket.com/event/nevada-governor-winner-2026",
-   "tier": "Eigentumswohnung",
-   "headline_price": 53207.8
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x5a49d7be46362712c7e8acf8168911fb88fdfdd5d5a779abec773ea2f3dea69b",
    "question": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?",
    "price": 0.0195,
    "url": "https://polymarket.com/event/uefa-champions-league-2027-champion-20260701202025549",
    "tier": "Kleinwagen",
-   "headline_price": 2091.19
+   "headline_price": 2118.19
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xb63fbd776203cada01a13bb21b3c52c500bcf904bdfc71627022db1f891f95c5",
+   "question": "Will the Republicans win the Nevada governor race in 2026?",
+   "price": 0.415,
+   "url": "https://polymarket.com/event/nevada-governor-winner-2026",
+   "tier": "Eigentumswohnung",
+   "headline_price": 51680.51
   },
   {
    "venue": "polymarket",
@@ -2758,25 +2803,25 @@
    "price": 0.22999999999999998,
    "url": "https://polymarket.com/event/which-company-has-the-best-ai-model-end-of-october",
    "tier": "Kleinwagen",
-   "headline_price": 3933.36
+   "headline_price": 4326.02
   },
   {
    "venue": "polymarket",
-   "market_id": "0x42b526ba297e1155358e5adfcce3e0c0225f37e1372fe31c4a220078166777df",
-   "question": "Map Handicap: LOUD (-1.5) vs Team Vitality (+1.5) [LOUD]",
-   "price": 0.36,
-   "url": "https://polymarket.com/event/val-loud-vit-2026-10-18",
+   "market_id": "0x27f24f12582c10d299dfb103ce2e868df75d7cc6c33d4fdc5e90a13f075f0d50",
+   "question": "Jinan: Mattia Bellucci vs Martin Landaluce [Mattia Bellucci]",
+   "price": 0.685,
+   "url": "https://polymarket.com/event/atp-bellucc-landalu-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 100413.39
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x5a0933e8d971bec6d5658b20eb302fb84f1ec8000786a0f80a997330616816d7",
+   "question": "Will the highest temperature in Cape Town be 16°C on October 18?",
+   "price": 0.042,
+   "url": "https://polymarket.com/event/highest-temperature-in-cape-town-on-october-18-2026",
    "tier": "Taschengeld",
-   "headline_price": 877.16
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x2ee255e1c784976842162f3d06a7803a3e7e63402dd4dbd467b07525de6dfb1b",
-   "question": "Will Ethereum reach $2,800 October 12-18?",
-   "price": 0.001,
-   "url": "https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 8.04
   },
   {
    "venue": "polymarket",
@@ -2785,7 +2830,7 @@
    "price": 0.265,
    "url": "https://polymarket.com/event/nfl-nyj-ne-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 26074.09
+   "headline_price": 28686.46
   },
   {
    "venue": "polymarket",
@@ -2794,7 +2839,7 @@
    "price": 0.325,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 9995.07
+   "headline_price": 9591.86
   },
   {
    "venue": "polymarket",
@@ -2803,22 +2848,22 @@
    "price": 0.225,
    "url": "https://polymarket.com/event/nba-2027-champion",
    "tier": "Eigentumswohnung",
-   "headline_price": 21500.31
+   "headline_price": 21524.29
   },
   {
    "venue": "polymarket",
    "market_id": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
    "question": "Will the Iranian regime fall before 2027?",
-   "price": 0.055,
+   "price": 0.045,
    "url": "https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 29792.43
+   "headline_price": 28008.75
   },
   {
    "venue": "polymarket",
    "market_id": "0x5c56f8b6382c55148469572df19852105420076649c2ce38eabaa8be961bdd9a",
    "question": "Will Suwon Bluewings win on 2026-10-18?",
-   "price": 0.999,
+   "price": 0.9995,
    "url": "https://polymarket.com/event/kor2-suw-hwa-2026-10-18",
    "tier": null,
    "headline_price": null
@@ -2839,7 +2884,7 @@
    "price": 0.14500000000000002,
    "url": "https://polymarket.com/event/next-press-secretary-2027",
    "tier": "Kleinwagen",
-   "headline_price": 6694.99
+   "headline_price": 3130.7
   },
   {
    "venue": "polymarket",
@@ -2848,7 +2893,7 @@
    "price": 0.185,
    "url": "https://polymarket.com/event/nfl-buf-lv-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 25503.32
+   "headline_price": 27538.72
   },
   {
    "venue": "polymarket",
@@ -2857,7 +2902,7 @@
    "price": 0.0245,
    "url": "https://polymarket.com/event/republican-presidential-nominee-2028",
    "tier": "Kleinwagen",
-   "headline_price": 7262.59
+   "headline_price": 7261.1
   },
   {
    "venue": "polymarket",
@@ -2902,7 +2947,7 @@
    "price": 0.0125,
    "url": "https://polymarket.com/event/nba-2027-champion",
    "tier": "Kleinwagen",
-   "headline_price": 1715.88
+   "headline_price": 1658.02
   },
   {
    "venue": "polymarket",
@@ -2911,16 +2956,7 @@
    "price": 0.0125,
    "url": "https://polymarket.com/event/will-jesus-christ-return-before-2027",
    "tier": "Eigentumswohnung",
-   "headline_price": 10719.77
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x5a0933e8d971bec6d5658b20eb302fb84f1ec8000786a0f80a997330616816d7",
-   "question": "Will the highest temperature in Cape Town be 16°C on October 18?",
-   "price": 0.0155,
-   "url": "https://polymarket.com/event/highest-temperature-in-cape-town-on-october-18-2026",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "headline_price": 10719.59
   },
   {
    "venue": "polymarket",
@@ -2929,7 +2965,16 @@
    "price": 0.865,
    "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 3301.06
+   "headline_price": 2716.01
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xf273da5c76e0116c0ec63787453b54d74f0c182256dff4ed2f27f08b14048f7c",
+   "question": "Will Christine Lagarde win the 2027 French presidential election?",
+   "price": 0.006500000000000001,
+   "url": "https://polymarket.com/event/next-french-presidential-election",
+   "tier": "ohne Widerstand",
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -2938,7 +2983,16 @@
    "price": 0.19,
    "url": "https://polymarket.com/event/nc-11-house-election-winner",
    "tier": "Kleinwagen",
-   "headline_price": 1527.12
+   "headline_price": 1953.73
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x6bd56627aa21311850825edb27e53434a0e17a4f782be0086bc07f71eee00d0d",
+   "question": "Putin out as President of Russia by December 31, 2026?",
+   "price": 0.0325,
+   "url": "https://polymarket.com/event/putin-out-before-2027",
+   "tier": "Eigentumswohnung",
+   "headline_price": 27881.24
   },
   {
    "venue": "polymarket",
@@ -2962,10 +3016,10 @@
    "venue": "polymarket",
    "market_id": "0x9ace536e6ad15e7dd2c37adc0a74cdfa7873eeb4b6ea8d13f296f3bbfee3400e",
    "question": "AFC Bournemouth vs. Sunderland AFC: O/U 2.5 [Over]",
-   "price": 0.485,
+   "price": 0.475,
    "url": "https://polymarket.com/event/epl-bou-sun-2026-10-18-more-markets",
    "tier": "teuer",
-   "headline_price": 131979.28
+   "headline_price": 176425.16
   },
   {
    "venue": "polymarket",
@@ -2980,10 +3034,10 @@
    "venue": "polymarket",
    "market_id": "0xbdce9cd5a5163bf992447dfa1f5c58ac0795a5f2375ea9239e057589189d6d4e",
    "question": "Counter-Strike: Elite Klan vs Passion Academy (BO3) - United21 Group D [Elite Klan]",
-   "price": 0.475,
+   "price": 0.47,
    "url": "https://polymarket.com/event/cs2-ek-psna-2026-10-18",
    "tier": "Taschengeld",
-   "headline_price": 462.34
+   "headline_price": 572.19
   },
   {
    "venue": "polymarket",
@@ -2992,16 +3046,34 @@
    "price": 0.235,
    "url": "https://polymarket.com/event/nfl-ten-ind-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 20040.63
+   "headline_price": 22209.07
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x47c7acf6c0235661142dc684f46b2c53fb813ffdfe173fb580396fbac64cde77",
+   "question": "Will Movistar KOI win Worlds 2026?",
+   "price": 0.006,
+   "url": "https://polymarket.com/event/worlds-2026-winner",
+   "tier": "ohne Widerstand",
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x2726aedb6fe9db134933e42d7afd0a917ce587301306c203c49e6bd65b4b7db5",
+   "question": "Will Shanghai Shenhua FC win on 2026-10-18?",
+   "price": 0.47,
+   "url": "https://polymarket.com/event/chi-wsz-sgr-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 25062.17
   },
   {
    "venue": "polymarket",
    "market_id": "0xfc8d4bd7a255f1eced9fbc9c386149633262f076b094a51cff7fb00b10274151",
    "question": "Will Elon Musk post 380-399 tweets from October 13 to October 20, 2026?",
-   "price": 0.1765,
+   "price": 0.181,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
    "tier": "Taschengeld",
-   "headline_price": 279.75
+   "headline_price": 344.96
   },
   {
    "venue": "polymarket",
@@ -3009,26 +3081,17 @@
    "question": "Will Barcelona win the 2026-27 UEFA Champions League Championship?",
    "price": 0.235,
    "url": "https://polymarket.com/event/uefa-champions-league-2027-champion-20260701202025549",
-   "tier": "Eigentumswohnung",
-   "headline_price": 99974.65
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xed4d57505826ebed7fdf013f82bf72f17ffdc40edcd68546038eba1f45170109",
-   "question": "Will Elon Musk post 180-199 tweets from October 16 to October 23, 2026?",
-   "price": 0.0195,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-16-october-23-2026",
-   "tier": "Taschengeld",
-   "headline_price": 274.36
+   "tier": "teuer",
+   "headline_price": 100024.15
   },
   {
    "venue": "polymarket",
    "market_id": "0x3d876fb6a2136d8aeabb3f6b3c5129af020b8bf3139175c27e94d3c11cfad8c3",
    "question": "Will OpenAI’s market cap be between $1T and $1.25T at market close on IPO day by December 31, 2027?",
-   "price": 0.068,
+   "price": 0.0675,
    "url": "https://polymarket.com/event/openai-ipo-closing-market-cap-554",
    "tier": "Taschengeld",
-   "headline_price": 802.97
+   "headline_price": 401.83
   },
   {
    "venue": "polymarket",
@@ -3046,13 +3109,13 @@
    "price": 0.065,
    "url": "https://polymarket.com/event/israeli-airspace-closed-by",
    "tier": "Kleinwagen",
-   "headline_price": 1326.39
+   "headline_price": 1368.75
   },
   {
    "venue": "polymarket",
    "market_id": "0xa62ca8ed78605e70e8fdc729c9928125ebe2fc8bf68de25cf0bf95d7179cd5c9",
    "question": "Will the highest temperature in Wuhan be 22°C on October 18?",
-   "price": 0.002,
+   "price": 0.0025,
    "url": "https://polymarket.com/event/highest-temperature-in-wuhan-on-october-18-2026",
    "tier": "ohne Widerstand",
    "headline_price": null
@@ -3073,7 +3136,7 @@
    "price": 0.635,
    "url": "https://polymarket.com/event/atp-shevche-sakella-2026-10-18",
    "tier": "Kleinwagen",
-   "headline_price": 5194.9
+   "headline_price": 5012.99
   },
   {
    "venue": "polymarket",
@@ -3086,12 +3149,21 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x3cbef8c9ed1398acdd619a3b96396bb49305e5ccd8869350af825b6fa7e2302e",
-   "question": "Will Elon Musk post 200-219 tweets from October 16 to October 23, 2026?",
-   "price": 0.0505,
+   "market_id": "0xb6716439771378018fd2e3906e9a8c15f765a2445d0d95073747b5706531a2f2",
+   "question": "Will Team Vitality win VALORANT Champions 2026?",
+   "price": 0.534,
+   "url": "https://polymarket.com/event/valorant-champions-2026-winner",
+   "tier": "Taschengeld",
+   "headline_price": 166.0
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xed4d57505826ebed7fdf013f82bf72f17ffdc40edcd68546038eba1f45170109",
+   "question": "Will Elon Musk post 180-199 tweets from October 16 to October 23, 2026?",
+   "price": 0.0215,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-16-october-23-2026",
    "tier": "Taschengeld",
-   "headline_price": 179.3
+   "headline_price": 299.63
   },
   {
    "venue": "polymarket",
@@ -3100,25 +3172,16 @@
    "price": 0.405,
    "url": "https://polymarket.com/event/cs2-won-rev-2026-10-18",
    "tier": "Taschengeld",
-   "headline_price": 369.92
+   "headline_price": 369.65
   },
   {
    "venue": "polymarket",
    "market_id": "0x52a05339ed87123d1f09f8da94569575579281d050ff94fa79a359e922122632",
    "question": "Spread: Bears (-1.5) [Bears]",
-   "price": 0.485,
+   "price": 0.475,
    "url": "https://polymarket.com/event/nfl-chi-atl-2026-10-18",
    "tier": "teuer",
-   "headline_price": 441790.39
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x2726aedb6fe9db134933e42d7afd0a917ce587301306c203c49e6bd65b4b7db5",
-   "question": "Will Shanghai Shenhua FC win on 2026-10-18?",
-   "price": 0.475,
-   "url": "https://polymarket.com/event/chi-wsz-sgr-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 23495.84
+   "headline_price": 323521.76
   },
   {
    "venue": "polymarket",
@@ -3131,48 +3194,30 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xf273da5c76e0116c0ec63787453b54d74f0c182256dff4ed2f27f08b14048f7c",
-   "question": "Will Christine Lagarde win the 2027 French presidential election?",
-   "price": 0.006500000000000001,
-   "url": "https://polymarket.com/event/next-french-presidential-election",
-   "tier": "ohne Widerstand",
-   "headline_price": null
+   "market_id": "0x3cbef8c9ed1398acdd619a3b96396bb49305e5ccd8869350af825b6fa7e2302e",
+   "question": "Will Elon Musk post 200-219 tweets from October 16 to October 23, 2026?",
+   "price": 0.058499999999999996,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-16-october-23-2026",
+   "tier": "Taschengeld",
+   "headline_price": 223.33
   },
   {
    "venue": "polymarket",
    "market_id": "0x1aecffe8111c4eb16628ff15f9db76b0c0553254148dc4828a42e23bb13d1927",
    "question": "Will the highest temperature in Cape Town be 18°C on October 18?",
-   "price": 0.019,
+   "price": 0.0195,
    "url": "https://polymarket.com/event/highest-temperature-in-cape-town-on-october-18-2026",
    "tier": "Taschengeld",
-   "headline_price": 6.13
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x94ae8e5414e036e2e9b6b6514c048042bf74d089614d7f7d73635693f9d5186b",
-   "question": "Will Anthropic IPO by November 15, 2026?",
-   "price": 0.039999999999999994,
-   "url": "https://polymarket.com/event/anthropic-ipo-by",
-   "tier": "Taschengeld",
-   "headline_price": 492.51
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xddb2b6ed6acb769a32af26d7967266d2abd4fbb59d136f39f75eba79a8dd1d17",
-   "question": "Will Elon Musk post 440-459 tweets from October 13 to October 20, 2026?",
-   "price": 0.0135,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
-   "tier": "Taschengeld",
-   "headline_price": 184.33
+   "headline_price": 7.77
   },
   {
    "venue": "polymarket",
    "market_id": "0x23858cc44dce48e23f754240a0a71595f38f5c66d9a0eaf612eb5a737ad1e66d",
    "question": "Will Google have the best AI model at the end of October 2026?",
-   "price": 0.751,
+   "price": 0.7515000000000001,
    "url": "https://polymarket.com/event/which-company-has-the-best-ai-model-end-of-october",
    "tier": "Kleinwagen",
-   "headline_price": 2464.38
+   "headline_price": 4106.64
   },
   {
    "venue": "polymarket",
@@ -3190,7 +3235,16 @@
    "price": 0.10500000000000001,
    "url": "https://polymarket.com/event/bab-el-mandeb-strait-effectively-closed-by",
    "tier": "Eigentumswohnung",
-   "headline_price": 18091.41
+   "headline_price": 18124.51
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xddb2b6ed6acb769a32af26d7967266d2abd4fbb59d136f39f75eba79a8dd1d17",
+   "question": "Will Elon Musk post 440-459 tweets from October 13 to October 20, 2026?",
+   "price": 0.0125,
+   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
+   "tier": "Taschengeld",
+   "headline_price": 142.73
   },
   {
    "venue": "polymarket",
@@ -3205,19 +3259,19 @@
    "venue": "polymarket",
    "market_id": "0x85bd3e9a04042a25484b5486fa674c025156a5922c5f5fb3ddf72246fba6851a",
    "question": "Will Elon Musk post 340-359 tweets from October 13 to October 20, 2026?",
-   "price": 0.2585,
+   "price": 0.2655,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
    "tier": "Taschengeld",
-   "headline_price": 651.41
+   "headline_price": 702.01
   },
   {
    "venue": "polymarket",
    "market_id": "0x5a6c2ecba45c16b027997d05d28abc979fdb10b793c45b6174aa0f393988dde9",
    "question": "Will LOUD win VALORANT Champions 2026?",
-   "price": 0.5805,
+   "price": 0.47050000000000003,
    "url": "https://polymarket.com/event/valorant-champions-2026-winner",
    "tier": "Taschengeld",
-   "headline_price": 75.14
+   "headline_price": 166.0
   },
   {
    "venue": "polymarket",
@@ -3235,7 +3289,7 @@
    "price": 0.0205,
    "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
    "tier": "Kleinwagen",
-   "headline_price": 5783.87
+   "headline_price": 5897.09
   },
   {
    "venue": "polymarket",
@@ -3244,7 +3298,7 @@
    "price": 0.045,
    "url": "https://polymarket.com/event/saudi-airspace-closed-byptptpt",
    "tier": "Kleinwagen",
-   "headline_price": 6410.21
+   "headline_price": 5164.63
   },
   {
    "venue": "polymarket",
@@ -3266,12 +3320,30 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xeab407624bcde0f55935c340ab1d45506bfbdd348ff98e2f31bcd55ea752e4b0",
+   "question": "Spread: Giants (-3.5) [Giants]",
+   "price": 0.385,
+   "url": "https://polymarket.com/event/nfl-no-nyg-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 46213.04
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x9701412e75979042221de3dfd4809217200274261c16be5751f5cb1eac970162",
+   "question": "FC Machida Zelvia vs. Avispa Fukuoka: O/U 3.5 [Over]",
+   "price": 0.99,
+   "url": "https://polymarket.com/event/jap-zel-avi-2026-10-18-more-markets",
+   "tier": null,
+   "headline_price": null
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x7fd71c48a98bb515664cadb1f62cf1f27b770fe9cc1216571e183b982a48e42a",
    "question": "Will the Democratic Party win the NC-11 House seat?",
    "price": 0.79,
    "url": "https://polymarket.com/event/nc-11-house-election-winner",
    "tier": "Kleinwagen",
-   "headline_price": 3702.88
+   "headline_price": 3688.96
   },
   {
    "venue": "polymarket",
@@ -3284,6 +3356,15 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0x4f1283b50de13f729d4124254dd81bdb151c027847b5a1e73e0ebba4cad395e1",
+   "question": "Map Handicap: FAL (-1.5) vs Aurora Gaming (+1.5) [Team Falcons]",
+   "price": 0.325,
+   "url": "https://polymarket.com/event/cs2-aur1-fal2-2026-10-18",
+   "tier": "Eigentumswohnung",
+   "headline_price": 47453.47
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x61600d487069f99e775307a0655c1a79f26e4fc6d8d1ba66790c64d78d0beba2",
    "question": "Will Jon Ossoff win the 2028 US Presidential Election?",
    "price": 0.1015,
@@ -3293,12 +3374,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x4f1283b50de13f729d4124254dd81bdb151c027847b5a1e73e0ebba4cad395e1",
-   "question": "Map Handicap: FAL (-1.5) vs Aurora Gaming (+1.5) [Team Falcons]",
-   "price": 0.325,
-   "url": "https://polymarket.com/event/cs2-aur1-fal2-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 47687.11
+   "market_id": "0x2ee255e1c784976842162f3d06a7803a3e7e63402dd4dbd467b07525de6dfb1b",
+   "question": "Will Ethereum reach $2,800 October 12-18?",
+   "price": 0.001,
+   "url": "https://polymarket.com/event/what-price-will-ethereum-hit-october-12-18-2026",
+   "tier": null,
+   "headline_price": null
   },
   {
    "venue": "polymarket",
@@ -3313,10 +3394,10 @@
    "venue": "polymarket",
    "market_id": "0x483c569cd9a3617a9e421dcbc24782bd2c993652af259e9ad843b405e517cdc8",
    "question": "Will Elon Musk post 360-379 tweets from October 13 to October 20, 2026?",
-   "price": 0.263,
+   "price": 0.2675,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
    "tier": "Kleinwagen",
-   "headline_price": 1274.94
+   "headline_price": 1278.02
   },
   {
    "venue": "polymarket",
@@ -3329,21 +3410,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0x9baeece46b6c4af559a297695850d395e627863a8f53bdde09ddf04c57961a99",
-   "question": "Bayer 04 Leverkusen vs. SC Freiburg: O/U 3.5 [Over]",
-   "price": 0.445,
-   "url": "https://polymarket.com/event/bun-b04-fre-2026-10-18-more-markets",
-   "tier": "Eigentumswohnung",
-   "headline_price": 47318.67
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x157411dc46f1a2c74180e16126ffc21550475c5572b2d52954cc43a24c2e2932",
    "question": "Will Elon Musk post 400-419 tweets from October 13 to October 20, 2026?",
-   "price": 0.0785,
+   "price": 0.0765,
    "url": "https://polymarket.com/event/elon-musk-of-tweets-october-13-october-20-2026",
    "tier": "Taschengeld",
-   "headline_price": 410.59
+   "headline_price": 422.18
   },
   {
    "venue": "polymarket",
@@ -3361,7 +3433,7 @@
    "price": 0.325,
    "url": "https://polymarket.com/event/chi-wsz-sgr-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 20444.05
+   "headline_price": 21543.21
   },
   {
    "venue": "polymarket",
@@ -3376,10 +3448,10 @@
    "venue": "polymarket",
    "market_id": "0x67a229c77a9ac893f3895ed4dd1dfd1f89a6145da408bba530a544ec77ff6bfb",
    "question": "Will the Cleveland Guardians win the 2026 World Series?",
-   "price": 0.1305,
+   "price": 0.134,
    "url": "https://polymarket.com/event/mlb-world-series-champion-2026",
    "tier": "Kleinwagen",
-   "headline_price": 7232.11
+   "headline_price": 6262.78
   },
   {
    "venue": "polymarket",
@@ -3388,7 +3460,7 @@
    "price": 0.125,
    "url": "https://polymarket.com/event/crude-oil-all-time-high-by",
    "tier": "Kleinwagen",
-   "headline_price": 7540.22
+   "headline_price": 7543.37
   },
   {
    "venue": "polymarket",
@@ -3414,8 +3486,8 @@
    "question": "Will there be a Hormuz agreement by October 23, oil below $80, and the Republicans win the Senate?",
    "price": 0.0185,
    "url": "https://polymarket.com/event/who-wins-the-senate-pending-hormuz-agreement-by-oct-23-and-oil-below-80",
-   "tier": "Eigentumswohnung",
-   "headline_price": 10148.86
+   "tier": "Kleinwagen",
+   "headline_price": 8619.63
   },
   {
    "venue": "polymarket",
@@ -3424,13 +3496,13 @@
    "price": 0.325,
    "url": "https://polymarket.com/event/ohio-senate-election-winner",
    "tier": "Eigentumswohnung",
-   "headline_price": 46552.02
+   "headline_price": 46531.05
   },
   {
    "venue": "polymarket",
    "market_id": "0x7209592f294c2b3a7230ea66a4483ecfe1a57ae79144e5e735654829e00cfc68",
    "question": "Will Apple release a foldable iPhone before 2027?",
-   "price": 0.9944999999999999,
+   "price": 0.995,
    "url": "https://polymarket.com/event/will-apple-release-a-foldable-iphone-before-2027",
    "tier": "ohne Widerstand",
    "headline_price": null
@@ -3442,7 +3514,7 @@
    "price": 0.136,
    "url": "https://polymarket.com/event/bulgaria-presidential-election-first-round-margin-of-victory",
    "tier": "Kleinwagen",
-   "headline_price": 1098.49
+   "headline_price": 1117.53
   },
   {
    "venue": "polymarket",
@@ -3460,7 +3532,16 @@
    "price": 0.0325,
    "url": "https://polymarket.com/event/modi-out-before-2027",
    "tier": "Kleinwagen",
-   "headline_price": 9367.02
+   "headline_price": 9306.14
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0xab1fd80d8bd4071eed7e300af7478a50f20524588ce4577e3bd8a54410d9d9db",
+   "question": "Will Leeds United FC win on 2026-10-18?",
+   "price": 0.385,
+   "url": "https://polymarket.com/event/epl-lee-mun-2026-10-18",
+   "tier": "teuer",
+   "headline_price": 234204.97
   },
   {
    "venue": "polymarket",
@@ -3469,25 +3550,7 @@
    "price": 0.575,
    "url": "https://polymarket.com/event/lal-mala-rso-2026-10-18-more-markets",
    "tier": "Eigentumswohnung",
-   "headline_price": 42399.11
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xe496820bb94513f7e748a98dbac56d9883f3165236faf2eef5d6d89dd25b6d14",
-   "question": "Will Bitcoin dip to $60,000 in October?",
-   "price": 0.0135,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-in-october-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 1060.72
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x7d542d01581ab32518a4131ef852dbc5167697c8dd9600f3fb0c24df2a417ce1",
-   "question": "US imports Russian diesel by November 30?",
-   "price": 0.315,
-   "url": "https://polymarket.com/event/us-imports-russian-diesel-by-october-31",
-   "tier": "Kleinwagen",
-   "headline_price": 2185.01
+   "headline_price": 57970.71
   },
   {
    "venue": "polymarket",
@@ -3496,7 +3559,16 @@
    "price": 0.275,
    "url": "https://polymarket.com/event/balance-of-power-2026-midterms",
    "tier": "teuer",
-   "headline_price": 685450.8
+   "headline_price": 673749.12
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x7d542d01581ab32518a4131ef852dbc5167697c8dd9600f3fb0c24df2a417ce1",
+   "question": "US imports Russian diesel by November 30?",
+   "price": 0.315,
+   "url": "https://polymarket.com/event/us-imports-russian-diesel-by-october-31",
+   "tier": "Kleinwagen",
+   "headline_price": 2294.13
   },
   {
    "venue": "polymarket",
@@ -3505,16 +3577,7 @@
    "price": 0.28500000000000003,
    "url": "https://polymarket.com/event/nfl-pit-tb-2026-10-18",
    "tier": "Eigentumswohnung",
-   "headline_price": 38493.84
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x2053d8515f1b8cbeea4ccdb56e60e89c2617e43a8660d95166b8e71d27865277",
-   "question": "Will Marco Rubio win the 2028 US Presidential Election?",
-   "price": 0.0805,
-   "url": "https://polymarket.com/event/presidential-election-winner-2028",
-   "tier": "Eigentumswohnung",
-   "headline_price": 10572.11
+   "headline_price": 39651.27
   },
   {
    "venue": "polymarket",
@@ -3524,15 +3587,6 @@
    "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
    "tier": "ohne Widerstand",
    "headline_price": null
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xab1fd80d8bd4071eed7e300af7478a50f20524588ce4577e3bd8a54410d9d9db",
-   "question": "Will Leeds United FC win on 2026-10-18?",
-   "price": 0.385,
-   "url": "https://polymarket.com/event/epl-lee-mun-2026-10-18",
-   "tier": "teuer",
-   "headline_price": 245599.82
   },
   {
    "venue": "polymarket",
@@ -3547,10 +3601,10 @@
    "venue": "polymarket",
    "market_id": "0xd68c2c39de610675e33e964f4196f9cda9e0d7e324465e291dd0c1e387dc0897",
    "question": "Will Bitcoin dip to $79,000 on October 18?",
-   "price": 0.025,
+   "price": 0.0245,
    "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-on-october-18-2026",
    "tier": "Taschengeld",
-   "headline_price": 937.09
+   "headline_price": 903.68
   },
   {
    "venue": "polymarket",
@@ -3577,7 +3631,7 @@
    "price": 0.019,
    "url": "https://polymarket.com/event/democratic-presidential-nominee-2028",
    "tier": "Kleinwagen",
-   "headline_price": 7428.28
+   "headline_price": 7425.65
   },
   {
    "venue": "polymarket",
@@ -3608,6 +3662,15 @@
   },
   {
    "venue": "polymarket",
+   "market_id": "0xae515ea2b1b95486007cff8aa4afbd5f677e2760dd8752c1068d9cc55afb6d58",
+   "question": "Alexandre de Moraes out as Brazil Supreme Court Justice?",
+   "price": 0.28,
+   "url": "https://polymarket.com/event/alexandre-de-moraes-out-as-brazil-supreme-court-justice",
+   "tier": "Taschengeld",
+   "headline_price": 95.89
+  },
+  {
+   "venue": "polymarket",
    "market_id": "0x57074a761c6f2d121914c33f1286c98f20972ad1ec2fff7f0d804ae1b6d04d57",
    "question": "Exact Score: Any Other Score?",
    "price": 0.99,
@@ -3626,15 +3689,6 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xae515ea2b1b95486007cff8aa4afbd5f677e2760dd8752c1068d9cc55afb6d58",
-   "question": "Alexandre de Moraes out as Brazil Supreme Court Justice?",
-   "price": 0.26,
-   "url": "https://polymarket.com/event/alexandre-de-moraes-out-as-brazil-supreme-court-justice",
-   "tier": "Taschengeld",
-   "headline_price": 27.38
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x868ced307eb33d65835775c9c88a74eba3769d2582fc374b0dfc3ace8520fde9",
    "question": "Will \"Grand Theft Auto VI Launch Trailer\" get between 120 and 140 million views on week 1?",
    "price": 0.001,
@@ -3649,7 +3703,16 @@
    "price": 0.052500000000000005,
    "url": "https://polymarket.com/event/who-wins-the-senate-pending-oil-below-85-before-the-midterms",
    "tier": "Eigentumswohnung",
-   "headline_price": 25106.8
+   "headline_price": 22110.53
+  },
+  {
+   "venue": "polymarket",
+   "market_id": "0x95139252047fc62776fdd1061723f19cea7710983a7f18ceb29d45f34514f517",
+   "question": "Will Bitcoin dip to $80,000 on October 18?",
+   "price": 0.08,
+   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-on-october-18-2026",
+   "tier": "Taschengeld",
+   "headline_price": 573.34
   },
   {
    "venue": "polymarket",
@@ -3662,30 +3725,12 @@
   },
   {
    "venue": "polymarket",
-   "market_id": "0xb6716439771378018fd2e3906e9a8c15f765a2445d0d95073747b5706531a2f2",
-   "question": "Will Team Vitality win VALORANT Champions 2026?",
-   "price": 0.396,
-   "url": "https://polymarket.com/event/valorant-champions-2026-winner",
-   "tier": "Taschengeld",
-   "headline_price": 151.02
-  },
-  {
-   "venue": "polymarket",
    "market_id": "0x3babe91f8d2fac44027f9ba7f0f1a59e61b72419828e6e517f96bbcf4e132498",
    "question": "Will the Democrats win the Ohio governor race in 2026?",
    "price": 0.725,
    "url": "https://polymarket.com/event/ohio-governor-winner-2026",
    "tier": "Eigentumswohnung",
-   "headline_price": 71949.53
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x95139252047fc62776fdd1061723f19cea7710983a7f18ceb29d45f34514f517",
-   "question": "Will Bitcoin dip to $80,000 on October 18?",
-   "price": 0.087,
-   "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-on-october-18-2026",
-   "tier": "Kleinwagen",
-   "headline_price": 1919.0
+   "headline_price": 69838.86
   },
   {
    "venue": "polymarket",
@@ -3694,52 +3739,7 @@
    "price": 0.315,
    "url": "https://polymarket.com/event/edi-rama-out-as-albania-pm-in-2026",
    "tier": "Taschengeld",
-   "headline_price": 242.29
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x9639a6a92c4b2a434ee674c104c7f4660340663b91e418e2be1ee4377971aa32",
-   "question": "Will Aleksandar Vučić be the next Prime Minister of Serbia?",
-   "price": 0.678,
-   "url": "https://polymarket.com/event/next-prime-minister-of-serbia-20260629223938642",
-   "tier": "Eigentumswohnung",
-   "headline_price": 13708.07
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x05bdb0fa33aa79a807878114b6b1ee19f14f071ce0e4c53a915a059690a65186",
-   "question": "Netflix (NFLX) Q3 operating margin 32% to 34%?",
-   "price": 0.6,
-   "url": "https://polymarket.com/event/netflix-nflx-q3-operating-margin-20261008120015000",
-   "tier": "Taschengeld",
-   "headline_price": 638.86
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xbd1235130181ae10a8f66d81729da689b5685234d2b873a32f96b7e628ef346f",
-   "question": "Spread: Saints (-3.5) [Saints]",
-   "price": 0.365,
-   "url": "https://polymarket.com/event/nfl-no-nyg-2026-10-18",
-   "tier": "Eigentumswohnung",
-   "headline_price": 68695.44
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0xced8ac1f4faf80e60a45a6e5056faf0cd80dcdedda776a0bb161c528aa4be206",
-   "question": "Will Elon Musk post 90-114 tweets from October 17 to October 19, 2026?",
-   "price": 0.155,
-   "url": "https://polymarket.com/event/elon-musk-of-tweets-october-17-october-19-2026",
-   "tier": "Taschengeld",
-   "headline_price": 297.83
-  },
-  {
-   "venue": "polymarket",
-   "market_id": "0x5e4aa43999e84e017186157e4780bf85b94f75a6f41a8953d2677767a65ea258",
-   "question": "Will Microsoft be the largest company in the world by market cap on October 31, 2026?",
-   "price": 0.002,
-   "url": "https://polymarket.com/event/largest-company-end-of-october-2026",
-   "tier": null,
-   "headline_price": null
+   "headline_price": 221.54
   }
  ]
 }
