@@ -136,15 +136,19 @@ def main(argv=None) -> int:
     # Startseite = die Reise (statisch, liest summary.json); Tagesmessung = heute.html
     (SITE / "heute.html").write_text(render(stale_from or day, records, ano, div, cov, cal, stats),
                                      encoding="utf-8")
-    (SITE / "index.html").write_text((Path(__file__).parent / "static" / "reise.html").read_text(encoding="utf-8"),
-                                     encoding="utf-8")
+    static = Path(__file__).parent / "static"
+    (SITE / "index.html").write_text((static / "reise.html").read_text(encoding="utf-8"), encoding="utf-8")
+    (SITE / "ci.css").write_text((static / "ci.css").read_text(encoding="utf-8"), encoding="utf-8")
+    import shutil
+    shutil.copytree(static / "fonts", SITE / "fonts", dirs_exist_ok=True)
     (SITE / "impressum.html").write_text(render_legal(stats["generated"]), encoding="utf-8")
     (SITE / "summary.json").write_text(json.dumps({
         "stats": stats, "coverage": cov, "divergences": div, "anomalies": ano[:50],
         "calibration": cal,
         "markets": [{k: r.get(k) for k in ("venue", "market_id", "question", "price", "url", "volume_24h")}
                     | {"tier": r["move"].get("tier"), "headline_price": r["move"].get("headline_price"),
-                       "status": r["move"].get("status"), "sport": analysis.is_sport(r)}
+                       "status": r["move"].get("status"), "sport": analysis.is_sport(r),
+                       "ai": analysis.is_ai(r)}
                     for r in records],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log.info("Bericht: %s (%d Märkte, Fehler: %s)", SITE / "heute.html", len(records), errors or "keine")

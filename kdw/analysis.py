@@ -121,6 +121,19 @@ def classify(rec: dict) -> tuple[str, str]:
     return region, topic
 
 
+_AI = re.compile(r"(?<![\w])(ai|a\.i\.|agi|asi|artificial intelligence|artificial general intelligence|"
+                 r"superintelligence|openai|anthropic|claude|gemini|chatgpt|gpt-?\d*|grok|xai|deepmind|"
+                 r"llm|llms|large language model|ai model|frontier model|mistral|deepseek|llama|"
+                 r"sam altman|dario amodei|demis hassabis|ai safety|ai act|humanoid robot|"
+                 r"robotaxi|turing test|arc-agi|imo gold|benchmark)(?![\w])", re.I)
+
+
+def is_ai(rec: dict) -> bool:
+    """Märkte zu künstlicher Intelligenz: Modelle, Firmen, AGI, Regulierung."""
+    h = " ".join([rec.get("question") or ""] + [str(t) for t in (rec.get("tags") or [])])
+    return bool(_AI.search(h))
+
+
 def is_sport(rec: dict) -> bool:
     return classify(rec)[1] == "Sport"
 

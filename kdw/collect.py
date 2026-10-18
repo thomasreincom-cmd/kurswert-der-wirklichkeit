@@ -201,10 +201,21 @@ def normalize_polymarket(m: dict, raw_book: Optional[dict], ts: str) -> Optional
     }
 
 
-def collect_polymarket(http: Http, top_n: int = 400) -> list[dict]:
+def collect_polymarket(http: Http, top_n: int = 400, ai_scan: int = 2000) -> list[dict]:
+    """Die top_n meistgehandelten Märkte, dazu alle KI-Märkte aus den
+    ai_scan meistgehandelten (KI ist ein Schwerpunkt des Studios und fällt
+    sonst fast ganz aus der Auswahl)."""
+    from .analysis import is_ai
     ts = _now()
-    markets = polymarket_markets(http, top_n)
+    scanned = polymarket_markets(http, max(top_n, ai_scan))
+    markets = scanned[:top_n]
+    seen = {m.get("conditionId") or m.get("id") for m in markets}
+    extra = [m for m in scanned[top_n:]
+             if is_ai({"question": m.get("question"), "tags": [t.get("label") for t in (m.get("tags") or []) if isinstance(t, dict)]})
+             and (m.get("conditionId") or m.get("id")) not in seen]
+    markets = markets + extra
     STATS["polymarket_listed"] += len(markets)
+    STATS["polymarket_ai_extra"] += len(extra)
     want = []
     for m in markets:
         yi, toks = _yes_index(_jlist(m.get("outcomes"))), _jlist(m.get("clobTokenIds"))

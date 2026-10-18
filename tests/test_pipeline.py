@@ -142,3 +142,10 @@ def test_kalshi_series_marks_sport():
 
 def test_matchday_is_sport():
     assert analysis.is_sport({"question": "Will Paris FC win on 2026-10-18?"})
+
+
+def test_ai_detection():
+    assert analysis.is_ai({"question": "Will Anthropic have the best AI model at the end of October 2026?"})
+    assert analysis.is_ai({"question": "OpenAI announces AGI before 2027?"})
+    assert not analysis.is_ai({"question": "Will Paris FC win on 2026-10-18?"})
+    assert not analysis.is_ai({"question": "Will the Fed raise rates in October?"})

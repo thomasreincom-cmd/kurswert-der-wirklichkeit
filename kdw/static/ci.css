@@ -1,0 +1,19 @@
+/* Studio Bifurkation · IC, Designlinie convocare.at/studio (Stand Oktober 2026).
+   Schriften lokal eingebunden (SIL Open Font License), damit beim Aufruf keine
+   Daten an Schriftdienste fließen. */
+@font-face{font-family:"Orbitron";font-weight:700;font-display:swap;src:url(fonts/orbitron-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Orbitron";font-weight:900;font-display:swap;src:url(fonts/orbitron-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:300;font-display:swap;src:url(fonts/space-grotesk-latin-300-normal.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-display:swap;src:url(fonts/space-grotesk-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:600;font-display:swap;src:url(fonts/space-grotesk-latin-600-normal.woff2) format("woff2")}
+
+:root{
+  --void:#04060f; --void-2:#070a18;
+  --cyan:#00f0ff; --violet:#b14dff; --pink:#ff2e9a; --red:#ff2d4d; --green:#2dffa6; --ice:#cfe9ff;
+  --text:#e7f0ff; --muted:#8a96bd;
+  --glass:rgba(140,170,255,.05); --glass-2:rgba(140,170,255,.09); --glass-border:rgba(160,200,255,.16);
+  --grad-ice:linear-gradient(110deg,#fff 10%,#a9d8ff 40%,#00f0ff 75%);
+  --grad-heat:linear-gradient(110deg,#b14dff,#ff2e9a 60%,#ff7ac6);
+  --display:"Orbitron",system-ui,sans-serif;
+  --body:"Space Grotesk",system-ui,"Segoe UI",Helvetica,sans-serif;
+}

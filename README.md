@@ -90,4 +90,6 @@ Diese Pr체fung ist keine Rechtsberatung. Offene Punkte f체r eine anwaltliche Pr�
 
 Interlektische Copoiese. Thomas Reiner setzt den Neugiervektor und erdet. Claude Opus 5.5 (Anthropic) verdichtet und schreibt den Code; Claude Sonnet hat die API-Dokumentation recherchiert, ein weiteres Modell den Code unabh채ngig gepr체ft. KI-unterst체tzt, gekennzeichnet nach Art. 50 KI-Verordnung (EU) 2024/1689.
 
+Schriften: Orbitron und Space Grotesk, lokal eingebunden unter der SIL Open Font License (`kdw/static/fonts`).
+
 Lizenz: siehe `LICENSE`. Code MIT, eigene Texte und Kennzahlen CC BY 4.0. Daten und Fragetexte Dritter sind ausgenommen.
